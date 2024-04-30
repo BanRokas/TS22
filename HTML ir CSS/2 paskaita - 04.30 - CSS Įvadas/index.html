@@ -53,7 +53,7 @@
       CSS selektoriai yra naudojami tam, kad CSS faile nurodytume, kokiems elementams norime suteikti stilius.
     </p>
     <ul>
-      <li id="susigalvotasID colorPink">tag - span/p/h1... - yra parenkami visi HTML esantys elementai turintys nurodytą tag'ą.</li>
+      <li id="susigalvotasID color">tag - span/p/h1... - yra parenkami visi HTML esantys elementai turintys nurodytą tag'ą.</li>
       <li>* - yra parenkami visiškai visi elementai.</li>
       <li class="susigalvotasPavadinimas">class - yra parenkami visi elementai turintys nurodytą klasę.</li>
       <li id="susigalvotasID">id - yra parenkas elementas turintis nurodytą ID.</li>
@@ -70,6 +70,35 @@
       <p>
         Vienas ID gali būti priskirtas TIK vienam elementui. Vienas elementas gali turėti TIK vieną ID.<br>
         CSS ID aprašomas už grotelių simbolio "#" susigalvotu (siūlomai) logišku pavadinimu. HTML'e id priskiriame suteikiant atributą "id" ir už lygybės kabutėse parašomas id pavadinimas.
+      </p>
+    </div>
+  </div>
+  <div> <!-- Spalvos -->
+    <h2>Spalvos</h2>
+    <p>
+      Spalvos gali būti užrašytos įvairiais būdais. Populiariausi spalvų aprašymo būdai yra: spalvos vardas, rbg kodas, hex kodas.
+    </p>
+    <div> <!-- spalvos vardas -->
+      <h3>Spalvos vardas</h3>
+      <p>
+        Spalva gali būti suteikiama nurodant jos vardą. Vardinių spalvų yra ~140.
+      </p>
+    </div>
+    <div>
+      <h3 id="color">RGB kodas</h3>
+      <p>
+        RGB kodas susideda iš RedGreenBlue spalvų, kurioms galima skirti nuo 0 iki 255 kiekio. To pasekoje galima išgauti 16.777m spalvų.<br>
+        RBG gali turėti permatomumą (alpha), tuomet kodas vadinamas RGBA ir turi nebe 3 reikšmes, bet 4, o tą 4'toji reikšmė yra nuo 0 iki 1, 0.001 žingsniu.
+      </p>
+    </div>
+    <div>
+      <h3>Hex kodas</h3>
+      <p>
+        Hex yra trumpinys hexadecimal žodžiui, kuris reiškia šešioliktainis. Kitaip pasakius hex kodas yra šešioliktainė skaičiavimo sistema.<br>
+        Hex kodas susideda iš #RRGGBB, kiekviena raidė yra skaičius nuo 0 iki 15 parašytas šešioliktainėje sistemoje.<br>
+        Pvz.: dešimtainėje 50 yra lygus hexadecimal 32.<br>
+        Hex kaip ir RBG gali turėti spalvos permatomumą. Jis aprašomas kaip du extra hexadecimal simboliai gale. (nebe #RRGGBB, bet #RRGGBBAA)<br>
+        Hex yra vienintelis spalvos aprašymo būdas, kuris gali būti trumpinamas, jeigu vienos spalvos hexdecimal simboliai yra vienodi. Bet jeigu jau trumpinamas kodas, turi būti trumpinamos visos spalvos.
       </p>
     </div>
   </div>
