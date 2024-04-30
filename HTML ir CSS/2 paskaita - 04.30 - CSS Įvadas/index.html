@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 paskaita - CSS Įvadas</title>
+  <style>
+    span{
+      color: blue;
+    }
+  </style>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <h1>CSS Įvadas</h1>
+  <p>
+    CSS - Cascading Style Sheets yra skirtas stilizuoti HTML'o elementus.
+  </p>
+  <div>
+    <h2>CSS rašymo būdai</h2>
+    <ul>
+      <li>Inline - Linijinis - CSS rašomas tag'o viduje, style atribute.</li>
+      <li>Internal - Vidinis - CSS rašomas HTML faile, style tag'o viduje.</li>
+      <li>External - Išorinis - CSS rašomas atskirame CSS faile, kuris yra prijungiamas prie HTML'o.</li>
+    </ul>
+    <div> <!-- Inline -->
+      <h3>Inline</h3>
+      <p>
+        Naudojamas norint pasitestuoti kaip atrodytų stilius pritaikytas tam elementui. Nepaliekamas galutiniame kode.
+      </p>
+      <p style="color:red">Pavyzdys Inline</p>
+    </div>
+    <div> <!-- Internal -->
+      <h3>Internal</h3>
+      <p>
+        Naudojamas norint pasitestuoti CSS selektorius ir stilius ARBA turint labai mažą ir unikalų HTML failą, kuriam nenori kurti papildomo CSS'o.
+      </p>
+      <p>Pavyzdinis Internal <span>išskirta dalis</span> teksto</p>
+    </div>
+    <div> <!-- External -->
+      <h3>External</h3>
+      <p>
+        Dažniausiai naudojamas CSS rašymo būdas. Kai CSS rašomas atskirame faile, kuris yra prijungiamas prie HTML'o su link tag'o pagalba.
+      </p>
+      <p>Pavyzdys External</p>
+    </div>
+  </div>
+</body>
+</html>
