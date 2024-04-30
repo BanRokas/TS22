@@ -1,3 +1,19 @@
 p{
   color: green;
+  font-size: 20px;
+}
+*{
+  font-family:'Courier New', Courier, monospace;
+}
+.susigalvotasPavadinimas{
+  background-color: grey;
+}
+.borded{
+  border: 5px red solid;
+}
+#susigalvotasID{
+  text-decoration: underline;
+}
+#colorPink{
+  color: pink;
 }

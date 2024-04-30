@@ -16,7 +16,7 @@
   <p>
     CSS - Cascading Style Sheets yra skirtas stilizuoti HTML'o elementus.
   </p>
-  <div>
+  <div> <!-- CSS rašymo būdai -->
     <h2>CSS rašymo būdai</h2>
     <ul>
       <li>Inline - Linijinis - CSS rašomas tag'o viduje, style atribute.</li>
@@ -43,6 +43,34 @@
         Dažniausiai naudojamas CSS rašymo būdas. Kai CSS rašomas atskirame faile, kuris yra prijungiamas prie HTML'o su link tag'o pagalba.
       </p>
       <p>Pavyzdys External</p>
+    </div>
+  </div>
+  <div> <!-- CSS selektoriai -->
+    <h2>CSS Selektoriai</h2>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors">Developer Mozilla</a><br>
+    <a href="https://www.w3schools.com/cssref/css_selectors.php">W3 School</a>
+    <p class="susigalvotasPavadinimas borded">
+      CSS selektoriai yra naudojami tam, kad CSS faile nurodytume, kokiems elementams norime suteikti stilius.
+    </p>
+    <ul>
+      <li id="susigalvotasID colorPink">tag - span/p/h1... - yra parenkami visi HTML esantys elementai turintys nurodytą tag'ą.</li>
+      <li>* - yra parenkami visiškai visi elementai.</li>
+      <li class="susigalvotasPavadinimas">class - yra parenkami visi elementai turintys nurodytą klasę.</li>
+      <li id="susigalvotasID">id - yra parenkas elementas turintis nurodytą ID.</li>
+    </ul>
+    <div> <!-- Class -->
+      <h3>Class</h3>
+      <p>
+        Vieną klasę galima priskirti daugeliui elementų. Vienas elementas gali turėti daugelį klasių.<br>
+        CSS klasė aprašoma už taško simbolio "." susigalvotu (siūlomai) logišku pavadinimu. HTML'e klasė priskiriame suteikiant atributą "class" ir už lygybės kabutėse išrašomos klasė/s per tarpelį.
+      </p>
+    </div>
+    <div> <!-- ID -->
+      <h3>ID</h3>
+      <p>
+        Vienas ID gali būti priskirtas TIK vienam elementui. Vienas elementas gali turėti TIK vieną ID.<br>
+        CSS ID aprašomas už grotelių simbolio "#" susigalvotu (siūlomai) logišku pavadinimu. HTML'e id priskiriame suteikiant atributą "id" ir už lygybės kabutėse parašomas id pavadinimas.
+      </p>
     </div>
   </div>
 </body>
