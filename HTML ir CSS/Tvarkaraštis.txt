@@ -1,0 +1,14 @@
+1 savaitė:
+  1 paskaita - 04.29 - HTML Įvadas
+  2 paskaita - 04.30 - CSS Įvadas
+  3 paskaita - 05.02 - CSS prioritetai
+  4 paskaita - 05.03 - Box Model ir Positions
+2 savaitė:
+  5 paskaita - 05.06 - Lentelės ir pseudo klasės
+  6 paskaita - 05.07 - Formos ir pseudo elementai
+  7 paskaita - 05.08 - Flex
+  8 paskaita - 05.09 - Grid
+  9 paskaita - 05.10 - Flex ir Grid praktika
+3 savaitė: responsiveDesign, Animation ir Transition, Git ir Github (trumpai), Framework, ?Preprocessors?, Accessability, Praktika
+4 savaitė:
+  15 paskaita - 05.20 - HTML atsiskaitymas (testas ir praktika)
