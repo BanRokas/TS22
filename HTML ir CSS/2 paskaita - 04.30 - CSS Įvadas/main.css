@@ -47,3 +47,20 @@ p{
   background-size: cover;
   background-position: center;
 }
+
+.inline{
+  height: 200px;
+  background-color: #f2ce9f;
+}
+.block{
+  width: 200px;
+  height: 200px;
+  background-color: #9ff2a9;
+}
+.inline-block{
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  background-color: #a59ff2;
+  font-size: 16px;
+}
