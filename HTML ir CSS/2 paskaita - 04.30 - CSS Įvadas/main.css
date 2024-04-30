@@ -17,3 +17,33 @@ p{
 #color{
   color: #31b431;
 }
+
+.fonas{
+  height: 500px;
+}
+.spalva{
+  background-color: rgb(229, 233, 126);
+}
+.gradientas{
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(225, 98, 98),
+    rgb(113, 113, 235),
+    rgb(127, 235, 127),
+    rgb(232, 232, 122)
+  );
+}
+.imgBg0{
+  background-image: url('./media/nature3.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.imgBg1{
+  background-image: url('https://wallpapers.com/images/featured/mountain-t6qhv1lk4j0au09t.jpg');
+  background-attachment: fixed;
+}
+.imgBg2{
+  background-image: url('./media/nature8.jpg');
+  background-size: cover;
+  background-position: center;
+}
