@@ -16,16 +16,21 @@
 </head>
 <body>
   <header>
-    <img src="" alt="logo">
+    <a href="https://google.lt" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="logo" class="logotipas">
+    </a>
     <nav>
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Posts</a>
+      <a href="#semantika">Semantika</a>
+      <a href="#defaultStyles">Default Stiliai</a>
+      <a href="#parentChild">Parent/Child</a>
+      <a href="#priorities">Prioritetai</a>
+      <a href="#fonts">Fonts</a>
+      <a href="#icons">Ikonos</a>
     </nav>
     <!-- log in / sign up / search / ... -->
   </header>
   <main>
-    <article> <!-- Puslapio semantika -->
+    <article id="semantika"> <!-- Puslapio semantika -->
       <h2>Semantika</h2>
       <p>
         Semantika yra reikalinga tam, kad puslapis būtų tvarkingas, lengva jame naviguotis (programuotojui) ir būtų geriau vertinamas google paieškos sistemos.
@@ -40,7 +45,7 @@
         <li>footer - puslapio apatinė dalis</li>
       </ul>
     </article>
-    <section> <!-- naršyklės numatytieji stiliai -->
+    <section id="defaultStyles"> <!-- naršyklės numatytieji stiliai -->
       <h2>Naršyklės numatytieji stiliai</h2>
       <p>
         Kiekvienas (beveik) tag'as turi savo numatytuosius naršyklės stilius.<br>
@@ -54,7 +59,7 @@
         <a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target="_blank">Normalize CSS</a> - suvienodina vienodų tag'ų stilius tarp skirtingų naršyklių, panaikina nenaudingus stilius ir prideda reikalingus stilius.
       </p>
     </section>
-    <section> <!-- Tėviniai ir vaikiniai elementai -->
+    <section id="parentChild"> <!-- Tėviniai ir vaikiniai elementai -->
       <h2>Tėviniai ir vaikiniai elementai</h2>
       <p>
         Elementas gali turėti DAUG vaikinių elementų.<br>
@@ -65,7 +70,7 @@
         Stiliai gali būti paveldimi iš tėvinio elemento į vaikinį elementą.
       </p>
     </section>
-    <section> <!-- CSS Stilių Prioritetai -->
+    <section id="priorities"> <!-- CSS Stilių Prioritetai -->
       <h2>CSS Stilių Prioritetai</h2>
       <ol>
         <li>!important</li>
@@ -89,7 +94,18 @@
         <span class="bigText">Jeigu įmanoma - nenaudoti!!!</span> !important prierašo. !important ignoruoja visus prioritetus ir suteikia nurodytą stilių (stiliausVardas: stiliausNustatymas !important). Norint perrašyti stilių su !important prierašu reikia naudoti kitą !important... 
       </p>
     </section>
-    <!-- <section>???</section> -->
+    <section id="fonts"> <!-- Fonts -->
+      <h2>Teksto šriftas</h2>
+      <p>
+        Šriftai gali būti atsisiunčiami iš įvairių svetainių, bet viena populiariausių yra <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.
+      </p>
+    </section>
+    <section id="icons"> <!-- Ikonos -->
+      <a href="https://www.w3schools.com/icons/">Ikonų panaudojimas</a>
+      <a href="https://www.w3schools.com/icons/icons_reference.asp">"Visos" ikonos</a>
+      <span>comment - siūlau nenaudoti font awesome 5</span>
+      <span>comment - siūlau naudoti <a href="https://icons.getbootstrap.com/">naujesnį bootstrap ikonų puslapį</a></span>
+    </section>
   </main>
   <footer>
     <p>Copyrights</p>
