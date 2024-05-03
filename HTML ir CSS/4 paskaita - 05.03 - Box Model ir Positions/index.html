@@ -96,10 +96,90 @@
       </div>
     </section>
     <section> <!-- Position -->
-
+      <h2>Position</h2>
+      <ul>
+        <li>static (default)</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+        <li>top, right, bottom, left, z-index (ne pozicijos)</li>
+      </ul>
+      <p>
+        Suteikus elementui betkurią poziciją (apart static), jis įgauna galimybę naudotis top, right, bottom, left ir z-index nustatymais.<br>
+        z-index nusako elemento eilės sluoksnį ekrane (kaip arti/toli nuo vartotojo elementas yra /// kuris elementas kurį užstos).
+      </p>
+      <div> <!-- static -->
+        <h3>Static</h3>
+        <p>
+          Static nustatymas nesuteikia jokių savybių. Net galimybės naudotis top, right, bottom, left ar z-index stiliais.
+        </p>
+        <div class="posContainer">
+          <div class="box static">Static 1</div>
+          <div class="box static top">Static 2</div>
+          <div class="box static">Static 3</div>
+          <div class="box static">Static 4</div>
+        </div>
+      </div>
+      <div> <!-- relative -->
+        <h3>Relative</h3>
+        <p>
+          Relative nustatymas suteikia elementui galimybę naudotis top, right, bottom, left ir z-index nustatymais.<br>
+          Top, right, bottom ir left nustatymai pastumia elementą nuo nurodytos jo pradinės pozicijos per nurodytą atstumą nuo nurodytos kraštinės.<br>
+          Elemento viduje esant absoliučiajam elementui, jo atitraukimai skaičiuojami nuo artimiausio protėvinio elemento turinčio relatyviąją poziciją.
+        </p>
+        <div class="posContainer">
+          <div class="box static">Static 1</div>
+          <div class="box static">Static 2</div>
+          <div class="box relative z-index-5">Relative 3</div>
+          <div class="box relative top right">Relative 4</div>
+        </div>
+      </div>
+      <div class="relative"> <!-- absolute -->
+        <h3>Absolute</h3>
+        <p>
+          Absolute nustatymas suteikia elementui galimybę naudotis top, right, bottom, left ir z-index nustatymais.<br>
+          Elementas turintis absolute nustatymą išeina iš puslapio tėkmės.<br>
+          Top, right, bottom, left atitraukia elementą nuo artimiausio protėvinio elemento kraštų, kuris turi relative nustatymą.
+        </p>
+        <div class="posContainer relative">
+          <div class="box static">Static 1</div>
+          <div class="box static">Static 2</div>
+          <div class="box absolute top left">Absolute 3</div>
+          <div class="box static">Static 4</div>
+        </div>
+      </div>
+      <div> <!-- Fixed -->
+        <h3>Fixed</h3>
+        <p>
+          Fixed nustatymas suteikia elementui galimybę naudotis top, right, bottom, left ir z-index nustatymais.<br>
+          Elementas turintis fixed nustatymą išeina iš puslapio tėkmės.<br>
+          Fixed elementas prilimpa prie ekrano (viewport) ir juda scroll'inant per svetainę.<br>
+          Top, right, bottom ir left nustatymai, nusako per kokį atstumą nuo ekrano (viewport) kraštų elementas bus atsitraukęs.
+        </p>
+        <div class="posContainer relative">
+          <div class="box fixed top right">Fixed 1</div>
+          <div class="box static">Static 2</div>
+          <div class="box static">Static 3</div>
+          <div class="box static">Static 4</div>
+        </div>
+      </div>
+      <div> <!-- Sticky -->
+        <h3>Sticky</h3>
+        <p>
+          Sticky nustatymas suteikia elementui galimybę naudotis top, right, bottom, left ir z-index nustatymais.<br>
+          Top, right, bottom ir left nustatymai, nusako per kokį atstumą nuo ekrano (viewport) ribų sticky elementas prilips. Sticky elementas neišeis iš savo tėvinio elemento ribų / prilimpa tik savo tėvinio elemento ribose.
+        </p>
+        <div class="posContainer">
+          <div class="box static">Static 1</div>
+          <div class="box static">Static 2</div>
+          <div class="box sticky top">Sticky 3</div>
+          <div class="box static">Static 4</div>
+        </div>
+      </div>
     </section>
-    <section> <!-- Selectors -->
-
+    <section style="height:1000px"> <!-- Selectors -->
+      
     </section>
   </main>
   <footer></footer>

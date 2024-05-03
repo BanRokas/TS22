@@ -32,3 +32,52 @@
 
   box-sizing: border-box;
 }
+
+.posContainer{
+  width: 800px;
+  height: 300px;
+  border: 1px solid black;
+}
+.box{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 5px dashed orange;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+}
+.top{
+  top: 50px;
+}
+.bottom{
+  bottom: 30px;
+}
+.right{
+  right: 100px;
+}
+.left{
+  left: 80px;
+}
+
+.z-index-5{
+  z-index: 5;
+}
+
+.static{
+  position: static;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
+.sticky{
+  position: sticky;
+}
