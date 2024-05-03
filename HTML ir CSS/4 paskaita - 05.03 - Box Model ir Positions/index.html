@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 paskaita - Box Model ir Positions</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Box Model -->
+      <h2>Box Model</h2>
+      <ol>
+        <li>Content - turinys, centrinė dalis</li>
+        <li>Padding - pamušalas, tarpas tarp turinio ir rėmelio</li>
+        <li>Border - rėmelis, esantis tarp padding ir margin</li>
+        <li>Margin - paraštė, esanti tarp rėmelio ir kitų elementų</li>
+        <li>Position - modifikuota pozicija, neįtakojant kitų elementų pozicijos</li>
+      </ol>
+      <div class="boxModelPvz">Box Model Pvz</div>
+      <div> <!-- Content -->
+        <h3>Content</h3>
+        <p>
+          Turinio dalį įtakoja turinio kiekis ir jo nustatymai, kaip width; height; font-size; font...
+        </p>
+      </div>
+      <div> <!-- Padding -->
+        <h3>Padding</h3>
+        <p>
+          Padding yra tarpas tarp turinio ir rėmelio.<br>
+          Padding gali būti nustatomas 8 būdais.
+        </p>
+        <ul>
+          <li>padding-top: px;</li>
+          <li>padding-right: px;</li>
+          <li>padding-bottom: px;</li>
+          <li>padding-left: px;</li>
+          <li>padding: top right bottom left;</li>
+          <li>padding: top right&left bottom;</li>
+          <li>padding: top&bottom right&left;</li>
+          <li>padding: all;</li>
+        </ul>
+      </div>
+      <div> <!-- Border -->
+        <h3>Border</h3>
+        <p>
+          Border - rėmelis yra juosta atskirianti elemento padding'ą nuo jo margin'o. Už border'io baigiasi elemento vidinė dalis (baigiasi fono spalva/paveiksliukas).
+        </p>
+        <p>
+          Border'iui galima suteikti spalvos, linijos storio, linijos tipo, kampų apvalinimo stilius. Skirtingus stilius galima suteikti skirtingoms kraštinėms/kampams. 
+        </p>
+        <ul>
+          <li>border: width style color;</li>
+          <li>border-width: px;</li>
+          <li>border-style: solid/dashed/dotted/double...</li>
+          <li>border-color: color;</li>
+          <li>border-[kraštinė]: width style color;</li>
+          <li>border-[kraštinė]-color/style/width: ???;</li>
+          <li>border-radius: px;</li>
+          <li>border-radius: px px;</li>
+          <li>.....</li>
+          <li>....</li>
+          <li>...</li>
+          <li>..</li>
+          <li>.</li>
+        </ul>
+      </div>
+      <div> <!-- Margin -->
+        <h3>Margin</h3>
+        <p>
+          Margin yra tarpas tarp elemento rėmelio ir aplinkinių elementų.<br>
+          Margin'ai gali persidengti jeigu vienas po kitu einantys elementai yra blokiniai.
+        </p>
+        <p>
+          Margin iš viršaus ir apačios neveikia linijiniams elementams.
+        </p>
+        <p>Blokinį elementą, turintį pločio nustatymą, iš kraštų galima sucentruoti naudojant - margin:0 auto;</p>
+        <p>Margin gali būti nustatomas 8 būdais.</p>
+        <ul>
+          <li>margin-top: px;</li>
+          <li>margin-right: px;</li>
+          <li>margin-bottom: px;</li>
+          <li>margin-left: px;</li>
+          <li>margin: top right bottom left;</li>
+          <li>margin: top right&left bottom;</li>
+          <li>margin: top&bottom right&left;</li>
+          <li>margin: all;</li>
+        </ul>
+      </div>
+      <div> <!-- Box Sizing -->
+        <h3>Box Sizing</h3>
+        <p>
+          Suteikiant elementui padding ir border, jo turinio dydis didėja. Norint kad elementas išliktų nustatyto pločio ir aukščio, o suteiktas padding ir border įsiskaičiuotų į pradinį dydį, reikia elementui suteikti stilių box-sizing su border-box nustatymu.
+        </p>
+      </div>
+    </section>
+    <section> <!-- Position -->
+
+    </section>
+    <section> <!-- Selectors -->
+
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
