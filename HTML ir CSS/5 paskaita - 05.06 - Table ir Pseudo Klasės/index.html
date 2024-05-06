@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 paskaita - Table ir Pseudo Klasės</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Table -->
+      <h2>Table</h2>
+      <ul>
+        <li>table - lentelė</li>
+        <li>thead - atvaizduoja lentelės stulpelių pavadinimus</li>
+        <li>tbody - atvaizduoja lentelės duomenis</li>
+        <li>tfoot - atvaizduoja lentelės išvestines (suma/vidurkis/...)</li>
+        <li>tr - table row - sukuria lentelės eilutę</li>
+        <li>th - table heading - lentelės stulpelio pavadinimas</li>
+        <li>td - table data - lentelės duomens laukelis</li>
+        <li>colgroup - stulpelių grupė</li>
+        <li>col - stulpelių paskirstymas</li>
+        <li>caption - lentelės pavadinimas</li>
+      </ul>
+      <div>
+        <table>
+          <caption>Table pavyzdys</caption>
+          <thead>
+            <tr>
+              <th></th>
+              <th colspan="2">Vardas</th>
+              <th>Ūgis</th>
+              <th>Amžius</th>
+              <th>Žingsniai</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>Rokas</td>
+              <td>Lina</td>
+              <td>186</td>
+              <td>27</td>
+              <td rowspan="2">25000</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td colspan="2">Petras</td>
+              <td>180</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td colspan="2">Jonas</td>
+              <td>168</td>
+              <td>20</td>
+              <td>5000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">Dienos žingsnių vidurkis:</td>
+              <td>13333.3(3)</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <section> <!-- pseudo class -->
+
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
