@@ -1,0 +1,6 @@
+Darytis CAO
+
+Selectors:
+  Pasibaigti https://flukeout.github.io/
+Lentelė:
+  1) Sukurkite lentelę, kurioje būtų informacija apie 5 jūsų mėgstamiausias vietas (kur norėtumėte nuvykti, kur jau buvote ir t.t.). Informacija apie vietas: Eilės numeris; Pavadinimas; Šalis; Buvau/Nebuvau; Paveiksliukas; Nuoroda;
