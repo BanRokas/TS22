@@ -24,10 +24,10 @@ a:active{
   color: red;
 }
 
-:empty{
+/* :empty{
   height: 20px;
   background-color: yellow;
-}
+} */
 
 .border{
   border: 1px solid black;
