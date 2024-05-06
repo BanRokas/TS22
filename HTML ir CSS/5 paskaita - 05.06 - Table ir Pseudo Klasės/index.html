@@ -79,6 +79,56 @@
         <li>[attribute|="reiksme"] - atributo vardas ir reikšmė arba reikšmė su "-"</li>
       </ul>
     </section>
+    <section> <!-- Pseudo Class -->
+      <h2>Pseudo Class</h2>
+      <ul>
+        <li>Nuorodų
+          <ol>
+            <li>:link</li>
+            <li>:visited</li>
+            <li>:hover</li>
+            <li>:active</li>
+          </ol>
+        </li>
+        <li>:first-child - pirmasis vaikinis elementas</li>
+        <li>:last-child - paskutinis vaikinis elementas</li>
+        <li>:only-child - vienintelis vaikinis elementas</li>
+        <li>:first-of-type - pirmasis savo tipo elementas</li>
+        <li>:last-of-type - paskutinis savo tipo elementas</li>
+        <li>:only-of-type - vienintelis savo tipo elementas</li>
+        <li>:nth-child(n)</li>
+        <li>:nth-last-child(n)</li>
+        <li>:nth-of-type(n)</li>
+        <li>:nth-last-of-type(n)</li>
+        <li>Nebūtini
+          <ul>
+            <li>:root - kurti kintamuosius CSS'e (ir kitokiems dar dalykams)</li>
+            <li>:not(selector) - parenka viską, bet ne nurodytą selektorių</li>
+            <li>:empty - tag'as be turinio</li>
+            <li>:fullscreen - pajungus fullscreen mode'ą</li>
+            <li>:lang(language) - kalbos atributo selektorius</li>
+            <li>:target - kreipiamasi į elementą, į kurį nusinaviguoji su nuoroda</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="selectorTest border">
+        <h3>Pavyzdžiai</h3>
+        <a href="https://www.google.lt/search?q=penguin">Nuoroda</a>
+        <div class="border">
+          <p>1 Lorem ipsum dolor sit amet.</p>
+          <p>2 Lorem ipsum dolor sit amet.</p>
+          <p>3 Lorem ipsum dolor sit amet.</p>
+        </div>
+        <h3>Pavyzdžiai</h3>
+        <h3>Pavyzdžiai</h3>
+        <a href="https://www.google.lt/search?q=penguin">Nuoroda</a>
+        <p>4 Lorem ipsum dolor sit amet.</p>
+        <p>5 Lorem ipsum dolor sit amet.</p>
+        <a href="https://www.google.lt/search?q=penguin">Nuoroda</a>
+        <p>5 Lorem ipsum dolor sit amet.</p>
+        <p>5 Lorem ipsum dolor sit amet.</p>
+      </div>
+    </section>
   </main>
   <footer></footer>
 </body>

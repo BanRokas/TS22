@@ -8,3 +8,50 @@ td, th{
 [colspan="5"]{
   background-color: #faebd7;
 }
+
+a:link{
+  color: orange;
+}
+a:visited{
+  color: green;
+}
+a:hover{
+  color: blue;
+}
+a:active{
+  color: red;
+}
+
+:empty{
+  height: 20px;
+  background-color: yellow;
+}
+
+.border{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.selectorTest > :first-child{
+  background-color: #0ff;
+}
+.selectorTest :last-child{
+  background-color: #008000;
+}
+.selectorTest :only-child{
+  background-color: #f00;
+}
+
+.selectorTest > :first-of-type{
+  color: orange;
+}
+.selectorTest > :last-of-type{
+  color: grey;
+}
+.selectorTest > :only-of-type{
+  color: purple;
+}
+
+.selectorTest > :nth-child(2n){
+  font-size: 30px;
+}
