@@ -1,0 +1,35 @@
+input:checked + label{
+  background-color: green;
+}
+
+input[type='checkbox'],
+input[type='radio']{
+  display: none;
+}
+
+:default{
+  background-color: aqua;
+}
+
+:disabled{
+  background-color: black;
+}
+:enabled{
+  color: purple;
+}
+:focus{
+  font-size: 30px;
+}
+:in-range{
+  background-color: green;
+}
+:out-of-range{
+  background-color: red;
+}
+
+input[type='email']:valid{
+  color: green;
+}
+input[type='email']:invalid{
+  color: red;
+}

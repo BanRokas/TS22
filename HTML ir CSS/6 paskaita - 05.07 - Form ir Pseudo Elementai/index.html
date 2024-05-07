@@ -85,7 +85,7 @@
         </div>
         <div>
           <label for="amzius">Amžius</label>
-          <input type="range" name="amzius" id="amzius" min="18" max="99" step="3">
+          <input type="number" name="amzius" id="amzius" min="18" max="99" step="3">
         </div>
         <div>
           <label for="descripiton">Aprašymas</label>
@@ -94,10 +94,10 @@
         <div>
           <label for="bestProgrLang">Geriausia programavimo kalba</label>
           <select name="bestProgrLang" id="bestProgrLang">
-            <option value="neReiksme" selected disabled></option>
+            <option value="neReiksme"  disabled></option>
             <option value="JavaScript">JavaScript</option>
             <option value="Java">Java</option>
-            <option value="Python">Python</option>
+            <option value="Python" selected>Python</option>
             <option value="PHP">PHP</option>
             <option value="C#">C#</option>
             <option value="C">C</option>
@@ -132,12 +132,12 @@
         </div>
         <div> <!-- radio -->
           <label>Pasirinkite savo lytį:</label>
-          <label for="lytisVyr">Vyras</label>
           <input type="radio" name="lytis" value="vyras" id="lytisVyr">
-          <label for="lytisMot">Moteris</label>
+          <label for="lytisVyr">Vyras</label>
           <input type="radio" name="lytis" value="moteris" id="lytisMot">
-          <label for="lytisNe">Nenoriu sakyti</label>
+          <label for="lytisMot">Moteris</label>
           <input type="radio" name="lytis" value="nenurodyti" id="lytisNe" checked>
+          <label for="lytisNe">Nenoriu sakyti</label>
         </div>
         <div> <!-- checkbox -->
           <label>Pasirinkite papildomus kebabo ingredientus</label>
@@ -150,16 +150,36 @@
           <input type="checkbox" name="extraKebab" id="agurkeliu" value="agurkėliai">
           <label for="agurkeliu">Agurkelių</label>
         </div>
+        <div>
+          <label for="pastas">El paštas:</label>
+          <input type="email" name="pastas" id="pastas">
+        </div>
         <!-- <button onclick="()=>{ console.log('hello') }">Eiti į kitą formos puslapį</button> -->
         <input type="button" onclick="(function(){console.log('hello')})()" value="Eiti į kitą formos puslapį">
         <input type="submit" value="Pateikti">
       </form>
     </section>
     <section> <!-- Pseudo Class -->
-
+      <h2>Pseudo Class</h2>
+      <ul>
+        <li>:checked - pažymėtas (checkbox / radio)</li>
+        <li>:default - pradinis (su checked atributu)</li>
+        <li>:disabled - turintis disabled atributą</li>
+        <li>:enabled - neturintis disabled atributo</li>
+        <li>:focus - fokusuota įvestis</li>
+        <li>:in-range - įvestis ribose</li>
+        <li>:out-of-range - įvestis už ribų</li>
+        <li>:indeterminate - neapibrėžta reikšmė</li>
+        <li>:valid - tinkama įvesties reikšmė</li>
+        <li>:invalid - netinkama įvesties reikšmė</li>
+        <li>:optional - įvestis neturinti required atributo</li>
+        <li>:required - įvestis turinti required atributą</li>
+        <li>:readonly - įvestis turinti readonly atributą</li>
+        <li>:read-write - įvestis neturinti readonly atributo</li>
+      </ul>
     </section>
     <section> <!-- Pseudo Elements -->
-
+      
     </section>
   </main>
   <footer></footer>
