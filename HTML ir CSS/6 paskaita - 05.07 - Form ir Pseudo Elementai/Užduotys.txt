@@ -1,0 +1,5 @@
+Atlikti CAO užduotis
+
+Nebūtina atlikti šitų:
+  Atkartoti custom input atvaizduotą "./media/customInput.PNG"
+  Atkartoti formą atvaizduotą "./media/niceForm.png"
