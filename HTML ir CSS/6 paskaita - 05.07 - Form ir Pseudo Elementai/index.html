@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 paskaita - Form ir Pseudo Elementai</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Form -->
+      <h2>Form</h2>
+      <div>
+        <h3>Formos tag'ai</h3>
+        <ul>
+          <li>form - formos tag'as</li>
+          <li>label - formos įvesties etiketė/pavadinimas</li>
+          <li>input - formos įvesties laukas (įvairus)</li>
+          <li>textarea - formos įvesties laukas (dideliam kiekiui teksto)</li>
+          <li>select - opcijų pasirinkimo laukas (nedideliam kiekiui opcijų)</li>
+          <li>datalist - opcijų pasirinkimo laukas (dideliam kiekiui opcijų)</li>
+          <li>option - opcija</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Formos tag'ų atributai</h3>
+        <ul>
+          <li>type - nurodo input'o tipą
+            <ul>
+              <li>text - tekstas</li>
+              <li>password - slapyvardis (atvaizduoja kaip taškelius)</li>
+              <li>number - skaičius</li>
+              <li>email - elektroninis paštas</li>
+              <li>url - nuoroda</li>
+              <li>checkbox - daugelio pasirinkimas</li>
+              <li>radio - vieno pasirinkimas</li>
+              <li>submit - formos pateikimas</li>
+              <li>file - kompiuteryje esančio failo pasirinkimas</li>
+              <li>tel - telefonas</li>
+              <li>range - skaičiaus pasirinkimas slenkančioje juostoje</li>
+              <li>date - datos pasirinkimas (metų, mėnesio, dienos)</li>
+              <li>datetime-local - datos ir laiko pasirinkimas (metų, mėnesio, dienos, valandos, minutės)</li>
+              <li>month - mėnesio pasirinkimas</li>
+              <li>week - savaitės pasirinkimas</li>
+              <li>time - laiko pasirinkimas</li>
+              <li>color - spalva</li>
+              <li>button - mygtukas be funkcionalumo</li>
+              <li>image - formos pateikimas kaip paveiksliukas</li>
+              <li>hidden - paslėpta įvestis</li>
+              <li>reset - išvalyti formą</li>
+              <li>search - paieškos laukas</li>
+            </ul>
+          </li>
+          <li>for - nurodo kuriai įvesčiai priskirti label'į</li>
+          <li>id - label sujungimui su įvestimi</li>
+          <li>name - suteikia įvesčiai pavadinimą</li>
+          <li>value - įvesties reikšmė</li>
+          <li>required - privalomas įvesties laukas</li>
+          <li>placeholder - pavyzdinis tekstas</li>
+          <li>min - minimali reikšmė (skaičiaus)</li>
+          <li>max - maksimali reikšmė (skaičiaus)</li>
+          <li>step - žingsnis (skaičiaus)</li>
+          <li>accept - kokio tipo failas priimtinas</li>
+          <li>pattern - nurodo kokia turi būti įvesties seka (regex dažniausiai)</li>
+          <li>rows - textarea eilučių kiekį (vizualaus dydžio pavidalas)</li>
+          <li>cols - textarea stulpelių kiekį (vizualaus dydžio pavidalas)</li>
+          <li>checked - radio arba checkbox išankstinis parinkimas</li>
+          <li>selected - select išankstinis parinkimas</li>
+          <li>disabled - išjungtas įvesties laukas</li>
+          <li>readonly - neleidžia keisti reikšmių</li>
+          <li>...</li>
+        </ul>
+      </div>
+      <form>
+        <div>
+          <label for="vardas">Įveskite savo vardą:</label>
+          <input type="text" name="vardas" id="vardas" required placeholder="Petras">
+        </div>
+        <div>
+          <label for="id">Tavo ID</label>
+          <input type="text" name="id" id="id" value="5d4fg6181gf" readonly>
+        </div>
+        <div>
+          <label for="amzius">Amžius</label>
+          <input type="range" name="amzius" id="amzius" min="18" max="99" step="3">
+        </div>
+        <div>
+          <label for="descripiton">Aprašymas</label>
+          <textarea name="descripiton" id="descripiton" rows="5" cols="15"></textarea>
+        </div>
+        <div>
+          <label for="bestProgrLang">Geriausia programavimo kalba</label>
+          <select name="bestProgrLang" id="bestProgrLang">
+            <option value="neReiksme" selected disabled></option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="PHP">PHP</option>
+            <option value="C#">C#</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+          </select>
+        </div>
+        <div>
+          <label for="isKokioMiesto">Iš kokio Lietuvos miesto esi?</label>
+          <input list="randomZodisSusigalvotas" name="isKokioMiesto" id="isKokioMiesto" value="Vilnius">
+
+          <datalist id="randomZodisSusigalvotas">
+            <option value="Kaunas"></option>
+            <option value="Vilnius"></option>
+            <option value="Klaipėda"></option>
+            <option value="Šiauliai"></option>
+            <option value="Telšiai"></option>
+            <option value="Panevėžys"></option>
+            <option value="Elektrėnai"></option>
+            <option value="Alytus"></option>
+            <option value="Druskininkai"></option>
+            <option value="Utena"></option>
+            <option value="Marijampolė"></option>
+            <option value="Rokiškis"></option>
+            <option value="Jurbarkas"></option>
+            <option value="Kėdainiai"></option>
+            <option value="Plungė"></option>
+            <option value="Palanga"></option>
+            <option value="Ukmergė"></option>
+            <option value="Zarasai"></option>
+            <option value="Kryžkalnis"></option>
+          </datalist>
+        </div>
+        <!-- <button onclick="()=>{ console.log('hello') }">Eiti į kitą formos puslapį</button> -->
+        <input type="button" onclick="(function(){console.log('hello')})()" value="Eiti į kitą formos puslapį">
+        <input type="submit" value="Pateikti">
+      </form>
+    </section>
+    <section> <!-- Pseudo Class -->
+
+    </section>
+    <section> <!-- Pseudo Elements -->
+
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
