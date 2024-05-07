@@ -21,6 +21,7 @@
           <li>select - opcijų pasirinkimo laukas (nedideliam kiekiui opcijų)</li>
           <li>datalist - opcijų pasirinkimo laukas (dideliam kiekiui opcijų)</li>
           <li>option - opcija</li>
+          <li>output - formos atsakymui atvaizduoti</li>
         </ul>
       </div>
       <div>
@@ -69,6 +70,7 @@
           <li>selected - select išankstinis parinkimas</li>
           <li>disabled - išjungtas įvesties laukas</li>
           <li>readonly - neleidžia keisti reikšmių</li>
+          <li>multiple - leidžia pasirinkti daugiau select'o opcijų</li>
           <li>...</li>
         </ul>
       </div>
@@ -127,6 +129,26 @@
             <option value="Zarasai"></option>
             <option value="Kryžkalnis"></option>
           </datalist>
+        </div>
+        <div> <!-- radio -->
+          <label>Pasirinkite savo lytį:</label>
+          <label for="lytisVyr">Vyras</label>
+          <input type="radio" name="lytis" value="vyras" id="lytisVyr">
+          <label for="lytisMot">Moteris</label>
+          <input type="radio" name="lytis" value="moteris" id="lytisMot">
+          <label for="lytisNe">Nenoriu sakyti</label>
+          <input type="radio" name="lytis" value="nenurodyti" id="lytisNe" checked>
+        </div>
+        <div> <!-- checkbox -->
+          <label>Pasirinkite papildomus kebabo ingredientus</label>
+          <input type="checkbox" name="extraKebab" id="suris" value="sūris" checked>
+          <label for="suris">Sūrio</label>
+          <input type="checkbox" name="extraKebab" id="mesos" value="mėsa">
+          <label for="mesos">Mėsos</label>
+          <input type="checkbox" name="extraKebab" id="padazo" value="padažas">
+          <label for="padazo">Padažo</label>
+          <input type="checkbox" name="extraKebab" id="agurkeliu" value="agurkėliai">
+          <label for="agurkeliu">Agurkelių</label>
         </div>
         <!-- <button onclick="()=>{ console.log('hello') }">Eiti į kitą formos puslapį</button> -->
         <input type="button" onclick="(function(){console.log('hello')})()" value="Eiti į kitą formos puslapį">
