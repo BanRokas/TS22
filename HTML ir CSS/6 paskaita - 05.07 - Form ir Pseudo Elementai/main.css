@@ -33,3 +33,35 @@ input[type='email']:valid{
 input[type='email']:invalid{
   color: red;
 }
+
+::placeholder{
+  color: rgba(74, 220, 230, 0.654);
+  letter-spacing: 5px;
+}
+li::before{
+  content: ":) ";
+  font-size: 30px;
+  font-weight: bold;
+}
+::marker{
+  color: orange;
+}
+::selection{
+  background-color: black;
+  color: orange;
+}
+
+::first-letter{
+  font-size: 50px;
+  color: red;
+}
+
+::-webkit-scrollbar{
+  width: 50px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: purple;
+}
+::-webkit-scrollbar-track{
+  background-color: black;
+}
