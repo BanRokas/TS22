@@ -7,11 +7,25 @@
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <header></header>
+  <header>
+    <div> <!-- logo -->
+      <a href="#">
+        <img src="https://i.ytimg.com/vi/CT5fEix7eL8/maxresdefault.jpg" alt="flex logo">
+        <span>Flex</span>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#flexTeorija">Flex</a></li>
+        <li><a href="#flexPvz">Flex Pavyzdys</a></li>
+        <li><a href="#pavadinimai">Pavadinimai</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <section> <!-- Flex -->
       <h2>Flex</h2>
-      <div>
+      <div id="flexTeorija">
         <h3>Flex properties</h3>
         <div>
           <ul>
@@ -34,7 +48,7 @@
           </ul>
         </div>
       </div>
-      <h3>Pavyzdys</h3>
+      <h3 id="flexPvz">Pavyzdys</h3>
       <div class="divContainer">
         <!-- div{$}*12 -->
         <div class="align_self">1</div>
@@ -51,7 +65,7 @@
         <div class="order_negative_1">12</div>
       </div>
     </section>
-    <section> <!-- Pavadinimai -->
+    <section id="pavadinimai"> <!-- Pavadinimai -->
       <h2>Pavadinimai</h2>
       <ul>
         <li>camelCase</li>

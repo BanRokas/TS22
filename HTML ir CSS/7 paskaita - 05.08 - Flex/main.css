@@ -1,3 +1,13 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  height: 500vh;
+}
+
 .divContainer{
   border: 1px solid black;
   height: 500px;
@@ -12,7 +22,7 @@
   gap: 10px 5px;
 }
 
-.div-Container > div{
+.divContainer > div{
   width: 100px;
   height: 100px;
   background-color: bisque;
@@ -39,4 +49,79 @@ div.flex_grow_2{
 
 .divContainer > div:hover{
   align-self: flex-end;
+}
+
+
+/* 
+header{
+}
+header > div{
+}
+header > nav{
+}
+*/
+
+header{
+  height: 80px;
+  padding: 0 20px;
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  > div{
+    height: 80%;
+    /* margin-left: 30px; */
+
+    >a{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+
+      > img{
+        height: 100%;
+      }
+      > span{
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: black;
+      }
+    }
+  }
+  > nav{
+    /* margin-right: 30px; */
+    > ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      gap: 10px;
+
+      > li{
+        > a{
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+        }
+        > a:hover{
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+#flexPvz{
+  position: sticky;
+  top: 80px;
+}
+
+[id]{
+  scroll-margin-top: 80px;
 }
