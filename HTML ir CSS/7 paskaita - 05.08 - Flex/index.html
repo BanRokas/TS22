@@ -25,25 +25,30 @@
             <li>gap: row-gap column-gap;</li>
           </ul>
           <ul>
-            <li></li>
+            <li>order: number;</li>
+            <li>flex-grow: number;</li>
+            <li>flex-shrink: number;</li>
+            <li>flex-basis: px | percentage;</li>
+            <li>flex: flex-grow flex-shrink flex-basis;</li>
+            <li>align-self: flex-start | flex-end | center | stretch;</li>
           </ul>
         </div>
       </div>
       <h3>Pavyzdys</h3>
       <div class="divContainer">
         <!-- div{$}*12 -->
-        <div>1</div>
-        <div>2</div>
+        <div class="align_self">1</div>
+        <div class="order_1">2</div>
         <div>3</div>
-        <div>4</div>
+        <div class="order_2">4</div>
         <div>5</div>
-        <div>6</div>
-        <div>7</div>
+        <div class="order_1">6</div>
+        <div class="flex_grow_2">7</div>
         <div>8</div>
         <div>9</div>
-        <div>10</div>
+        <div class="flex_grow_2">10</div>
         <div>11</div>
-        <div>12</div>
+        <div class="order_negative_1">12</div>
       </div>
     </section>
     <section> <!--  -->

@@ -7,8 +7,8 @@
   flex-wrap: wrap; */
   flex-flow: row wrap;
   justify-content: center;
-  align-content: center;
-  /* align-items: center; */
+  /* align-content: center; */
+  align-items: center;
   gap: 10px 5px;
 }
 
@@ -16,8 +16,27 @@
   width: 100px;
   height: 100px;
   background-color: bisque;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 
   font-size: 30px;
   font-weight: bold;
+  /* flex: 1; */
+}
+
+.order_1{
+  order: 1;
+}
+.order_2{
+  order: 2;
+}
+.order_negative_1{
+  order: -1;
+}
+
+div.flex_grow_2{
+  /* flex: 2; */
+}
+
+.divContainer > div:hover{
+  align-self: flex-end;
 }
