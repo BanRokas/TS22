@@ -1,0 +1,23 @@
+.divContainer{
+  border: 1px solid black;
+  height: 500px;
+
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  /* align-items: center; */
+  gap: 10px 5px;
+}
+
+.divContainer > div{
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  border: 3px solid black;
+
+  font-size: 30px;
+  font-weight: bold;
+}
