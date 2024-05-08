@@ -125,3 +125,9 @@ header{
 [id]{
   scroll-margin-top: 80px;
 }
+
+.textAroundImage{
+  >img{
+    float: left;
+  }
+}
