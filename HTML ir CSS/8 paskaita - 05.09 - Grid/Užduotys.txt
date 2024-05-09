@@ -1,0 +1,4 @@
+1) Pasidaryti CAO.
+2) Pabandyti įveikti https://cssgridgarden.com/
+3) Pabandyti (jei norit) https://codingfantasy.com/games/css-grid-attack/play
+4) Pabandyti atkartoti "./media/gridOverlap.png" (galima pažiūrėti grid sistemos linijas "./media/gridOverlapLines.png" jeigu nepavyksta pačiam)
