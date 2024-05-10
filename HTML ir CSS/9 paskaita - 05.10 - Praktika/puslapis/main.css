@@ -1,4 +1,12 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+main > section{
+  padding: 30px 15vw;
+}
+header, footer{
+  padding: 0 15vw;
+}
 
 #hero{
   background-image: url("../media/nature8.jpg");
@@ -22,6 +30,23 @@
   > div{
     position: relative;
     width: 40vw;
-    
+
+  }
+}
+
+#about{
+  background-color: aliceblue;
+
+  > .cardList{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    > div{
+      box-shadow: 0 0 10px 3px #797979;
+      width: 100%;
+      padding: 5px;
+      text-align: center;
+    }
   }
 }
