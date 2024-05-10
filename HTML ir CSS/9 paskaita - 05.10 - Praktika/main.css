@@ -21,3 +21,47 @@
     position: absolute;
   }
 }
+
+#table{
+  text-align: center;
+  background-color: antiquewhite;
+
+  > table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    overflow: hidden;
+
+    *{
+      position: relative;
+      z-index: 1;
+    }
+
+    th, td{
+      border: 1px solid black;
+      width: 100px;
+      height: 30px;
+    }
+
+    th:hover, td:hover{
+      background-color: orange;
+      /* position: relative; */
+    }
+    tr:hover{
+      background-color: #f4f473;
+    }
+
+    /* >#group > col:hover{
+      background-color: aqua;
+    } */
+    td:hover::before, th:hover::before{
+      content: "";
+      background-color: aqua;
+      height: 10000px;
+      width: 100%;
+      top: -5000px;
+      left: 0;
+      position: absolute;
+      z-index: 0;
+    }
+  }
+}
