@@ -1,0 +1,9 @@
+1) Pasidaryti CAO.
+
+2) (kam reikia) Pabandyti atkartoti "./media/grid1.PNG" easntį išdėstymą su Grid.
+3) Pasirinkite 1 iš 3 svetainių, kurią bandysite atkartoti:
+  "./media/flexGridPage1.jpg" - lengviausia ir trumpiausia
+  "./media/flexGridPage2.jpg" - vidutinė su nemažai turinio
+  "./media/flexGridPage3.jpg" - sunkesnė su nemažai turinio
+4) (nebūtina) Per savaitę (ar iki kito pavasario) atkartoti "./media/gridFlexTASK.jpg" atvaizduotus išdėstymus, tiek su Flex, tiek su Grid'u (po 20, bendrai 40).
+5) (kas labai norite) Pabandyti atkartoti "./media/periodicTable.PNG" naudojant grid.
