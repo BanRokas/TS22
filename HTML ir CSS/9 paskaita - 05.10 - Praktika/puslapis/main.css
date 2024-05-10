@@ -1,0 +1,27 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+#hero{
+  background-image: url("../media/nature8.jpg");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(201, 201, 204, 0.4);
+  }
+
+  > div{
+    position: relative;
+    width: 40vw;
+    
+  }
+}
