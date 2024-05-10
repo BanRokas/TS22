@@ -24,17 +24,17 @@
 
 #table{
   text-align: center;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 
   > table{
     border-collapse: collapse;
     margin: 0 auto;
     overflow: hidden;
 
-    *{
+    /* *{
       position: relative;
       z-index: 1;
-    }
+    } */
 
     th, td{
       border: 1px solid black;
@@ -44,7 +44,7 @@
 
     th:hover, td:hover{
       background-color: orange;
-      /* position: relative; */
+      position: relative;
     }
     tr:hover{
       background-color: #f4f473;
@@ -61,7 +61,7 @@
       top: -5000px;
       left: 0;
       position: absolute;
-      z-index: 0;
+      z-index: -1;
     }
   }
 }
