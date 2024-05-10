@@ -1,0 +1,23 @@
+#fonas{
+  height: 60vh;
+  background-image: url("./media/nature5.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  /* >h1, p{
+    text-shadow: 0 0 5px white;
+    color: ??;
+  } */
+  > div{
+    position: relative;
+  }
+  &::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.5);
+
+    position: absolute;
+  }
+}
