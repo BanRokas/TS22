@@ -9,6 +9,11 @@
   7 paskaita - 05.08 - Flex
   8 paskaita - 05.09 - Grid
   9 paskaita - 05.10 - Flex ir Grid praktika
-3 savaitė: responsiveDesign, Animation ir Transition, Git ir Github (trumpai), Framework, ?Preprocessors?, Accessability, Praktika
+3 savaitė:
+  10 paskaita - 05.13 - Responsive Design
+  11 paskaita - 05.14 - Animation ir Transition
+  12 paskaita - 05.15 - Git ir Github IR Framework ir Preprocessors
+  13 paskaita - 05.16 - Accessability ir Praktika
+  14 paskaita - 05.17 - Praktika
 4 savaitė:
   15 paskaita - 05.20 - HTML atsiskaitymas (testas ir praktika)
