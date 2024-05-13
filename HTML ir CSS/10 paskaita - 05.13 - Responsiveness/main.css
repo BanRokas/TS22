@@ -1,0 +1,29 @@
+body{
+  background-color: #b8d3a9;
+  color: blue;
+}
+p{
+  text-decoration: underline;
+}
+
+
+/* tablet */
+@media (min-width: 600px){
+  body{
+    background-color: #7fdbff;
+  }
+  p{
+    text-decoration: none;
+  }
+}
+
+/* desktop */
+@media (min-width: 1000px){
+  body{
+    background-color: #ec6f6f;
+    color: orange;
+  }
+  h1,h2,h3{
+    text-align: center;
+  }
+}

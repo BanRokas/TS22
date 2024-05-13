@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 paskaita - Responsiveness</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section>
+      <h1>Responsive Design</h1>
+      <p>
+        Išdėstyti elementus ekrane skirtingai, esant skirtingiems ekranų dydžiams.
+      </p>
+      <h3>
+        <a href="" target="_blank">Breakpoints</a>
+      </h3>
+      <p>
+        Breakpoint - ekrano lūžis - kai iš vieno išdėstymo, pavyzdžiui telefoninio dydžio, yra pakeičiamas elementų išdėstymas į kitą išdėstyma, pavyzdžiui plančetiniam dydžiui.<br>
+        Breakpoint'ų galima prikurti kiek tik nori (reikėtų nepersitengti, dažniausiai daromi 3) ir ties kokiais nori dydžiais (yra šokie tokie standartai).
+      </p>
+      <ol>
+        <li>x-small - portrait phones - 0px => 575px</li>
+        <li>small - landscape phones - 576px => 767px</li>
+        <li>medium - tablets - 768px => 991px</li>
+        <li>large - laptop - 992px => 1199px</li>
+        <li>x-large - desktop - 1200 => 1399px</li>
+        <li>xx-large - large desktops -> 1400px => infinity</li>
+      </ol>
+      <p>
+        Tam, kad būtų sukurtas vadinamasis breakpoint'as CSS'e, reikia aprašyti jo media query.<br>
+        Media query apsirašo šitaip: @media (min-width: number_px){ ... css ... }
+      </p>
+      <p>
+        Media query nesuteikia papildomo stilių prioriteto, dėl to media query reikia išrašyti teisingu eiliškumu.<br>
+        Media query stiliai nepradingsta, pasiekus naują media query.
+      </p>
+    </section>
+    <section> <!-- Mobile First -->
+
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
