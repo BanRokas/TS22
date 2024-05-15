@@ -1,0 +1,15 @@
+section h2 {
+  text-align: center;
+  color: purple;
+}
+section p {
+  text-align: justify;
+  word-spacing: 3px;
+  color: blue;
+}
+section ol {
+  list-style-type: lower-greek;
+}
+section ol > li {
+  color: yellow;
+}/*# sourceMappingURL=neMain.css.map */

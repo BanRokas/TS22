@@ -1,0 +1,17 @@
+section{
+  h2{
+    text-align: center;
+    color: purple;
+  }
+  p{
+    text-align: justify;
+    word-spacing: 3px;
+    color: blue;
+  }
+  ol{
+    list-style-type: lower-greek;
+    >li{
+      color: yellow;
+    }
+  }
+}
