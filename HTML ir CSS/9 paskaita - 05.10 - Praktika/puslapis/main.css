@@ -55,6 +55,7 @@ header, footer{
   height: 50vh;
   display: flex;
   gap: 30px;
+  position: relative;
 
   > div{
     width: 100%;
@@ -84,5 +85,17 @@ header, footer{
     > img:nth-child(3){
       grid-area: 2 / 1 / 4 / 4;
     }
+  }
+  &::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-image: linear-gradient(#2910e27d,#d765497d), url("https://i.pinimg.com/originals/e3/b4/90/e3b49065f5344597820d11aedb6c4bf2.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
   }
 }
