@@ -50,3 +50,39 @@ header, footer{
     }
   }
 }
+
+#offers{
+  height: 50vh;
+  display: flex;
+  gap: 30px;
+
+  > div{
+    width: 100%;
+    height: 100%;
+  }
+  > div:nth-child(1){
+    
+  }
+  > div:nth-child(2){
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, 2fr 1fr); /* 2fr 1fr 2fr 1fr */
+
+    > img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    > img:nth-child(1){
+      grid-area: 1 / 2 / 3 / 5;
+    }
+    > img:nth-child(2){
+      grid-area: 3 / 3 / 5 / 6;
+    }
+    > img:nth-child(3){
+      grid-area: 2 / 1 / 4 / 4;
+    }
+  }
+}
