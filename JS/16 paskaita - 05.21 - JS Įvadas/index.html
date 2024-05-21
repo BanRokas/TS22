@@ -54,6 +54,19 @@
         Pagrinde naudojamas External būdas. Jo prijungimas aprašomas head tag'o viduje. Kadangi HTML failas skaitomas paeiliui, gaunasi, kad JS perskaitomas prieš HTML body, o būna, kad JS kreipiasi į HTML body esančią informciją ir šitaip gaunamas error. Tam, kad nebūtų eiliškumo klaidų, JS prijungime rašomas defer atributas kuris nukelia to failo skaitymą į pabaigą.
       </p>
     </section>
+    <section> <!-- Informacijos atvaizdavimas naršyklėje -->
+      <h2>Informacijos atvaizdavimas naršyklėje</h2>
+      <ul>
+        <li>console.log("pranešimas"); - išvedimas į konsolę</li>
+        <li>console.dir("pranešimas"); - išvedimas į konsolę (bus reikalingas ateityje)</li>
+        <li>console.group("pavadinimas"); - sukuria konsolės grupės pradžią (atidarytą)</li>
+        <li>console.groupCollapsed("pavadinimas"); - sukuria konsolės grupės pradžią (uždarytą)</li>
+        <li>console.groupEnd(); - nurodo konsolės grupės pabaigą</li>
+        <li>window.alert("pranešimas"); - puslapyje atvaizduojamas pranešimas</li>
+        <li>window.prompt("pranešimas"); - puspalyje atvaizduojamas pranešimas su vieta atsakymui, kuris grąžinamas į kodą</li>
+        <li>Ateityje: innerHTML/innerText/append...</li>
+      </ul>
+    </section>
   </main>
   <footer></footer>
 </body>
