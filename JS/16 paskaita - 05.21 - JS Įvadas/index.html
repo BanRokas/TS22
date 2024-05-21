@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>16 paskaita - JS Įvadas</title>
   <link rel="stylesheet" href="./main.css">
+  <!-- <link rel="icon" href="./images/image.png"> -->
+  <script src="./main.js" defer></script>
+  <script>
+    console.log("Labas rytas");
+  </script>
 </head>
 <body>
   <header></header>
   <main>
     <section> <!-- JS pagrindai -->
       <h1>JS pagrindai</h1>
-      <ol>
+      <ol id="list">
         <li>Variables - Kintamieji</li>
         <li>Conditions - Sąlygos</li>
         <li>Loops/Cycle - Ciklai</li>
@@ -37,6 +42,16 @@
       </ul>
       <p>
         Kodą reikėtų komentuoti. Kad kodas būtų suprantamas jums po ilgo laiko arba kitam programuotojui. Reikia pakomentuoti funkciją / sąlygą / ciklą / klasę..., kad nereikėtų pačiam nagrinėtis ką jinai daro, o pasiskaičius trumpą komentarą - būtų aišku.
+      </p>
+    </section>
+    <section> <!-- JS rašymo būdai -->
+      <h2>JS rašymo būdai</h2>
+      <ul>
+        <li>Internal - JS rašymas HTML failo viduje, script tag'o viduje.</li>
+        <li>External - JS rašomas atskirame JS faile, kuris yra prijungiamas prie HTML'o.</li>
+      </ul>
+      <p>
+        Pagrinde naudojamas External būdas. Jo prijungimas aprašomas head tag'o viduje. Kadangi HTML failas skaitomas paeiliui, gaunasi, kad JS perskaitomas prieš HTML body, o būna, kad JS kreipiasi į HTML body esančią informciją ir šitaip gaunamas error. Tam, kad nebūtų eiliškumo klaidų, JS prijungime rašomas defer atributas kuris nukelia to failo skaitymą į pabaigą.
       </p>
     </section>
   </main>
