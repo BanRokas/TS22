@@ -1,0 +1,9 @@
+0) Persižiūrėti persiskaityti CAO
+  0.1) CAO nedaryti "Palyginimai" ir "Palyginimai: Užduotys"
+
+1) Peržiūrėti video:
+  istorija: https://www.youtube.com/watch?v=Sh6lK57Cuk4
+  100+: https://www.youtube.com/watch?v=lkIFF4maKMU
+  100seconds: https://www.youtube.com/watch?v=DHjqpvDnNGE
+
+2) Pabandyti atlikti ir į konsolę išvesti (kaip mes darėme (85->105 eilutės)) įvairias matematines opericjas su įvairiais duomenų tipais.
