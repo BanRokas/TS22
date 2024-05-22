@@ -75,14 +75,15 @@ console.groupEnd();
 // }
 // console.log('kodas už sąlygos');
 
-// let amzius = prompt('Koks tavo amžius?');
-// if(amzius < 18){
+// console.log(amzius);
+// let amzius0 = prompt('Koks tavo amžius?');
+// if(amzius0 < 18){
 //   console.log('Asmuo nėra pilnametis');
-// } else if(amzius >= 65){
+// } else if(amzius0 >= 65){
 //   console.log('Asmuo yra pensininkas');
-// } else if(amzius < 30){
+// } else if(amzius0 < 30){
 //   console.log('Jaunas pilnametis');
-// } else if(amzius >= 30){
+// } else if(amzius0 >= 30){
 //   console.log('Pagyvenes pilnametis');
 // } else {
 //   console.log('Neteisinga įvestis');
@@ -94,3 +95,20 @@ console.groupEnd();
 // } else {
 //   console.log('falsy');
 // }
+
+// nested if
+let age = 188;
+if(age >= 18){
+  console.log('pilnametis');
+} else if(age < 18){
+  console.log('nepilnametis');
+  if(age < 2){
+    console.log('kūdikis');
+  } else if(age < 7){
+    console.log('darželinukas');
+  } else if(age < 12){
+    console.log('mokyklinukas');
+  } else {
+    console.log('paauglys');
+  }
+}
