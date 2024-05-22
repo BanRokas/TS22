@@ -1,0 +1,33 @@
+0) Persiskaityti/padaryti CAO.
+  Nebūtina Sąlyginis operatorius “?“ (ternary)
+  Nebūtina Switch
+
+
+NEREIKIA:
+  Sąlygos (harder):
+  1) Parašyti sąlygą, kuri tikrintų ar turi vairuotojo teises.
+    1.1) Papildyti užduoties sąlygą, kad tikrintų ar vairuotojas turintis vairuotojo teises - turi automobilį. (nesting)
+    1.2) Papildyti užduoties sąlygą, kad tikrintų ar vairuotojas turintis vairuotojo teises - turi automobilį ir yra blaivas. (AND)
+
+  2) Padaryti taip, kad puslapis su tavimi pasisveikintų, patikrintų kokiame mieste gyveni ir išvestų su tai susijusią info (pasakytų ką nors gražaus apie tavo miestą(galima tobulinti išskiriant keletą miestų, o ne išvedant tą pačią žinutę apie visus)).
+    Naudoti:
+      1) let - kurti kintamuosius/ąjį
+      optional) prompt - gauti tavo miesto pavadinimą.
+      2) alert/console.log - grąžintų atsakymus.
+      3) if/elseIf/else - kas be ko...
+
+  4) Parašyti if'ą, kuris tikrintų koks dabar mėnuo ir grąžintų koks yra metų laikas
+    Naudoti:
+      1) let - kurti kintamuosius.
+      optional) prompt - gauti mėnesį.
+      2) alert/console.log - grąžinti galimus atsakymus.
+      3) if/elseIf/else - kas be ko...
+    4 extra) Google kaip veikia/atrodo/naudojamas switch'as ir užduotį atlikti su switch vietoj if.
+
+  5 Extra) Padaryti taip, kad puslapis su tavimi pasisveikintu naudodamas teisingą galunę (ir tiktų ne tik tavo vardui, o visiem).
+    Naudoti: 
+      1) let - kurti kintamuosius
+      2) prompt - gauti tavo vardą
+      3) endsWith | slice | concat - google šiuos string metodus, kad tikrintum ir koreguotum vardą
+      4) alert/console.log - grąžinti teisingą pasisveikinimą.
+      5) if/elseIf/else - kas be ko...
