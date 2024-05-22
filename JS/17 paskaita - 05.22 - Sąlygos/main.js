@@ -65,3 +65,25 @@ console.log(typeof 'tekstas');
 console.log(typeof true);
 
 console.groupEnd();
+
+// let amzius = 17;
+// console.log('kodas prieš sąlygą');
+// if(amzius >= 18){
+//   console.log('Asmuo yra pilnametis.');
+// } else {
+//   console.log('Asmuo nėra pilnametis.');
+// }
+// console.log('kodas už sąlygos');
+
+let amzius = prompt('Koks tavo amžius?');
+if(amzius < 18){
+  console.log('Asmuo nėra pilnametis');
+} else if(amzius >= 65){
+  console.log('Asmuo yra pensininkas');
+} else if(amzius < 30){
+  console.log('Jaunas pilnametis');
+} else if(amzius >= 30){
+  console.log('Pagyvenes pilnametis');
+} else {
+  console.log('Neteisinga įvestis');
+}
