@@ -1,0 +1,28 @@
+1) Pasidaryti/Persiskaityti CAO
+
+2 nebūtina) Pasižiūrėti video: https://www.youtube.com/watch?v=x7Xzvm0iLCI
+
+3 NEBŪTINA) daryti Roko užduotys:
+easy:
+  1) Padaryk, kad kompiuteris 10 kartų paconsole'intų tavo vardą.
+  2) Pakoreguok pirmą pratimą, kad tiek vardas, tiek kiek kartų kartos - būtų kintamieji.
+  3) Prie savo vardo atspaudink ir 'i' raidę, t.y. kelintas ciklas yra (pvz.: "0. Petras", "1. Petras", "2. Petras")...
+
+harder:
+  0) Susikurti skaičių masyvą.
+  1) Parašyti ciklą, kuris išspausdintų kiekvieną masyvo elementą.
+  2) Parašyti ciklą, kuris išspausdintų kas trečią masyvo elementą.
+  3) Parašyti ciklą, kuris išspausdintų kas antrą masyvo elementą nuo galo.
+  4) Parašyti ciklą, kuris iš masyvo išspausdintų tik elementus, kurių reikšmė/skaičius didesnė negu 54. (for ir if)
+  5) Parašyti ciklą, kuris iš masyvo išspausdintų tik lyginius/nelyginius skaičius. (2 ciklai) (for ir if)
+
+
+extra 1) Parašyti ciklą, kuris atlieka Fizz Buzz testą nuo 0 iki 100. (for ir if)
+  Fizz - jeigu skaičius yra 3 kartotinis/daliklis/dalijasi iš 3 be liekanos.
+  Buzz - jeigu skaičius yra 5 kartotinis/daliklis/dalijasi iš 5 be liekanos.
+  FizzBuzz - jeigu skaičius yra 3 ir 5 kartotinis/daliklis/dalijasi iš 3 ir 5 be liekanos.
+  skaičius - kitais atvejais.
+
+EXTRA 2) Parašyti ciklą, kuris atrinktų ir į konsolę išspausdintų tik pirminius skaičius intervale nuo 2 iki 100. (for(for) ir if)
+  Pirminis skaičius - dalinasi TIK iš savęs paties ir iš 1 be liekanos.
+  pvz(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97)
