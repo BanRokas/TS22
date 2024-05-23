@@ -23,3 +23,38 @@ console.log(objektas.marke); // fiat
 console.log(objektas.pagaminimoMetai); // 2003
 console.log(objektas.chichiChacha); // undefined (neegzistuoja (bent jau kolkas))
 
+//        Ciklai
+console.groupCollapsed('be ciklų');
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+console.log(6);
+console.log(7);
+console.log(8);
+console.log(9);
+console.groupEnd();
+
+// for
+console.groupCollapsed('su for');
+for(let i = 1; i < 10; i++){
+  console.log(i);
+}
+console.groupEnd();
+
+// while
+console.groupCollapsed('su while stupid');
+let whileIteration = 1;
+while(whileIteration < 10){
+  console.log(whileIteration);
+  whileIteration++;
+}
+console.groupEnd();
+console.groupCollapsed('su while decent');
+let random = 0;
+while(random < 8){
+  random = Math.random()*9;
+  console.log(random);
+}
+console.groupEnd();
