@@ -1,0 +1,11 @@
+Daryti CAO:
+  Pamoka 5
+    Nereikia "Unikalūs elementai kiekis"
+  Pamoka 6 
+    Nenaudoti while, naudoti for.
+  Pamoka 7
+
+
+
+
+Perdaryti buvusias užduotis funkcijų pavidalu. (pvz.: main.js 52->62)
