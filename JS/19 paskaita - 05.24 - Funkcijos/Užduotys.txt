@@ -4,8 +4,6 @@ Daryti CAO:
   Pamoka 6 
     Nenaudoti while, naudoti for.
   Pamoka 7
-
-
-
+    Nereikie "Kvadratas"
 
 Perdaryti buvusias užduotis funkcijų pavidalu. (pvz.: main.js 52->62)
