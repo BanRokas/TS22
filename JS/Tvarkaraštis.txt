@@ -1,0 +1,13 @@
+4 savaitė:
+  16 paskaita - 05.21 - JS intro kintamieji
+  17 paskaita - 05.22 - Sąlygos
+  18 paskaita - 05.23 - Ciklai
+  19 paskaita - 05.24 - Funkcijos
+5 savaitė: String, Number ir Array Metodai
+  20 paskaita - 05.27 - Kartojimas/Praktika/Gilinimasis
+  21 paskaita - 05.28 - 
+  22 paskaita - 05.29 - 
+  23 paskaita - 05.30 - 
+  24 paskaita - 05.31 - 
+
+
