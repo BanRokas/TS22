@@ -48,7 +48,7 @@ console.log(objektasObjekte.gyvenamojiVieta.salis); // Lietuva
 console.log(objektasObjekte.gyvenamojiVieta.miestas); // Kaunas
 console.groupEnd();
 
-console.group('masyvai');
+console.groupCollapsed('masyvai');
 let masyvas = ['obuolys', 'vyšnia', 'kriaušė', 'agurkas', 'pomidoras', 'ananasas'];
 console.log(masyvas);
 console.log(masyvas[0]);
@@ -89,3 +89,41 @@ console.log(objektaiMasyve[0]); // {}
 console.log(objektaiMasyve[0].amzius); // 11
 console.log(objektaiMasyve[1].pavarde); // Ban2
 console.groupEnd();
+
+// Sąlygos
+/*
+  if(salyga0){
+    kodas vykdomas jeigu salyga0 yra tiesa
+  } else if(salyga1){
+    kodas vykdomas jeigu salyga0 yra melas ir salyga1 yra tiesa
+  } else if(salyga2){
+  } else if(salyga3){
+  } else {
+    kodas vykdomas TIK tuomet jeigu visos prieš tai buvusios sąlygos buvo melas
+  }
+*/
+
+let vartotojas = {
+  username: '',
+  role: 'admin'
+};
+console.log('if');
+if(vartotojas.role === 'user'){
+  console.log('matys įprastus prisijungusio vartotojo dalykus');
+} else if(vartotojas.role === 'admin'){
+  console.log('matys admino panelę');
+} else {
+  console.log('Vartotojas neprisijungęs');
+}
+console.log('switch');
+switch(vartotojas.role){
+  case 'admin':
+    console.log('matys admino panelę');
+    break;
+  case 'user':
+    console.log('matys įprastus prisijungusio vartotojo dalykus');
+    break;
+  default:
+    console.log('Vartotojas neprisijungęs');
+}
+
