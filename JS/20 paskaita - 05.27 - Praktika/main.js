@@ -129,7 +129,7 @@ switch(vartotojas.role){
 console.groupEnd();
 
 // Ciklai
-console.group('ciklai');
+console.groupCollapsed('ciklai');
 
 for(let i = 0; i < 5; i+=2){
   console.log(i);
@@ -155,3 +155,41 @@ for(let i = 0; i < objektaiMasyve.length; i++){
 }
 
 console.groupEnd();
+
+// Funkcijos
+
+// įprasta vardinė funkcija
+function atimtis0(sk1, sk2){
+  return sk1-sk2;
+}
+
+// įprasta bevardė funkcija
+(function (sk1, sk2){
+  return sk1 - sk2;
+})
+
+// įprasta bevardė funkcija prilyginta kintamajam
+let atimtis1 = function(sk1, sk2){
+  return sk1 - sk2;
+};
+
+// arrow funkcija
+(sk1, sk2) => {
+  return sk1-sk2;
+}
+
+// arrow funkcija prilyginta kintamajam
+let atimtis2 = (sk1, sk2) => {
+  return sk1-sk2;
+}
+
+// arrow funkcija sutrumpinta
+// galima trumpinti TIK TUOMET jeigu funkcijos viduje yra VIENAS veiksmas
+let atimtis2Short = (sk1, sk2) => sk1 - sk2;
+
+(sk1, sk2) => Math.floor(((sk1+sk2)*5+3)/13);
+
+(sk1, sk2) => {
+  let suma = sk1+sk2;
+  return Math.floor(((suma)*5+3)/13);
+}
