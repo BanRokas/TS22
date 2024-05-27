@@ -102,7 +102,7 @@ console.groupEnd();
     kodas vykdomas TIK tuomet jeigu visos prieš tai buvusios sąlygos buvo melas
   }
 */
-
+console.groupCollapsed('sąlygos');
 let vartotojas = {
   username: '',
   role: 'admin'
@@ -126,4 +126,32 @@ switch(vartotojas.role){
   default:
     console.log('Vartotojas neprisijungęs');
 }
+console.groupEnd();
 
+// Ciklai
+console.group('ciklai');
+
+for(let i = 0; i < 5; i+=2){
+  console.log(i);
+}
+
+for(let i = 0; i < masyvas.length; i++){
+  console.log(masyvas[i]);
+  // if(masyvas[i] === 'kriaušė'){
+  //   console.log('^ fui');
+  // }
+}
+console.log('------------');
+for(let vaisiusArbaDarzove of masyvas){
+  console.log(vaisiusArbaDarzove);
+  // if(vaisiusArbaDarzove === 'kriaušė'){
+  //   console.log('^ fui');
+  // }
+}
+console.log('------------');
+for(let i = 0; i < objektaiMasyve.length; i++){
+  // console.log("Vartotojo vardas yra " + objektaiMasyve[i].vardas + " " + objektaiMasyve[i].pavarde + ", jam yra " + objektaiMasyve[i].amzius + " metų.");
+  console.log(`Vartotojo vardas yra ${objektaiMasyve[i].vardas} ${objektaiMasyve[i].pavarde}, jam yra ${objektaiMasyve[i].amzius} metų.`);
+}
+
+console.groupEnd();
