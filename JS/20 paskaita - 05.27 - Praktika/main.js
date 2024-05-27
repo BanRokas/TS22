@@ -193,3 +193,12 @@ let atimtis2Short = (sk1, sk2) => sk1 - sk2;
   let suma = sk1+sk2;
   return Math.floor(((suma)*5+3)/13);
 }
+
+
+for(let i = 0; i < 10; i++){
+  console.log('veiksmai 1');
+  for(let j = 0; j <= 5; j++){ // j vyks 5 kartus kiekvieną kartą kai vyks i
+    console.log("i:"+i, "j:"+j);
+  }
+  console.log('veiksmai 2');
+}
