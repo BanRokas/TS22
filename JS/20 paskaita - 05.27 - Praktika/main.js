@@ -195,10 +195,44 @@ let atimtis2Short = (sk1, sk2) => sk1 - sk2;
 }
 
 
-for(let i = 0; i < 10; i++){
-  console.log('veiksmai 1');
-  for(let j = 0; j <= 5; j++){ // j vyks 5 kartus kiekvieną kartą kai vyks i
-    console.log("i:"+i, "j:"+j);
+// for(let i = 0; i < 10; i++){
+//   console.log('veiksmai 1');
+//   for(let j = 0; j <= 5; j++){ // j vyks 5 kartus kiekvieną kartą kai vyks i
+//     console.log("i:"+i, "j:"+j);
+//   }
+//   console.log('veiksmai 2');
+// }
+
+
+// CAO
+
+// Lygūs masyvai: Sukurkite funkciją arMasyvaiLygūs, kuri palygina du masyvus ir grąžina true, jei jie yra identiški, kitu atveju - false.
+function arMasyvaiLygus(mas1, mas2){
+  // let arLygus = true;
+  for(let i = 0; i < mas1.length; i++){
+    if(mas1[i] !== mas2[i]){
+      console.log(i,mas1[i], mas2[i]);
+      // arLygus = false;
+      return false;
+    }
   }
-  console.log('veiksmai 2');
+  // return arLygus;
+  return true;
 }
+console.log(arMasyvaiLygus([1,2,3,5,21],[1,2,3,5]));
+
+// Eilutės apvertimas: Sukurkite funkciją reverseString, kuri apverčia eilutę be jokių išorinių funkcijų ar metodų.
+function reverseString(word){
+  let apverstas = '';
+  for(let i = word.length-1; i >= 0; i--){
+    apverstas += word[i];
+  }
+  // if(apverstas === word){
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+  return apverstas;
+  // return word.split('').reverse().join('');
+}
+console.log(reverseString('vienas'));
