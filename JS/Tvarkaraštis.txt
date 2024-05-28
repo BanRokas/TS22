@@ -3,11 +3,33 @@
   17 paskaita - 05.22 - Sąlygos
   18 paskaita - 05.23 - Ciklai
   19 paskaita - 05.24 - Funkcijos
-5 savaitė: String, Number ir Array Metodai
+5 savaitė:
   20 paskaita - 05.27 - Kartojimas/Praktika/Gilinimasis
-  21 paskaita - 05.28 - 
-  22 paskaita - 05.29 - 
-  23 paskaita - 05.30 - 
-  24 paskaita - 05.31 - 
-
-
+  21 paskaita - 05.28 - Primityvių kintamųjų tipų Metodai 
+  22 paskaita - 05.29 - Masyvų metodai (neiteraciniai)
+  23 paskaita - 05.30 - Advanced sąlygos ir Destruktūrizavimas ir Iteraciniai masyvų metodai
+  24 paskaita - 05.31 - Praktika su metodai
+6 savaitė: Formos, DOM, Formos ir DOM, Klasės, Moduliai; Komponentai (ne React)
+  25 paskaita - 06.03 - 
+  26 paskaita - 06.04 - 
+  27 paskaita - 06.05 - 
+  28 paskaita - 06.06 - 
+  29 paskaita - 06.07 - 
+6 savaitė: Praktika, Local/Session/Cookie, TodoApp, Fetch
+  30 paskaita - 06.10 - 
+  31 paskaita - 06.11 - 
+  32 paskaita - 06.12 - 
+  33 paskaita - 06.13 - 
+  34 paskaita - 06.14 - Minkštieji įgūdžiai
+7 savaitė: JSON server, Async, CRUD, Praktika
+  35 paskaita - 06.17 - 
+  36 paskaita - 06.18 - 
+  37 paskaita - 06.19 - 
+  38 paskaita - 06.20 - 
+  39 paskaita - 06.21 - Minkštieji įgūdžiai
+8 savaitė: 
+  40 paskaita - 06.25 - 
+  41 paskaita - 06.26 - 
+  42 paskaita - 06.27 - 
+  43 paskaita - 06.28 - 
+9 savaitė: 
