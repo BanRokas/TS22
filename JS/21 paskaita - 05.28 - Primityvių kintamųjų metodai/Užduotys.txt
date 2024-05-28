@@ -1,0 +1,26 @@
+Padaryti CAO 10 pamoka
+
+Jeigu trūksta užduočių, daryti šitas:
+1) Pasirašyti / susikurti string kintamąjį.
+2) Pasirašyti / susikurti number kintmąjį.
+3) Pasirašyti / susikurti masyvą tik su string kintamaisiais.
+4) Pasirašyti / susikurti masyvą tik su number kintamaisiais.
+5) Pasirašyti / susikurti masyvą ir su string ir su number kintamaisiais.
+6) Išvesti pirmąją 1'os užduoties kintamojo raidę.
+7) Išvesti paskutinę 1'os užduoties kintamojo raidę.
+8) Išvesti viduriniąją 1'os užduoties kintamojo raidę.
+9) Pasirašyti funkciją, kuri iš jai pateikto string kintamojo išvestų jai nurodytą raidę (kelintąją). Pvz.:(uzd9("labas", 3) => "b").
+10) Patikrinti ar 2'os užduoties kintamasis yra lyginis skaičius.
+11) Patikrinti ar 2'os užduoties kintamasis yra nelyginis skaičius.
+12) Patikrinti ar 2'os užduoties kintamasis yra sveikasis skaičius.
+13) Parašyti funkciją, kuri pateiktų informaciją ar jai paduotas number kintamasis yra: lyginis/nelyginis skaičius. Pvz.: (uzd13(5) => nelyginis);
+14) Iš 3'čios užduoties masyvo išvesti tik ilgesnius nei 5 simbolių žodžius.
+15) Iš 3'čios užduoties masyvo išvesti tik trumpesnius nei 8 simbolių žodžius.
+16+) Parašyti funkciją, kuri iš 3'čios užduoties masyvo išvestų tik kiekvieno žodžio pirmąsias raides.
+17+) Parašyti funkciją, kuri iš 3'čios užduoties masyvo išvestų tik kiekvieno žodžio paskutiniąsias raides.
+18++) Parašyti funkciją, kuri iš jai pateikto masyvo išvestų tik tuos žodžius, kurie yra ilgesni negu A, bet trumpesni negu B. Pvz.:(funkcija uzd18(masyvas, a, b) => uzd18(["Labas", "ate", "Katašunis"], 4, 8) => "Labas")
+19) Sudėti visus 4'tos užduoties masyvo kintamuosius ir sumą išvesti į konsolę.
+20) Sudėti kas antrą 4'tos užduoties masyvo kintamąjį ir sumą išvesti į konsolę.
+21+) Parašyti funkciją, kuriai padavus 4'tos užduoties masyvą, jinai sudėtų kas kažkelintą (nurodyti funkcijai) kintamąjį ir išvestų sumą į konsolę.
+22++) Parašyti funkciją, kuriai padavus 4'tos užduoties masyvą, jinai sudėtų kas kažkelintą (nurodyti funkcijai) kintamąjį tik tada, jeigu tas kintamasis yra lyginis arba nelyginis (nurodyti funkcijai) ir išvestų sumą į konsolę. Pvz.:(funk([1,2,3,4,5,6,7,8,9], 3, false) => 12)
+23) Iš 5'tos užduoties masyvo atrinkite skaičius į vieną masyvą, o string'us į kitą.
