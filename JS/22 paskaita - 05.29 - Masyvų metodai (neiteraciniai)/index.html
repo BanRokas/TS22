@@ -19,8 +19,44 @@
         <li>...</li>
       </ul>
     </section>
-    <section></section>
-    <section></section>
+    <section> <!-- Array -->
+      <h2>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>
+      </h2>
+      <ul> <!-- neiteraciniai -->
+        <li>
+          <ul>Static (neprototipiniai) Metodai
+            <li>.isArray(element) - ar element yra masyvas</li>
+            <li>.from(value) - suskaido value į masyvą</li>
+            <li>.of(value1, value2, value3...) - sudeda values į masyvą</li>
+          </ul>
+        </li>
+        <li>Instance (prototipiniai) Metodai
+          <ul>
+            <li>.prototype.at(index) - grąžina tame indekse esančią reikšmę</li>
+            <li>.prototype.concat(arr1, arr2, arr3...) - grąžina masyvų junginį kaip naują masyvą</li>
+            <li>.prototype.fill(value, start, end) - užpildo masyvą reikšmėmis(value) nuo nurodytos pozicijos(start) iki nurodytos pozicijos(end). MODIFIKUOJA originalų masyvą, grąžina modifikuotą.</li>
+            <li>.prototype.includes(value) - tikrina ar masyve yra nurodyta (value) reikšmė. Grąžina true | false.</li>
+            <li>.prototype.indexOf(reikšmė, nuo) - grąžina pirmosios reikšmės indeksą masyve jeigu randa, jeigu neranda grąžina -1.</li>
+            <li>.prototype.lastIndexOf(reikšmė, nuo) - grąžina paskutinės reikšmės indeksą masyve jeigu randa, jeigu neranda grąžina -1.</li>
+            <li>.prototype.join(separator) - grąžina naują masyvą apjungtą į string'ą su separator tarp kiekvieno elemento.</li>
+            <li>.prototype.pop()</li>
+            <li>.prototype.push(value)</li>
+            <li>.prototype.shift()</li>
+            <li>.prototype.unshift(value)</li>
+            <li>.prototype.reverse() - apsuka masyvą iš kito galo. MODIFIKUOJA originalų masyvą, grąžina modifikuotą.</li>
+            <li>.prototype.toReversed() - apsuka masyvą iš kito galo. NEmodifikuoja originalaus masyvo, grąžina apsuktą.</li>
+            <li>.prototype.slice(from, to) - nukopijuoja masyvo elementus į naują masyvą (kurį grąžins), nuo nurodytos pozicijos(from) iki nurodytos pozicijos(to).</li>
+            <li>.prototype.sort(compareFn) - rikiuoja masyvą ir MODIFIKUOJA originalų ir grąžina modifikuotą.</li>
+            <li>.prototype.toSorted(compareFn) - rikiuoja masyvą ir NEmodifikuoja originalaus ir grąžina surikiuotą.</li>
+            <li>.prototype.splice(start, deletionCount, value1, value2, value3...) - nuo start indekso trina nurodytą kiekį elementų (deletionCount) ir į tą vietą įterpia toliau nurodytas reikšmes (valuesX...). MODIFIKUOJA originalų masyvą. Grąžina masyvą su ištrintomis reikšmėmis.</li>
+            <li>.prototype.toSpliced(start, deletionCount, value1, value2, value3...) - nuo start indekso trina nurodytą kiekį elementų (deletionCount) ir į tą vietą įterpia toliau nurodytas reikšmes (valuesX...). NEmodifikuoja originalaus masyvo. Grąžina naują masyvą, kuriame bus visos apart ištrintos reikšmės.</li>
+            <li>.prototype.with(index, value) - grąžina naują masyvą, kuriame nurodytame indekse esanti reikšmė pakeista į nurodytą reikšme(value). NEmodifikuoja originalaus masyvo.</li>
+            <li>iteraciniai...</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer></footer>
 </body>
