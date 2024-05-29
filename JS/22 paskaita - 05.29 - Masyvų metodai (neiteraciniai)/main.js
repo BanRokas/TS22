@@ -53,3 +53,41 @@ let gerasRikiuotasZ = zodziuMasyvas.toSorted((a,b)=>a.localeCompare(b));
 console.log(gerasRikiuotasZ);
 
 console.groupEnd();
+
+
+let sudetiAtimti = (sk1, sk2, veiksmas) => {
+  if(veiksmas === '+'){
+    return sk1+sk2;
+  } else {
+    return sk1-sk2;
+  }
+}
+let sudetiAtimti2 = (sk1, sk2, veiksmas) => veiksmas === '+' ? sk1+sk2 : sk1-sk2;
+
+console.log(sudetiAtimti(5,8,'-'));
+console.log(sudetiAtimti2(5,8,'-'));
+
+let skaiciuotuvas = (sk1, sk2, veiksmas) => {
+  if(veiksmas === '+'){
+    return sk1+sk2;
+  } else if(veiksmas === '-') {
+    return sk1-sk2;
+  } else if(veiksmas === '*') {
+    return sk1*sk2;
+  } else if(veiksmas === '/') {
+    return sk1/sk2;
+  } else {
+    return 'error: veiksmas unknown';
+  }
+}
+console.log(skaiciuotuvas(8,5,'/'));
+let skaiciuotuvas2 = (sk1, sk2, veiksmas) => 
+  veiksmas === '+' ? sk1+sk2 :
+  veiksmas === '-' ? sk1-sk2 :
+  veiksmas === '*' ? sk1*sk2 :
+  veiksmas === '/' ? sk1/sk2 :
+  'error: veiksmas unkown';
+console.log(skaiciuotuvas2(54,65,'-'));
+
+5 > 6 && console.log('5 yra daugiau už 6');
+5 < 6 && console.log('5 yra mažiau už 6');
