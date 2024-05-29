@@ -1,0 +1,15 @@
+CAO:
+  11 pamoka - nereikia (kolkas). Galima pasiskaityt apie callBack, gal ir užduotis.
+  12 pamoka - tik su sort(). Nereikia reduce().
+
+  Atlikite pateiktas užduotis NENAUDODAMI iteracinių metodų.
+1) Parašykite funkciją, kuri iš jai duotojo masyvo suformuotų ir grąžintų string'ą.
+2+) Parašykite funkciją, kuriai padavus kažkokį number kintamąjį (ilgą 10+ skaitmenų), jinai jį išvestų į konsolę su "-" simboliu tarp dviejų lyginių skaičių. (pvz: paduodi 645286344, grąžina '6-452-8-634-4')
+3) Parašykite funkciją, kuri atliktų tą patį, ką daro .reverse() metodas. (žinoma nenaudokite reverse ir toReversed)
+4+) Parašykite funkciją, kuri iš jai paduoto masyvo išrinktų nurodytas reikšmes ir išvestų į konsolę likusias. (paduodama masyvas=[1,4,5,6,4,8,4,5], funkcija: func(masyvas, [4,6,8]), išveda: 1,5,5).
+5) Parašykite funkciją, kuri iš jai paduoto masyvo randa ir išspausdina didžiausią ir mažiausią skaičius.
+6) Parašykite funkciją, kuri iš 2 jai paduotų masyvų išveda į konsolę pasikartojančias reikšmes. (jeigu yra dvi vienodos reikšmės abejuose masyvuose, ta reikšmė turi būti išvesta į konsolę)
+7+) Parašykite funkciją, kuriai padavus du masyvus (pirmas: informacijos, antras: indeksų), suformuotų naują masyvą iš pirmojo, paimdamas tik tas reikšmes, kurios nurodytos indeksuose. (pirmas=["a","b","c","d","e","f"], antras=[0,3,4], naujas=["a","d","e"])
+8+) Parašykite funkciją, kuri iš jai paduoto masyvo atrinktų ir į konsolę išspausdintų tik unikalius/nesikartojančius duomenis.
+9++) Parašykite funkciją, kuri iš jai paduotų masyvų (2 arba daugiau) atrenka ir išspausdina tik tuos duomenis, kurie kartojasi visuose masyvuose. (destruktūrizavimo (funkcijai paduoti daugiau reikšmiu, negu ji turi apsirašiusi))
+10) Parašykite funkciją, kuri iš jai paduoto skaičių masyvo atrinktų n'tąjį didžiausią skaičių. (funkcija([12,54,1,65,78,91,45],3) grąžintų 65).
