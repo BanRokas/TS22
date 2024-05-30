@@ -1,0 +1,64 @@
+Viską ką darėm persiskaitykite dar sykį, pasitestuokite, pasikonspektuokite.
+
+Pasidaryti CAO:
+  11 -> 12 -> 13 (iš dalies rytojui skirta)
+Mano užduočių:
+  Kolkas nedaryti destruktūrizavimo. Ten rytojui.
+
+Iteracinių masyvų metodų užduotys:
+  1) Nusikopijuok array (const cars = ["BMW", "VW", "Audi"]) ir naudojant forEach, atspausdink kiekvieną elementą (automobilio reikšmę).
+  2) Pakoreguok pirmą pratimą, kad atspaudintum index: value (pvz: "0: BMW", "1: VW" ir t.t.).
+  3) Sukurk Array su savo draugų vardais, raidžių kapitalizaciją pamiksuok (t.y. "peTras", "Jonas", "aNTanaS" ir t.t.). Naudojant map metodą, padaryk, kad susikurtų naujas array (ir jį atspausdink), kuriame vardai surašyti teisinga kapitalizacija (pvz. "peTras" => "Petras").
+  4) Sukurk Array su savo draugų amžiais (nuo 1 iki 99). Naudojant filter - prafiltruok tik tuos skaičius, kurie didesni arba lygūs jūsų amžiui.
+  5) Sukurk Array su Lietuvos miestais ("Vilnius", "Kaunas", "Klaipėda", ...). Naudojant find - surask bet kokį pirmą miestą, kuris prasideda iš "K" raidės.
+  6) Penktame pratime esantį sprendimą pakoreguot ir patikrink su some ar bent vienas miestas prasideda iš mažosios.
+  7) Pakoreguok šeštą pratimą, kad tikrintų ne ar bent vienas miestas prasideda iš mažosios, bet ar visi iš didžiosios.
+
+Destruktūrizavimas:
+  1) Naudodami destructuring priskirkite 2 kintamiesiems 2 masyvo reikšmes, iš kurių 1'oji būtų 3'oji masyvo reikšmė, o 2'oji būtų likusios masyvo reikšmės.
+  2) Naudodami destructuring priskirkite 4 kintamiesiems 4 objekto reikšmes, iš kurių 1'oji būtų pakeistu pavadinimu, 2'oji turėtų default reikšmę, 3'oji būtų iš viduje nestinto objekto, 4'oji būtų iš viduje nestinto objekto su pakeistu pavadinimu.
+  3) Naudodami destructuring priskirkite 1 kintamajam visas masyvo reikšmes išskyrus pirmas 3.
+  4) Naudodami destructuring sukeiskite 2 kintamųjų reikšmes.
+
+Filter:
+  1) Sukurti funkciją, kuri sukurtų A ilgio skaičių masyvą, B ir C intervale. (A - kokio ilgio masyvo norite, B - mažiausias galimas masyvo skaičius, C - didžiausias galimas masyvo skaičius). (naudoti Math.random())
+  2) Sukurti funkciją, kuri iš jai paduoto string'o sukurtų string'ų masyvą atskirdama kiekvieną žodį. (tarpai ir skiriamieji ženklai neturi būti įtraukti).
+  3) Naudojant 1'ios užduoties masyvą išfiltruoti lyginius skaičius.
+  4) Naudojant 1'ios užduoties masyvą išfiltruoti nelyginius skaičius.
+  5) Naudojant 1'ios užduoties masyvą išfiltruoti sveikuosius skaičius.
+  6) Sukurti funkciją, kuri 1'ios užduoties masyvą išfiltruotų A ir B intervale (nuo skaičiaus A iki skaičiaus B imtinai).
+  7) Naudojant 2'tos užduoties masyvą išfiltruoti žodžius, kurie prasideda didžiąja raide.
+  8) Naudojant 2'tos užduoties masyvą išfiltruoti žodžius, kurie prasideda mažąja raide.
+  9) Sukurti funkciją, kuri iš 2'tos užduoties masyvo išfiltruotų nurodyta raide prasidedančius žodžius.
+  10) Sukurti funkciją, kuri iš 2'tos užduoties masyvo išfiltruotų nurodyta raide pasibaigiančius žodžius.
+  11) Naudojant reduce metodą suskaičiuoti 3'tos užduoties masyvo bendrą sumą.
+  12) Naudojant reduce metodą suskaičiuoti 4'tos užduoties masyvo bendrą sandaugą.
+
+Daugiau uždavinių:
+  1) Parašyti arrow funkciją, kuri iš jai duoto masyvo grąžina pirmąjį elementą, kuris prasideda didžiąja arba mažąja raide (true arba false / "d" arba "s" kaip jau nuspręsit) ir yra ilgenis už A, bet trumpesnis už B (A ir B - funkcijos parametras skaičius). (function name(masyvas, d/s, ilgNeg, trumpNeg))
+  2) Parašykite arrow funkciją, kuri iš jai paduoto mišraus masyvo grąžina masyvą tik su number kintamaisiais, kurie yra didesni negu A, bet mažesni negu B ir lyginiai arba nelyginiai (lyginis - true, nelyginis - false) (arba galima priskirti raides, tarkim jei nori lyginių, parašai "l" kaip parametrą, jei nelyginių, parašai "n" kaip parametrą ir pns.)
+  3) Sukurti arrow funkciją, kuri sukurtų A ilgio skaičių masyvą, B ir C intervale. (A - kokio ilgio masyvo norite, B - mažiausias galimas masyvo skaičius, C - didžiausias galimas masyvo skaičius). (naudoti Math.random())
+  4) Sukurti arrow funkciją, kuri iš jai paduoto string'o sukurtų string'ų masyvą atskirdama kiekvieną žodį.
+  5) Naudojant 3'ios užduoties masyvą išfiltruoti lyginius skaičius.
+  6) Naudojant 3'ios užduoties masyvą išfiltruoti nelyginius skaičius.
+  7) Naudojant 3'ios užduoties masyvą išfiltruoti sveikuosius skaičius.
+  8) Sukurti arrow funkciją, kuri 3'ios užduoties masyvą išfiltruotų A ir B intervale (nuo skaičiaus A iki skaičiaus B imtinai).
+  9) Naudojant 4'tos užduoties masyvą išfiltruoti žodžius, kurie prasideda didžiąja raide.
+  10) Naudojant 4'tos užduoties masyvą išfiltruoti žodžius, kurie prasideda mažąja raide.
+  11) Sukurti arrow funkciją, kuri iš 4'tos užduoties masyvo išfiltruotų nurodyta raide prasidedančius žodžius.
+  12) Sukurti arrow funkciją, kuri iš 4'tos užduoties masyvo išfiltruotų nurodyta raide pasibaigiančius žodžius.
+  13) Naudojant reduce metodą suskaičiuoti 5'tos užduoties masyvo bendrą sumą.
+  14) Naudojant reduce metodą suskaičiuoti 6'tos užduoties masyvo bendrą sandaugą.
+
+FastFood task extra:
+  1) Susikurti bent 10 ilgio masyvą kaip nurodyta ir tolimesnėse užduotyse naudoti šitą masyvą. ( 1 ilgio pavyzdys: [{id:0, name:"Burgeris", inStock:true, primeCost:0.3, cost:1}])
+  2) Naudojant forEach - išvesti masyvo elementus į konsolę.
+  3) Naudojant forEach - išvesti tik masyvo elementų vardus ir kainas į konsolę.
+  4) Išfiltruoti tuos masyvo elementus, kurie yra inStock (inStock yra true) ir išsaugoti prafiltruotą masyvą naujame kintamajame ir jį atvaizduoti konsolėje (nereik iteruoti nieko (tiesiog įdėti patį masyvą į konsolę)).
+    4.1) Naudojant map ir 4'tos užduoties masyvą - sukurti naują masyvą, kuriame būtų name ir suskaičiuotas bei išsaugotas profit (cost-primeCost) ir jį atvaizduoti konsolėje (nereik iteruoti nieko (tiesiog įdėti patį masyvą į konsolę)).
+    4.2) Susikurti masyvą, kuriame būtų išrašyti masyvo (1'ojo) vardai ir jų kiekiai (sukurti užsakymo masyvą) ir jį atvaizduoti konsolėje (nereik iteruoti nieko (tiesiog įdėti patį masyvą į konsolę)). (galima sukurti kelis užsakymus)
+    4.3) Suskaičiuoti kiek pelno suteiks 4.2 masyvo užsakymas ir tai atvaizduoti konsolėje (nereik iteruoti nieko (tiesiog įdėti patį masyvą į konsolę)). (arba užsakymai, jei 4.2 dalyje sukūrėte keletą užsakymų)
+    4.4) Naudojant map - padaryti naują masyvą, kuriame būtų atvaizduotas užsakymas (kiek kokių dalykų buvo užsakyta) ir jo kaina (prie kiekvieno dalyko jo kaina(jei buvo keli, tai jų suma) ir pačiame gale bendra kaina) ir jį atvaizduoti konsolėje (nereik iteruoti nieko (tiesiog įdėti patį masyvą į konsolę)).
+  5) Išfiltruoti tuos masyvo (1'ojo) elementus, kurių "id" yra didesnis negu 4 ir jo kaina yra didesnė nei 2, bet mažesnė nei 10.
+  6+) Naudojant map - sukurti nerikiuotą sąrašą(<ul>) su masyvo elementų vardais ir kainomis kaip sąrašo elementais(<li>). (galima tą UL atvaizduoti ekrane)
+  7+) Naudodamiesi 4.2 užduoties masyvu/masyvais pabandykite DOM sukurti ./images/sąskaita.PNG pavaizduotą sąskaitą.
