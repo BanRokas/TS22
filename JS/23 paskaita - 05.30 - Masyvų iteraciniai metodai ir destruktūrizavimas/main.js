@@ -7,3 +7,10 @@ console.log('------------');
 zodziuMasyvas.forEach(zodis => console.log(zodis));
 console.groupEnd();
 
+let filtruotas = skaiciuMasyvas.filter(skaicius => {
+  if(skaicius > 100){
+    return skaicius;
+  }
+});
+let filtruotasShorter = skaiciuMasyvas.filter(skaicius => skaicius > 100);
+console.log(filtruotas, filtruotasShorter);

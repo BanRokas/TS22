@@ -12,10 +12,10 @@
     <section> <!-- Masyvų iteraciniai metodai -->
       <h1>Masyvų iteraciniai metodai</h1>
       <p>
-
+        Masyvų iteraciniai metodai yra tokie metodai, kurie suka ciklą per masyvą, ima kiekvieną jo elementą (kurį galima užsivadinti kaip nori) ir su juo kiekvienos iteracijos metu atlieka kažkokius veiksmus | sąlygas | kažką grąžina.
       </p>
       <div> <!-- forEach -->
-        <h2>forEach</h2>
+        <h2>ForEach</h2>
         <p>
           masyvas.forEach((element)=>{ ... veiksmai ... });
           masyvas.forEach((element, index)=>{ ... veiksmai ... });
@@ -25,6 +25,17 @@
           ForEach metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu TIKTAI atlieka kažkokius veiksmus su elementu.<br>
           ForEach negali grąžinti kažkokios reikšmės, neturi return.<br>
           ForEach negali būti sustabdytas, neturi break.
+        </p>
+      </div>
+      <div> <!-- filter -->
+        <h2>Filter</h2>
+        <p>
+          masyvas.filter((element)=>{ ... veiksmai sąlygą+return ... });
+          masyvas.filter((element, index)=>{ ... veiksmai sąlygą+return ... });
+          masyvas.filter((element, index, array)=>{ ... veiksmai sąlygą+return ... });
+        </p>
+        <p>
+          Filter metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu gali atlikti kažkokius veiksmus ir tuomet iteracijos elementą praleisti pro filtrą jeigu kažkokia sąlyga yra tenkinama. Kitaip pasakius, išfiltruoja masyvą ir grąžina naują masyvą su atrinktomis reikšmėmis.
         </p>
       </div>
     </section>
