@@ -49,6 +49,22 @@
           Map metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu gali atlikti kažkokius veiksmus, gali pagal kažkokią sąlygą grąžinti arba grąžina kažkaip mutuotą/pakeistą/redaguotą elementą. Kitaip pasakius, gaunamas vienoks masyvas, grąžinamas kitoks masyvas.
         </p>
       </div>
+      <div> <!-- reduce -->
+        <h2>Reduce</h2>
+        <p>
+          masyvas.reduce((accumulator, currentElement) => { ... veiksmai ?salyga? return ...});
+          masyvas.reduce((accumulator, currentElement, index) => { ... veiksmai ?salyga? return ...});
+          masyvas.reduce((accumulator, currentElement, index, array) => { ... veiksmai ?salyga? return ...});
+          masyvas.reduce((accumulator, currentElement) => { ... veiksmai ?salyga? return ...}, initialValue);
+          masyvas.reduce((accumulator, currentElement, index) => { ... veiksmai ?salyga? return ...}, initialValue);
+          masyvas.reduce((accumulator, currentElement, index, array) => { ... veiksmai ?salyga? return ...}, initialValue);
+        </p>
+        <p>
+          Reduce metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu keičia accumulator'ių naudodamas currentElement'o reikšmę ir grąžina pakeistą accumulator'ių kitai iteracijai. Viso metodo gale grąžinama viena reikšmė - accumulator.<br>
+          Jeigu NĖRA nurodytas initialvalue - pirmosios iteracijos metu, accumulator yra 0'tasis elementas, o currentElement yra 1'asis elementas.<br>
+          Jeigu YRA nurodytas initialValue - pirmosios iteracijos metu, accumulator yra initialValue, o currentElement yra 0'tasis elementas.
+        </p>
+      </div>
     </section>
     <section></section>
     <section></section>

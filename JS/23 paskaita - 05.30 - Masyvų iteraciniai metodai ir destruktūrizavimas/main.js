@@ -30,3 +30,17 @@ let mutuotasDifficult = zodziuMasyvas.map(zodis => {
   }
 }).filter(el => el.skaicius > 50);
 console.log(mutuotasLong, mutuotas, mutuotasDifficult);
+
+// ['suka', 'ciklą', 'per', 'visą', 'MaSyVą', 'ir', 'kiekvienos', 'iteracijos', 'metu', 'TIKTAI', 'atlieka', 'kažkokius', 'veikSMUs', 'su', 'elementu'];
+let reduceintas = zodziuMasyvas.reduce((acc, curr)=> acc+' '+curr);
+let reduceintas2 = zodziuMasyvas.reduce((acc, curr)=> {
+  if(curr.length > 5){
+    return acc+' '+'_'+curr.slice(1, -1)+'_';
+  } else {
+    return acc;
+  }
+}, '').trimStart()+'.';
+console.log(reduceintas);
+console.log(reduceintas2);
+let reduceNr = skaiciuMasyvas.reduce((acc, curr) => curr !== 0 ? acc*curr : acc);
+console.log(reduceNr);
