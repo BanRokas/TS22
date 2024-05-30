@@ -44,3 +44,12 @@ console.log(reduceintas);
 console.log(reduceintas2);
 let reduceNr = skaiciuMasyvas.reduce((acc, curr) => curr !== 0 ? acc*curr : acc);
 console.log(reduceNr);
+
+let arBentVienasNeigiamas = skaiciuMasyvas.some((el, i) => {
+  console.log(i, el);
+  return el < 0;
+});
+let arVisiTeigiami = skaiciuMasyvas.every((el, i) => {
+  console.log(i, el);
+  return el > 0;
+});

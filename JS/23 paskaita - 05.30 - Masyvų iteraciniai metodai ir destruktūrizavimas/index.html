@@ -65,6 +65,48 @@
           Jeigu YRA nurodytas initialValue - pirmosios iteracijos metu, accumulator yra initialValue, o currentElement yra 0'tasis elementas.
         </p>
       </div>
+      <div> <!-- reduceRight -->
+        <h2>ReduceRight</h2>
+        <p>Tas pats kas reduce, tik iš kito galo.</p>
+      </div>
+      <div> <!-- flatMap -->
+        <h2>FlatMap</h2>
+        <p>Junginys flat(1) ir map metodų.</p>
+      </div>
+      <div> <!-- Some ir Every -->
+        <h2>Some ir Every</h2>
+        <p>
+          masyvas.some|every((element)=>{ ... veiksmai sąlyga return ... });
+          masyvas.some|every((element, index)=>{ ... veiksmai sąlyga return ... });
+          masyvas.some|every((element, index, array)=>{ ... veiksmai sąlyga return ... });
+        </p>
+        <p>
+          Some metodas - suka ciklą per visą masyva ir kiekvienos iteracijos metu tikrina ar elementas atitinka sąlygą. Jeigu bent vienas masyvo elementas sąlygą atitinka, metodas iš karto grąžina true. Jeigu visi masyvo elementai sąlygos neatitinka, metodas grąžina false.
+        </p>
+        <p>
+          Every metodas - suka ciklą per visą masyva ir kiekvienos iteracijos metu tikrina ar elementas atitinka sąlygą. Jeigu bent vienas masyvo elementas sąlygos neatitinka, metodas iš karto grąžina false. Jeigu visi masyvo elementai sąlygą atitinka, metodas grąžina true.
+        </p>
+      </div>
+      <div> <!-- Find, FindIndex, FindLast, FindLastIndex -->
+        <h2>Find, FindIndex, FindLast, FindLastIndex</h2>
+        <p>
+          masyvas.find...((element)=>{ ... veiksmai sąlyga return ... });
+          masyvas.find...((element, index)=>{ ... veiksmai sąlyga return ... });
+          masyvas.find...((element, index, array)=>{ ... veiksmai sąlyga return ... });
+        </p>
+        <p>
+          Find - grąžina pirmą rastą elementą, kuris atitinka nurodytą sąlygą.
+        </p>
+        <p>
+          FindIndex - grąžina pirmo rasto elemento indeksą (vietą masyve), kuris atitinka nurodytą sąlygą.
+        </p>
+        <p>
+          FindLast - tas pats kas Find, tik iš kito galo.
+        </p>
+        <p>
+          FindLastIndex - tas pats kas FindIndex, tik iš kito galo.
+        </p>
+      </div>
     </section>
     <section></section>
     <section></section>
