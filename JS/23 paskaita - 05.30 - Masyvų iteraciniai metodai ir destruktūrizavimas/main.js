@@ -1,4 +1,4 @@
-let zodziuMasyvas = ['suka', 'ciklą', 'per', 'visą', 'masyvą', 'ir', 'kiekvienos', 'iteracijos', 'metu', 'TIKTAI', 'atlieka', 'kažkokius', 'veiksmus', 'su', 'elementu'];
+let zodziuMasyvas = ['suka', 'ciklą', 'per', 'visą', 'MaSyVą', 'ir', 'kiekvienos', 'iteracijos', 'metu', 'TIKTAI', 'atlieka', 'kažkokius', 'veikSMUs', 'su', 'elementu'];
 let skaiciuMasyvas = [5,4,981,981,98,15,1,681,61,6,-4,-115,51,-1,0,111,-99];
 
 console.groupCollapsed('for each');
@@ -14,3 +14,19 @@ let filtruotas = skaiciuMasyvas.filter(skaicius => {
 });
 let filtruotasShorter = skaiciuMasyvas.filter(skaicius => skaicius > 100);
 console.log(filtruotas, filtruotasShorter);
+
+let mutuotasLong = zodziuMasyvas.map(zodis => {
+  if(zodis.length > 3){
+    return zodis[0].toUpperCase() + zodis.slice(1).toLowerCase() + " :)";
+  } else {
+    return zodis;
+  }
+});
+let mutuotas = zodziuMasyvas.map(zodis => zodis.length > 3 ? zodis[0].toUpperCase() + zodis.slice(1).toLowerCase() + " :)" : zodis);
+let mutuotasDifficult = zodziuMasyvas.map(zodis => {
+  return {
+    pavadinimas: zodis[0].toUpperCase() + zodis.slice(1).toLowerCase(),
+    skaicius: Math.floor(Math.random()*99)
+  }
+}).filter(el => el.skaicius > 50);
+console.log(mutuotasLong, mutuotas, mutuotasDifficult);

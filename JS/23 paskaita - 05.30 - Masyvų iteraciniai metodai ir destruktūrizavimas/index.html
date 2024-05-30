@@ -30,12 +30,23 @@
       <div> <!-- filter -->
         <h2>Filter</h2>
         <p>
-          masyvas.filter((element)=>{ ... veiksmai sąlygą+return ... });
-          masyvas.filter((element, index)=>{ ... veiksmai sąlygą+return ... });
-          masyvas.filter((element, index, array)=>{ ... veiksmai sąlygą+return ... });
+          masyvas.filter((element)=>{ ... veiksmai sąlyga+return ... });
+          masyvas.filter((element, index)=>{ ... veiksmai sąlyga+return ... });
+          masyvas.filter((element, index, array)=>{ ... veiksmai sąlyga+return ... });
         </p>
         <p>
           Filter metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu gali atlikti kažkokius veiksmus ir tuomet iteracijos elementą praleisti pro filtrą jeigu kažkokia sąlyga yra tenkinama. Kitaip pasakius, išfiltruoja masyvą ir grąžina naują masyvą su atrinktomis reikšmėmis.
+        </p>
+      </div>
+      <div> <!-- map -->
+        <h2>Map</h2>
+        <p>
+          masyvas.map((element)=>{ ... veiksmai sąlyga return ... });
+          masyvas.map((element, index)=>{ ... veiksmai sąlyga return ... });
+          masyvas.map((element, index, array)=>{ ... veiksmai sąlyga return ... });
+        </p>
+        <p>
+          Map metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu gali atlikti kažkokius veiksmus, gali pagal kažkokią sąlygą grąžinti arba grąžina kažkaip mutuotą/pakeistą/redaguotą elementą. Kitaip pasakius, gaunamas vienoks masyvas, grąžinamas kitoks masyvas.
         </p>
       </div>
     </section>
