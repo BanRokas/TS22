@@ -139,3 +139,20 @@ console.log(miestai.some(miestas => miestas.charAt(0) === miestas.charAt(0).toLo
 // }));
 console.log(miestai.every(miestas => miestas.charAt(0) === miestas.charAt(0).toUpperCase()));
 
+
+// nereikia suprasti
+const people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 },
+  { name: "David", age: 30 }
+];
+const grouped = people.reduce((acc, cur) => {
+  const key = cur.age;
+  console.log('akumuliatorius',acc);
+  console.log('dabartinis',cur);
+  console.log(acc[key]); // {25:[{},{},{}]} {}.25 => [{},{},{}, {}]
+  // console.log(...acc[key]);
+  return { ...acc, [key]: [...(acc[key] || []), cur] };
+}, {});
+console.log(grouped);
