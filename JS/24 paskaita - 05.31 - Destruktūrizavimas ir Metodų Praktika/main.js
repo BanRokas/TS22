@@ -1,3 +1,4 @@
+console.groupCollapsed('destr');
 let masyvasDes = ['labas', 24, undefined, [false, 5], 'zodis', 5, 6, 8];
 console.log(masyvasDes);
 // be destr
@@ -36,7 +37,7 @@ console.log(objVardas, objMetai, objTeises, objSalis, objPomegis1);
 // su destr
 let { vardas, amzius:metai, vairuotojoTeises='nežinom', gyvenamojiVieta:{salis, ...restO}, pomegiai:{1:pomegis, ...restM}, ...restObj } = objektasDes;
 console.log(vardas, metai, vairuotojoTeises, salis, pomegis, restObj, restO, restM);
-
+console.groupEnd();
 
 //      PRAKTIKA
 /*
@@ -65,7 +66,7 @@ console.groupEnd();
     Pirminis skaičius - dalinasi TIK iš savęs paties ir iš 1 be liekanos.
     pvz(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97)
 */
-console.group('pirminiai');
+console.groupCollapsed('pirminiai');
 console.time();
 // iki 40000
 // su sqrt default: 4.735107421875 ms
@@ -107,4 +108,34 @@ for(let i = 2; i <= 40000; i++){
 console.timeEnd();
 console.log(pirminiuMasyvas);
 console.groupEnd();
+
+// CAO 11
+console.group('auto');
+// Auto
+const cars = ["BMW", "VW", "Audi"];
+cars.forEach((el) => console.log(el));
+// auto papild
+cars.forEach((el, i) => console.log(i+': ' + el));
+console.groupEnd();
+
+// Friends
+const friends = ['rachel', 'JOEY', 'PhoEbe', 'rOss', 'MonikA', 'ChanDleR'];
+console.log(friends.map(el => el.charAt(0).toUpperCase() + el.slice(1).toLowerCase()));
+
+// Pilnamečiai
+const amziai = [5,6,48,1,12,54,61,61,81];
+const pilnamecioAmzius = 18; // nebutina
+console.log(amziai.filter(el => el >= pilnamecioAmzius));
+
+// Miestai
+const miestai = ['Vilnius', 'Utena', 'Panevėžys', 'Šiauliai', 'Kaunas', 'Telšiai', 'Klaipėda'];
+console.log(miestai.find(miestas => miestas.charAt(0).toUpperCase() === 'K'));
+console.log(miestai.some(miestas => miestas.charAt(0) === miestas.charAt(0).toLowerCase()));
+// console.log(miestai.some(miestas =>{
+//   console.log(miestas);
+//   console.log(miestas[0]);
+//   console.log(miestas[0].toLowerCase());
+//   return miestas.charAt(0) === miestas.charAt(0).toLowerCase()
+// }));
+console.log(miestai.every(miestas => miestas.charAt(0) === miestas.charAt(0).toUpperCase()));
 
