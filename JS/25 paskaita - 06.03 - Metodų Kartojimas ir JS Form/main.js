@@ -90,3 +90,13 @@ document
     // const { userName:vardas, userPhoto, userDOB, userAge, userSex, userMusicTaste:muzika } = ete;
     // console.log(vardas, userDOB, userAge, muzika, userPhoto, userSex);
   });
+
+
+document
+  .querySelector('#sudetis')
+  .addEventListener('submit', e => {
+    e.preventDefault();
+    const sk1 = e.target.elements.sk1.valueAsNumber;
+    const sk2 = e.target.elements.sk2.valueAsNumber;
+    console.log(sk1 + sk2);
+  });
