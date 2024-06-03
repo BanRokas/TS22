@@ -1,0 +1,8 @@
+https://www.codewars.com/
+https://leetcode.com/
+https://www.freecodecamp.org/
+https://edabit.com/
+https://www.w3resource.com/javascript-exercises/
+https://codecombat.com/play pasirinkite JS kalbą (default Python)
+
+https://javascript.info
