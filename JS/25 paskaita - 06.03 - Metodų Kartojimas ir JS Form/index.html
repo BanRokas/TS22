@@ -37,6 +37,7 @@
                 <li>url</li>
                 <li>radio</li>
                 <li>checkbox</li>
+                <li>datetime-local</li> <!-- date - be valandų/minučių; datetime-local -->
                 <li>submit</li>
                 <li>...</li>
               </ul>
@@ -58,7 +59,60 @@
         </div>
       </div>
     </section>
-    <section></section>
+    <section> <!-- Test Form -->
+      <h2>Test Form</h2>
+      <form>
+        <div>
+          <label for="userName">Vardas:</label>
+          <input type="text" id="userName" name="userName">
+        </div>
+        <div>
+          <label for="userPhoto">Nuotrauka:</label>
+          <input type="url" id="userPhoto" name="userPhoto">
+        </div>
+        <div>
+          <label for="userDOB">Gimimo data:</label>
+          <input type="datetime-local" id="userDOB" name="userDOB">
+        </div>
+        <div>
+          <label for="userAge">Amžius</label>
+          <input type="number" id="userAge" name="userAge">
+        </div>
+        <div>
+          <label for="">Lytis</label>
+          <input type="radio" id="male" name="userSex" value="male">
+          <label for="male">Vyras</label>
+          <input type="radio" id="female" name="userSex" value="female">
+          <label for="female">Moteris</label>
+          <input type="radio" id="null" name="userSex" value="undefined">
+          <label for="null">Nenurodyti</label>
+        </div>
+        <div>
+          <label for="">Kokių firmų batus nešiojate?</label>
+          <input type="checkbox" id="Adidas" name="userBoots" value="Adidas">
+          <label for="Adidas">Adidas</label>
+          <input type="checkbox" id="Nike" name="userBoots" value="Nike">
+          <label for="Nike">Nike</label>
+          <input type="checkbox" id="Puma" name="userBoots" value="Puma">
+          <label for="Puma">Puma</label>
+          <input type="checkbox" id="Gucci" name="userBoots" value="Gucci">
+          <label for="Gucci">Gucci</label>
+        </div>
+        <div>
+          <label for="userMusicTaste">Mėgstamiausias muzikos žanras</label>
+          <select name="userMusicTaste" id="userMusicTaste">
+            <option value="Country">Country</option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Metal">Metal</option>
+            <option value="Phonk">Phonk</option>
+            <option value="Classic">Classic</option>
+          </select>
+        </div>
+        <input type="submit" value="Pateikti formą">
+      </form>
+    </section>
     <section></section>
   </main>
   <footer></footer>
