@@ -1,0 +1,17 @@
+section > h2{
+  font-size: 50px;
+  text-align: center;
+}
+
+.twoLists{
+  display: flex;
+  justify-content: space-evenly;
+
+  > div:nth-child(2) > ul{
+    columns: 2;
+
+    > li{
+      padding-right: 10px;
+    }
+  }
+}
