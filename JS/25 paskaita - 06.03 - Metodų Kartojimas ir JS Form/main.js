@@ -40,3 +40,53 @@ const findMostFrequent = arr => {
 }
 
 console.log(findMostFrequent(masyvas));
+
+// FORM
+document
+  .querySelector('#testForm')
+  .addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log(event);
+    // BLOGAI, nes eiliškumas gali lengvai pakisti
+    // const vardas = event.target[0].value;
+    // const nuotrauka = event.target[1].value;
+    // const dob = event.target[2].value;
+    // const amzius = event.target[3].valueAsNumber;
+    // console.log(vardas, nuotrauka, dob, amzius);
+
+    // nėra gerai, nes vis per naują kreiptis į dokumentą nėra gerai
+    // const vardas = document.querySelector('#userName').value;
+    // const nuotrauka = document.querySelector('#userPhoto').value;
+    // const dob = document.querySelector('#userDOB').value;
+    // const amzius = document.querySelector('#userAge').valueAsNumber;
+    // console.log(vardas, nuotrauka, dob, amzius);
+
+    // geras :)
+    // const vardas = event.target.elements.userName.value;
+    // const nuotrauka = event.target.elements.userPhoto.value;
+    // const dob = event.target.elements.userDOB.value;
+    // const amzius = event.target.elements.userAge.valueAsNumber;
+    // const lytis = event.target.elements.userSex.value;
+    // const batai = [];
+    // event.target.elements.userBoots.forEach(el => el.checked && batai.push(el.value));
+    // // jeigu select neturi multiple atributo, su juo elgiamės kaip su radio input. Jeigu turi multiple atributą, elgiamės kaip su checkbox, bet vietoj forEach naudoti for of
+    // const muzika = event.target.elements.userMusicTaste.value;
+    // console.log(vardas, nuotrauka, dob, amzius, lytis, batai, muzika);
+    const ete = event.target.elements; // trumpinti event.target.elements (galima ir aukščiau esančiam)
+    // viską turėti objekte
+    const formosReiksmes = {
+      vardas: ete.userName.value,
+      nuotrauka: ete.userPhoto.value,
+      dob: ete.userDOB.value,
+      amzius: ete.userAge.valueAsNumber,
+      lytis: ete.userSex.value,
+      batai: [],
+      muzika: ete.userMusicTaste.value
+    }
+    ete.userBoots.forEach(el => el.checked && formosReiksmes.batai.push(el.value));
+    console.log(formosReiksmes);
+
+    // nesiūlau destruktūrizuoti
+    // const { userName:vardas, userPhoto, userDOB, userAge, userSex, userMusicTaste:muzika } = ete;
+    // console.log(vardas, userDOB, userAge, muzika, userPhoto, userSex);
+  });
