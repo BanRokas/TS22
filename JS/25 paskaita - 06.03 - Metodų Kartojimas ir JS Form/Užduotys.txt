@@ -1,0 +1,3 @@
+1) Persiskaityti viską ką ėjome šiandieną, pasinagrinėti, pasižaisti...
+2) Persiskaityti CAO 14 paskaita (labai nesukti galvos dėl visų prototype, contructors ir pns); Pasidaryti užduotis (lengvas).
+3) Pabandyti padaryti skaičiuotuvą (kaip padarėme su sudėtimi, tik kad būtų galimybė pasirinkti veiksmą). (išvedimas į konsolę)
