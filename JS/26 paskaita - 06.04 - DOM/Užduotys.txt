@@ -1,0 +1,5 @@
+0) Persiskaityti / persižiūrėti / pasikonspektuoti / pasitestuoti / extra info pasiieškoti ir t.t. to ką šiandieną veikėme.
+1) CAO:
+  Praleisti 15 ir 16 paskaitas.
+  Persiskaityti ir padaryti 17 paskaitą (DOM) (bent jau lengvus)
+2+) Susikurti duomenų kintamąjį (masyvas su objektais [{},{},{},{}]) ir iš jo ekrane sugeneruoti korteles, kurios turi bent jau: pavadinimą, aprašymą ir paveiksliuką.
