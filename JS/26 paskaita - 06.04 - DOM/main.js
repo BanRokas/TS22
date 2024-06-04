@@ -22,3 +22,29 @@ image0.setAttribute('alt', 'Stan Pines from Gravity Falls');
 image0.classList.add('smallImage');
 // test0_Sec.appendChild(image0);
 test0_Sec.append(antraste0, image0);
+
+const cardSection = document.querySelector('#card');
+
+
+const cardDiv = document.createElement('div');
+cardDiv.classList.add('cardLandscape');
+
+const heading3 = document.createElement('h3');
+heading3.textContent = 'Card name';
+
+const innerCardDiv = document.createElement('div');
+const cardImage = document.createElement('img');
+cardImage.setAttribute('src', 'https://static.wikia.nocookie.net/villains/images/f/f8/Stan_Pines.png');
+cardImage.setAttribute('alt','Stan Pines');
+innerCardDiv.appendChild(cardImage);
+
+const par = document.createElement('p');
+par.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, fugit! Porro ullam quibusdam voluptatum obcaecati voluptatibus magni error saepe quos eligendi cumque, excepturi culpa a amet suscipit voluptas velit recusandae.';
+
+cardDiv.append(heading3, innerCardDiv, par);
+cardSection.appendChild(cardDiv);
+
+cardDiv.addEventListener('click', () => {
+  cardDiv.classList.toggle('cardLandscape');
+  cardDiv.classList.toggle('cardPortrait');
+});
