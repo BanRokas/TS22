@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>26 paskaita - DOM</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <h1>DOM - Document Object Model</h1>
+    <section>
+      <h2>Node</h2>
+      <p>
+        Node'as - HTML elementas JS'o aplinkoje.
+      </p>
+      <p>
+        Galima HTML'ą pildyti innerHTML'u - rašant HTML kodą JS'e kaip string'ą ir juo papildyti HTML'o elementą. Tuomet tas string'as HTML'e bus skaitomas kaip HTML kodas ir atvaizduojamas kaip HTML kodas.<br>
+        Šitas būdas turi daug minusų, pradedant nuo saugumo, pabaigiant implementacija.
+      </p>
+      <p>
+        Geresnis būdas yra pildyti HTML'ą su JS'u - kurti node'us (HTML elementus), juos prilyginti kintamiesiems ir tuomet tuos node'us append'inti į kitus HTML elementus.<br>
+        Node'ai yra kuriami, modifikuojami, įterpiami į HTML'ą naudojant Node'ų metodus.
+      </p>
+    </section>
+    <section>
+      <h2>Node'ų metodai</h2>
+      <ul>
+        <li>document.createElement('tagName')</li>
+        <li>document.createTextNode('tekstas koks tik nori...')</li> <!-- galima nenaudot -->
+        <li>kam.append(ką0, ką1, ką2...) - į kokį node'ą (kam) gale įdėsime kokį/ius node'ą/node'us/string'us (ką)</li>
+        <li>kam.appendChild(ką) - į kokį node'ą (kam) gale įdėsime kokį node'ą (ką)</li>
+        <li>kam.prepend(ką) - į kokį node'ą (kam) pradžioje įdėsime kokį/ius node'ą/node'us/string'us (ką)</li>
+        <li>kam.setAttribute('name','value')</li>
+        <li>kam.classList
+          <ul>
+            <li>add('vienKlase', 'kitaKlase', 'treciaKlase', ...)</li>
+            <li>remove('vienKlase', 'kitaKlase', 'treciaKlase', ...)</li>
+            <li>replace('klaseIsimi', 'klasePridedi')</li>
+            <li>toggle('klase') - jeigu elementas klase turi - ją išima, jeigu neturi - ją prideda</li>
+          </ul>
+        </li>
+        <li>...</li>
+      </ul>
+    </section>
+    <section></section>
+  </main>
+  <footer></footer>
+</body>
+</html>
