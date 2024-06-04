@@ -48,3 +48,22 @@ cardDiv.addEventListener('click', () => {
   cardDiv.classList.toggle('cardLandscape');
   cardDiv.classList.toggle('cardPortrait');
 });
+
+const sarasoSec = document.querySelector('#generateList');
+
+const list = document.createElement('ol');
+// for(let i = 0; i < 10; i++){
+//   const li = document.createElement('li');
+//   li.textContent = 'labas :)';
+//   list.appendChild(li);
+// }
+const gyvunai = ['<b>gyvatė</b>', 'žirafa', 'vilkas', 'šuo', 'katė', 'pelė', 'žiurkėnas', 'žuvelė', 'tinginys', 'liūtas', 'bezdžionė'];
+gyvunai.forEach(gyvunas => {
+  const li = document.createElement('li');
+  // li.innerHTML = gyvunas; // BLOGAI
+  li.textContent = gyvunas;
+  // li.append(gyvunas);
+  list.appendChild(li);
+});
+sarasoSec.appendChild(list);
+
