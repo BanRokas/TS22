@@ -91,7 +91,6 @@ document
     // console.log(vardas, userDOB, userAge, muzika, userPhoto, userSex);
   });
 
-
 document
   .querySelector('#sudetis')
   .addEventListener('submit', e => {
@@ -100,3 +99,12 @@ document
     const sk2 = e.target.elements.sk2.valueAsNumber;
     console.log(sk1 + sk2);
   });
+
+// CAO 14 Darbuotojų ataskaita
+const darbuotojuObj = { "Jonas": "Engineer", "Petras": "Manager" };
+const printEmployeeInfo = (badObj) => {
+  const objKeys = Object.keys(badObj);
+  objKeys.forEach(el => console.log(`Name: ${el}, Position: ${badObj[el]}`)); // spausdinimui
+  return objKeys.map(el => { return { name: el, position: badObj[el] } }); // duomenų sutvarkymui
+}
+const dabuotojuMasyvas = printEmployeeInfo(darbuotojuObj);
