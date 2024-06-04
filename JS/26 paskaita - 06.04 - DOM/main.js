@@ -67,3 +67,28 @@ gyvunai.forEach(gyvunas => {
 });
 sarasoSec.appendChild(list);
 
+// const sections = document.querySelectorAll('section');
+// console.log(sections);
+// sections.forEach()
+document.querySelectorAll('section').forEach(section => {
+  console.dir(section);
+  section.classList.add('positionRelative');
+
+  const button = document.createElement('button');
+  button.textContent = 'Slėpti';
+  button.classList.add('positionAbsolute', 'top0', 'right0');
+  button.addEventListener('click', () => {
+    [...section.children].forEach(child => {
+      child.classList.toggle('displayNone');
+    });
+    // section.firstElementChild.classList.remove('displayNone'); // norint palikti pirmąjį elementą neslepiamą
+    button.classList.remove('displayNone');
+    if(button.textContent === 'Slėpti'){
+      button.textContent = 'Rodyti';
+    } else {
+      button.textContent = 'Slėpti';
+    }
+  });
+
+  section.appendChild(button);
+});

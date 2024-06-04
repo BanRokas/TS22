@@ -68,3 +68,23 @@ body{
     text-align: justify;
   }
 }
+
+section{
+  min-height: 30px;
+}
+
+.positionRelative{
+  position: relative;
+}
+.positionAbsolute{
+  position: absolute;
+}
+.top0{
+  top: 0;
+}
+.right0{
+  right: 0;
+}
+.displayNone{
+  display: none;
+}
