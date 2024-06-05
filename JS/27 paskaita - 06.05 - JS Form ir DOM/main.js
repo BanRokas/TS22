@@ -59,3 +59,52 @@ document
   });
 // Galima patobulinti, kad būtų galimybė nusirodyti Fizz ir Buzz reikšmes. (nebūtinai 3 ir 5)
 // Galima patobulinti, kad antrosios įvesties atributo min reikšmė būtų vienu didesnė negu pirmosios įvesties įvesta reikšmė. Naudoti extra event. Google koks tai įvykis.
+
+document
+  .querySelector('#filmas')
+  .addEventListener('submit', e => {
+    e.preventDefault();
+    console.dir(e);
+    const ete = e.target.elements;
+    const filmas = {
+      pavadinimas: ete.name.value,
+      plakatas: ete.thumbnail.value,
+      aprasymas: ete.description.value,
+      leidimoMetai: ete.releaseDate.value,
+      autorius: ete.author.value,
+      IMDB: ete.IMDB_score.valueAsNumber,
+      eirinoKategorija: ete.eirinCategory.value
+    };
+    console.log(filmas);
+    const filmuOutputDiv = document.querySelector('#filmuOutput');
+
+    const cardDiv = document.createElement('div');
+
+    const heading = document.createElement('h3');
+    heading.textContent = filmas.pavadinimas;
+
+    const imageDiv = document.createElement('div');
+    imageDiv.classList.add('imageContainer');
+    const image = document.createElement('img');
+    image.setAttribute('src', filmas.plakatas);
+    image.setAttribute('alt', `${filmas.pavadinimas} plakatas`);
+    imageDiv.appendChild(image);
+
+    const description = document.createElement('p');
+    description.textContent = filmas.aprasymas;
+
+    const extraInfoDiv = document.createElement('div');
+    extraInfoDiv.classList.add('extraInfo');
+    const releaseDate = document.createElement('span'); // 2024-05-15
+    releaseDate.textContent = 'Leidimo metai: ' + filmas.leidimoMetai.slice(0,4);
+    const author = document.createElement('span');
+    author.textContent = 'Režisierius: ' + filmas.autorius;
+    const imdbScore = document.createElement('span');
+    imdbScore.textContent = 'IMDB: ' + filmas.IMDB;
+    const eirinCategory = document.createElement('span');
+    eirinCategory.textContent = 'Eirin: ' + filmas.eirinoKategorija;
+    extraInfoDiv.append(releaseDate, author, imdbScore, eirinCategory);
+    
+    cardDiv.append(heading, imageDiv, description, extraInfoDiv);
+    filmuOutputDiv.appendChild(cardDiv);
+  });
