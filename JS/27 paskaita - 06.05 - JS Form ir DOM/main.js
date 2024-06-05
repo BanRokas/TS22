@@ -107,4 +107,6 @@ document
     
     cardDiv.append(heading, imageDiv, description, extraInfoDiv);
     filmuOutputDiv.appendChild(cardDiv);
+
+    e.target.reset();
   });
