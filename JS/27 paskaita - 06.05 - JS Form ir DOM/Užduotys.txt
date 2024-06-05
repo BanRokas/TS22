@@ -1,0 +1,14 @@
+0) Konspektuoti. Paruošti kitai dienai konkrečių klausimų.
+1) Persiskaityti CAO 18. Padaryti bent jau lengvas užduotis.
+  Pabandyti (jeigu turi laiko) CAO 19.
+2) Patobulinti paskaitos metu darytą FizzBuzz. (kaip yra pasiūlyta. Žiūrėti JS komentarus)
+
+Pabandyti:
+  3) JS'u sukurkite x stulpelių ir y eilučių (x ir y nurodomas formoje) lentelę (table) vartotojui pateikus formą. (tik eilutes ir elementus eilutėse, nereikia tbody/thead/tfoot).
+
+  4+) Sukurkite formą su select ir option's. Pateikus formą - išimkite pažymėtą opciją iš select'o.
+
+  5++) Sukurkite formą, kurioje užpildžius x/y/z number laukelius ir pasirinkus atitinkamą opciją iš select'o apskaičiuokite 2D arba 3D (priklausomai ar z paliktas tušias/0 ar duotas dydis) keturkampio Plotą, Perimetrą, Paviršiaus plotą arba Turį.
+    4.1 EXTRA) Naudojant Canvas atkurti vizualų figurų vaizdą.
+
+  6+++) Sunki užduotis: sukurti seno tipo skaičiuotuvą (koks pavaizduotas "./images/skaiciuotuvas2.PNG")
