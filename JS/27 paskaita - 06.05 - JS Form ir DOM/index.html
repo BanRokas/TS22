@@ -51,7 +51,64 @@
         <div>Buzz</div> -->
       </div>
     </section>
-    <section></section>
+    <section>
+      <h2>Filmai</h2>
+      <form id="filmas">
+        <div>
+          <label for="name">Pavadinimas:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="thumbnail">Plakatas:</label>
+          <input type="url" name="thumbnail" id="thumbnail">
+        </div>
+        <div>
+          <label for="description">Aprašymas:</label>
+          <textarea name="description" id="description"></textarea>
+        </div>
+        <div>
+          <label for="releaseDate">Leidimo data:</label>
+          <input type="date" name="releaseDate" id="releaseDate">
+        </div>
+        <div>
+          <label for="author">Režisierius:</label>
+          <input type="text" name="author" id="author">
+        </div>
+        <div>
+          <label for="IMDB_score">IMDB score:</label>
+          <input type="number" step="0.1" name="IMDB_score" id="IMDB_score">
+        </div>
+        <div>
+          <label for="">Eirino kategorija:</label>
+          <input type="radio" name="eirinCategory" id="G" checked>
+          <label for="G">G</label>
+          <input type="radio" name="eirinCategory" id="PG12">
+          <label for="PG12">PG12</label>
+          <input type="radio" name="eirinCategory" id="R15">
+          <label for="R15">R15</label>
+          <input type="radio" name="eirinCategory" id="R18">
+          <label for="R18">R18</label>
+        </div>
+        <input type="submit" value="Pateikti filmą">
+      </form>
+      <div id="filmuOutput">
+        <!-- <div class="card">
+          <h3>Pavadinimas</h3>
+          <div>
+            <img src="" alt="">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eveniet qui enim maiores eligendi quae soluta minima itaque dolorem doloribus? Est vel eligendi vero aliquam id laborum sunt magnam saepe?
+          </p>
+          <div class="extraInfo">
+            <span>leidimo metai</span>
+            <span>autorius</span>
+            <span>imdb score</span>
+            <span>eirin category</span>
+          </div>
+        </div> -->
+      </div>
+    </section>
   </main>
   <footer></footer>
 </body>
