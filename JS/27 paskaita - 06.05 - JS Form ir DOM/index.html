@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>27 paskaita - JS Formos ir DOM</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section>
+      <h2>Besikartojantys Vardai</h2>
+      <form id="names">
+        <div>
+          <label for="name">Vardas:</label>
+          <input type="text" name="name" id="name1" required>
+        </div>
+        <div>
+          <label for="times">Kartai:</label>
+          <input type="number" name="times" id="times1" min="0" max="20">
+        </div>
+        <input type="submit" value="Generuoti">
+      </form>
+      <div id="namesOutput">
+        <!-- <p>Vardas</p>
+        <p>VardasVardas</p>
+        <p>VardasVardasVardas</p>
+        -->
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+  </main>
+  <footer></footer>
+</body>
+</html>
