@@ -23,3 +23,39 @@ document
     }
     e.target.reset();
   });
+
+document
+  .querySelector('#fizzBuzz')
+  .addEventListener('submit', e => {
+    e.preventDefault();
+    const ete = e.target.elements;
+    const from = ete.from.valueAsNumber;
+    const to = ete.to.valueAsNumber;
+    console.log(from, to);
+    const outputDiv = document.querySelector('#fizzBuzzOutput');
+    outputDiv.innerHTML = '';
+    if(from > to){
+      outputDiv.textContent = `Nuo negali būti mažesnis negu iki. Prašome pakeisti įvestis.`;
+    } else {
+      for(let i = from; i <= to; i++){
+        const iterationDiv = document.createElement('div');
+        if(i % 5 === 0 && i % 3 === 0){
+          // console.log('FizzBuzz');
+          iterationDiv.textContent = 'Fizz\nBuzz';
+        } else if(i % 5 === 0){
+          // console.log('Buzz');
+          iterationDiv.textContent = 'Buzz';
+        } else if(i % 3 === 0){
+          // console.log('Fizz');
+          iterationDiv.textContent = 'Fizz';
+        } else {
+          // console.log(i);
+          iterationDiv.textContent = i;
+        }
+        outputDiv.appendChild(iterationDiv);
+      }
+      e.target.reset();
+    }
+  });
+// Galima patobulinti, kad būtų galimybė nusirodyti Fizz ir Buzz reikšmes. (nebūtinai 3 ir 5)
+// Galima patobulinti, kad antrosios įvesties atributo min reikšmė būtų vienu didesnė negu pirmosios įvesties įvesta reikšmė. Naudoti extra event. Google koks tai įvykis.
