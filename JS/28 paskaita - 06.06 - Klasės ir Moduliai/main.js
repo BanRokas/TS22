@@ -88,3 +88,96 @@ class Knyga{
 
 const knygos = knyguSaugykla.map(el => new Knyga(el));
 console.log(knygos);
+
+// CAO 15 Automobilis
+
+class Car{
+  constructor(brand, model, engine){
+    this.brand = brand;
+    this.model = model;
+    this.engine = engine;
+  }
+  turnOn(){
+    console.log('vrooom');
+  }
+}
+
+const cars = [
+  new Car('Volkswagen', 'Golf', 1.6),
+  new Car('BMW', '8', 2)
+];
+console.log(cars[0]);
+cars[0].turnOn();
+
+
+// CAO 16 Bibliotekos Valdymo Sistema
+class Book{
+  constructor(title, author, year){
+    this.id = Math.ceil(Math.random()*1000000000000).toString();
+    this.title = title;
+    this.author = author;
+    this.year = year;
+  }
+  getSummary(){
+    return `${this.title} by ${this.author} was published in ${this.year}.`;
+  }
+}
+
+const books = [
+  new Book('Harry Potter', 'J.K.Rowling', 1997),
+  new Book('Harry Potter', 'J.K.Rowling', 1997),
+  new Book('Harry Potter', 'J.K.Rowling', 1997),
+  new Book('Harry Potter', 'J.K.Rowling', 1997),
+  new Book('Lord of the Rings', 'J.R.R.Tolkien', 1954),
+  new Book('Lord of the Rings', 'J.R.R.Tolkien', 1954),
+  new Book('Lord of the Rings', 'J.R.R.Tolkien', 1954)
+];
+
+class Library{
+  constructor(){
+    this.borrowers = [{userName:'Jonas', borrowedBooks:[54,12]},{userName:'Ugnė', borrowedBooks:[54,12]}]; // [{userName:'Petras', borrowedBooks:[id, id, id]}]
+    this.books = [];
+  }
+  addBook(book){
+    this.books.push(book);
+  }
+  listAvailableBooks(){
+    return this.books;
+  }
+  lendBook(bookTitle, userName){
+    if(this.books.some(book => book.title === bookTitle)){
+      console.log('rado');
+      const bookIdToGive = this.books.find(book => book.title === bookTitle).id;
+      console.log(bookIdToGive);
+      // priskiriame knygos ID skolininkui
+      if(this.borrowers.some(borrower => borrower.userName === userName)){
+        console.log('vartotojas yra');
+        // sukame ciklą per visus skolininkus ir jeigu tai yra tas skolininkas, jo skolintų knygų masyvą grąžiname papildytą, jeigu ne tas, grąžina nekeistą
+        this.borrowers = this.borrowers.map(borrower => {
+          if(borrower.userName === userName){
+            return {
+              userName: borrower.userName,
+              borrowedBooks: [...borrower.borrowedBooks, bookIdToGive]
+            }
+          } else {
+            return borrower;
+          }
+        });
+      } else {
+        console.log('vartotojo nera');
+        this.borrowers = [...this.borrowers, { 
+          userName: userName, borrowedBooks:[bookIdToGive]
+        }];
+      }
+      this.books = this.books.filter(book => book.id !== bookIdToGive);
+    } else {
+      console.log('Atsiprašome, šiuo metu neturime knygos ' + bookTitle + '.');
+    }
+  }
+}
+
+const library = new Library();
+books.forEach(book => library.addBook(book));
+console.log(library);
+console.log(library.listAvailableBooks());
+library.lendBook('Harry Potter', 'Petras');
