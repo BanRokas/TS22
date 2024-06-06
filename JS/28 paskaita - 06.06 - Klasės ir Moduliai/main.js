@@ -45,3 +45,46 @@ console.log(asmuo2.getVardas());
 console.log(asmuo3.pasisveikinaSu('Ieva'));
 // console.log(asmuo3.pasisveikinaSu(asmuo2.#vardas));
 console.log(asmuo3.pasisveikinaSu(asmuo2.getVardas()));
+
+class Knyga{
+  // constructor(pavadinimas, autorius, leidimoMetai){
+  //   this.pavadinimas = pavadinimas;
+  //   this.autorius = autorius;
+  //   this.leidimoMetai = leidimoMetai;
+  // }
+  // constructor(knygosObjektas){
+  //   this.pavadinimas = knygosObjektas.pavadinimas;
+  //   this.autorius = knygosObjektas.autorius;
+  //   this.leidimoMetai = knygosObjektas.leidimoMetai;
+  // }
+  constructor({ pavadinimas, autorius, leidimoMetai }){
+    this.pavadinimas = pavadinimas;
+    this.autorius = autorius;
+    this.leidimoMetai = leidimoMetai;
+    // this.knygosAmzius = new Date().getFullYear() - this.leidimoMetai;
+  }
+  getKnygosAmzius(){
+    return new Date().getFullYear() - this.leidimoMetai;
+  }
+}
+
+// const knyga0 = new Knyga('Harry Potter', 'J.K.Rowling', 1997);
+// const knyga1 = new Knyga('Lord of the Rings', 'J.R.R.Tolkien', 1954);
+
+// const knygos = [
+//   new Knyga('Harry Potter', 'J.K.Rowling', 1997),
+//   new Knyga('Lord of the Rings', 'J.R.R.Tolkien', 1954)
+// ];
+
+// const knyga0 = new Knyga(knyguSaugykla[0]);
+// console.log(knyga0);
+
+// const knygos = [
+//   new Knyga(knyguSaugykla[0]),
+//   new Knyga(knyguSaugykla[1])
+// ];
+// console.log(knygos[0]);
+// console.log(knygos[1]);
+
+const knygos = knyguSaugykla.map(el => new Knyga(el));
+console.log(knygos);
