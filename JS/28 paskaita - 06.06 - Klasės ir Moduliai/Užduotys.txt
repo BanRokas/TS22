@@ -1,0 +1,25 @@
+1) Sukurkite klasę vardu "Car" ir duokite jai "name" ir "year" parametrus ir savybes.
+  1.1) Sukurkite papildomą savybę "helloCar" ir priskirkite jam tekstą, pristatantį mašiną. (gali būti betkas, tarkim "Labas, čia mano mašina Volvo ir ji buvo pagaminta 1990 metais").
+  1.2) Skukurkite metodą "age", kuris apskaičiuotų ir grąžintų tekstą, pasakantį kiek mašinai metų. (dabartinę datą gauti galima su 'date = new Date()' ir paversti tik į metus su 'date.getFullYear()').
+
+2) Sukurkite klasę vardu "Rectangle" ir duokite jai "width" ir "height" parametrus ir savybes.
+  2.1) Sukurkite papildomą savybę "color" ir priskirkite jam randomly parinktą spalvą.
+  2.2) Sukurkite metodą "area", kuris grąžina stačiakampio plotą.
+  2.3) Sukurkite metodą "perimeter", kuris grąžina stačiakampio perimetrą.
+
+3) Sukurkite klasę vardu "Point" ir duokite jai "x" ir "y" parametrus ir savybes.
+  3.1) Sukurkite papildomą savybę "coordinates" ir priskirkite jam "x" ir "y" reikšmes.
+  3.2) Sukurkite metodą "distance", kuris grąžina atstumą tarp dviejų taškų (Point'ų). (siūlau naudoti Math.hypot() metodą).
+
+4) Sukurkite klasę vardu "Rectangle_3D" ir duokite jai "width", "height" ir "depth" parametrus ir savybes.
+  4.1) Sukurkite metodą "volume", kuris grąžina 3D stačiakampio tūrį.
+  4.2) Sukurkite metodą "surfaceArea", kuris grąžina 3D stačiakampio paviršiaus plotą.
+  4.3) Sukurkite metodą "perimeter", kuris grąžina 3D stačiakampio perimetrą.
+
+5+) Pabandyti sukurti UI (User Interface (Vartotojo Sąsaja)) 2-4 užduotims ir spausdinti informaciją į ekraną. (Kas nori pasižiūrėkite JS Canvas ir su juo pabandykite atvaizduoti figūras puslapyje(bent jau 2D))
+
+Peržiūrėti video apie klases:
+  https://youtu.be/Ug4ChzopcE4 (arba visą tutorial https://youtu.be/4l3bTDlT6ZI?list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7) - NetNinja
+  https://youtu.be/5AWRivBk0Gw - WebDevSimplified
+  https://youtu.be/ndzAGJin2ZE -> https://youtu.be/DaUFyK8M4WY
+  https://youtu.be/pTB0EiLXUC8 - 4 principai - Mosh
