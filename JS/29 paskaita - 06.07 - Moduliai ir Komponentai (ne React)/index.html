@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>29 paskaita - Moduliai ir Komponentai (ne React)</title>
   <link rel="stylesheet" href="./main.css">
-  <script src="./main.js" defer></script>
+  <script src="./main.js" type="module"></script>
 </head>
 <body>
   <header></header>
@@ -18,11 +18,26 @@
       <p>
         Komponentai dažniausiai yra kuriami framework'ų, kaip kad React/Vue/Angular/Swift pagalba, bet galima juos sukurti ir JS'e kaip atskiras Klases ar funkcijas.
       </p>
-      <div id="komponentuPvz">
-
-      </div>
+      <div id="komponentuPvz"></div>
     </section>
-    <section></section>
+    <section>
+      <h2>Moduliai</h2>
+      <p>
+        Moduliai - skirtingi/atskiri failai su savo kažkokiu kodu, kurie gali būti panaudojami kitų failų.
+      </p>
+      <ul>
+        <li>Moduliuose gali būti įvairus kodas. Duomenys (kintamieji), funkcijos, klasės...</li>
+        <li>Klasės turi būti atskiri failai. Vienai klasei - vienas failas.</li>
+        <li>HTML'e prijungtas JS'as, kuris kažką import'uoja - PRIVALO turėti atributą type su reikšme module. (type="module")</li>
+        <li>HTML failas, kuriame prie kurio yra prijungtas modulis - PRIVALO būti paleistas kaip serveris, kitu atveju modulis nebus prijungtas.</li>
+      </ul>
+      <h3>Export ir Import</h3>
+      <p>
+        Failuose esantis kodas gali būti iškeliamas (export'uojamas) ir galima kažkokį kodą iš kito failo įsikelti (import'uoti).
+      </p>
+      <h4>Export</h4>
+      <h4>Import</h4>
+    </section>
     <section></section>
   </main>
   <footer></footer>
