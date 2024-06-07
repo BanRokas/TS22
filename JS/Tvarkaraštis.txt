@@ -13,10 +13,10 @@
   25 paskaita - 06.03 - Formos JS intro
   26 paskaita - 06.04 - DOM
   27 paskaita - 06.05 - Formos ir DOM
-  28 paskaita - 06.06 - Formos ir DOM sudėtingiau (jei nespėjam prieš tai) / Klasės + Moduliai
-  29 paskaita - 06.07 - Klasės + Moduliai / Komponentai (ne React)
+  28 paskaita - 06.06 - Klasės + Moduliai
+  29 paskaita - 06.07 - Komponentai (ne React) ir Moduliai
 7 savaitė:
-  30 paskaita - 06.10 - Komponentai (ne React) / Praktika
+  30 paskaita - 06.10 - Praktika
   31 paskaita - 06.11 - Praktika / Local/Session/Cookie
   32 paskaita - 06.12 - Local/Session/Cookie / TodoApp
   33 paskaita - 06.13 - TodoApp / Fetch
