@@ -184,3 +184,28 @@ books.forEach(book => library.addBook(book));
 console.log(library);
 console.log(library.listAvailableBooks());
 library.lendBook('Harry Potter', 'Petras');
+
+
+class MovieTheater{
+  constructor(rows, seatsPerRow){
+    this.rows = rows;
+    this.seatsPerRow = seatsPerRow;
+    // this.seats = new Array(this.rows).fill(new Array(this.seatsPerRow).fill(false));
+    this.seats = Array.from({ length: this.rows }, () => Array(this.seatsPerRow).fill(false));
+    // this.seats = [];
+    // while(this.rows--){
+    //   this.seats.push(new Array(this.seatsPerRow).fill(false));
+    // }
+  }
+  bookSeat(row, seat){
+    if(this.seats[row-1][seat-1] === false){ // vieta laisva
+      this.seats[row-1][seat-1] = true;
+      console.log('Vieta 3:2 jums užrezervuota :)');
+    } else { // vieta užimta
+      console.log('Vieta 3:2 jau yra užrezervuota :(\nPrašome pasirinkti kitą vietą.');
+    }
+  }
+}
+
+const teatras = new MovieTheater(5, 3);
+teatras.bookSeat(3,2);
