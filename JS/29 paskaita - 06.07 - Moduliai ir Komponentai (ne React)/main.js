@@ -1,5 +1,5 @@
-import Paragraph from "./moduliai/Paragraph.js";
-import { randomColor, sudetis } from "./moduliai/helperFunc.js";
+import Par from "./moduliai/Paragraph.js";
+import rnmto, { randomColor as rc, sudetis as plus } from "./moduliai/helperFunc.js";
 
 const divOutput = document.querySelector('#komponentuPvz');
 
@@ -10,13 +10,14 @@ const divOutput = document.querySelector('#komponentuPvz');
 // const par1 = document.createElement('p');
 // par1.textContent = 'Mama, noriu miegot :(';
 
-const par = new Paragraph('Labas rytas');
-const par0 = new Paragraph('Pietų metas kada?');
-const par1 = new Paragraph('Mama, noriu miegot :(');
+const par = new Par('Labas rytas');
+const par0 = new Par('Pietų metas kada?');
+const par1 = new Par('Mama, noriu miegot :(');
 
 divOutput.appendChild(par);
 divOutput.appendChild(par0);
 divOutput.appendChild(par1);
 
-console.log(randomColor());
-console.log(sudetis(5, 4));
+console.log(rc());
+console.log(plus(5, 4));
+console.log(rnmto(999));
