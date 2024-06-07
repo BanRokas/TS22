@@ -139,15 +139,16 @@ class Library{
     this.books = [];
   }
   addBook(book){
-    this.books.push(book);
+    this.books.push({ ...book, available: true });
   }
   listAvailableBooks(){
     return this.books;
   }
   lendBook(bookTitle, userName){
-    if(this.books.some(book => book.title === bookTitle)){
+    // tikriname ar yra bent viena knyga su tokiu pavadinimu, kurią galime skolinti
+    if(this.books.some(book => book.title === bookTitle && book.available === true)){
       console.log('rado');
-      const bookIdToGive = this.books.find(book => book.title === bookTitle).id;
+      const bookIdToGive = this.books.find(book => book.title === bookTitle && book.available === true).id;
       console.log(bookIdToGive);
       // priskiriame knygos ID skolininkui
       if(this.borrowers.some(borrower => borrower.userName === userName)){
@@ -169,7 +170,9 @@ class Library{
           userName: userName, borrowedBooks:[bookIdToGive]
         }];
       }
-      this.books = this.books.filter(book => book.id !== bookIdToGive);
+      // pakeičiame skolintos knygos availability
+      const indexOfBookToChangeAvailability = this.books.findIndex(book => book.id === bookIdToGive);
+      this.books[indexOfBookToChangeAvailability] = { ...this.books[indexOfBookToChangeAvailability], available: false };
     } else {
       console.log('Atsiprašome, šiuo metu neturime knygos ' + bookTitle + '.');
     }
