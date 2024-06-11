@@ -17,11 +17,11 @@
   29 paskaita - 06.07 - Komponentai (ne React) ir Moduliai
 7 savaitė:
   30 paskaita - 06.10 - Praktika
-  31 paskaita - 06.11 - Praktika / Local/Session/Cookie
-  32 paskaita - 06.12 - Local/Session/Cookie / TodoApp
-  33 paskaita - 06.13 - TodoApp / Fetch
+  31 paskaita - 06.11 - Local/Session/Cookie TodoApp
+  32 paskaita - 06.12 - JSON ir Fetch
+  33 paskaita - 06.13 - JSON server
   34 paskaita - 06.14 - Minkštieji įgūdžiai
-8 savaitė: JSON server, Async, CRUD, Praktika
+8 savaitė: Async, CRUD, Recursion, Praktika
   35 paskaita - 06.17 - 
   36 paskaita - 06.18 - 
   37 paskaita - 06.19 - 
@@ -31,5 +31,5 @@
   40 paskaita - 06.25 - 
   41 paskaita - 06.26 - 
   42 paskaita - 06.27 - 
-  43 paskaita - 06.28 - 
+  43 paskaita - 06.28 - Atsiskaitymas?
 10 savaitė: 
