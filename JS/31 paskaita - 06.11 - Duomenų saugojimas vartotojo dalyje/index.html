@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>31 paskaita - Duomenų saugojimas vartotojo dalyje</title>
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section>
+      <h1>Duomenų saugojimas vartotojo dalyje</h1>
+      <p>
+        Cookies, SessionStorage ir LocalStorage informacija yra saugojama jūsų įrenginyje/aplikacijoje/naršyklėje...<br>
+        Skirtingose svetainėse/naršyklėse/įrenginiuose esantys cookies/localStorage/sessionStorage yra saugojami atskirai.
+      </p>
+      <p>
+        Visi lokaliai saugojami duomenys PRIVALO būti string pavidalu!!!
+      </p>
+      <img src="./images/cookieVsLocalVsSession.png" style="width:100%" alt="Cookies SessionStorage ir LocalStorage">
+      <div>
+        <div>
+          <h3>Cookies</h3>
+          <p>
+            Saugojama tik iki 4kb.<br>
+            Reikia rankiniu būdu nustatyti iki kada sauojami duomenys.<br>
+            Siunčiami su request'ais į back-end'ą.
+          </p>
+        </div>
+        <div>
+          <h3>Session</h3>
+          <p>
+            Laiko duomenis aplikacijoje/naršyklėje, per kurią atidaroma kažkuri svetainė, kurioje tie duomenys buvo saugojami.<br>
+            Kai pasibaigia sesija (kai yra išjungiama svetainė) šitie duomenys yra ištrinami.
+          </p>
+          <p>
+            Dažnai naudojamas saugoti JWT token'ą.
+          </p>
+          <h4>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage" target="_blank">Syntax</a>
+          </h4>
+          <ul>
+            <li>sessionStorage.length - grąžina kiek yra išsaugotų elementų</li>
+            <li>sessionStorage.setItem('raktas','reiksme') - sukuriamas elementas</li>
+            <li>sessionStorage.getItem('raktas') - grąžinama elemento reikšmė pagal raktą</li>
+            <li>sessionStorage.removeItem('raktas') - trinamas elementas pagal raktą</li>
+            <li>sessionStorage.clear() - ištrinama viskas iš sessionStorage</li>
+            <li>sessionStorage.key(index) - grąžinamas raktinis žodis esantis nurodytame indekse</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Local</h3>
+          <p>
+            Laiko duomenis aplikacijoje/naršyklėje, per kurią atidaroma kažkuri svetainė, kurioje tie duomenys buvo saugojami.<br>
+            Duomenys yra saugojami visam laikui. Jie turi būti trinami rankiniu būdu.
+          </p>
+          <h4>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage" target="_blank">Syntax</a>
+          </h4>
+          <ul>
+            <li>localStorage.length - grąžina kiek yra išsaugotų elementų</li>
+            <li>localStorage.setItem('raktas','reiksme') - sukuriamas elementas</li>
+            <li>localStorage.getItem('raktas') - grąžinama elemento reikšmė pagal raktą</li>
+            <li>localStorage.removeItem('raktas') - trinamas elementas pagal raktą</li>
+            <li>localStorage.clear() - ištrinama viskas iš localStorage</li>
+            <li>localStorage.key(index) - grąžinamas raktinis žodis esantis nurodytame indekse</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+  </main>
+  <footer></footer>
+</body>
+</html>
