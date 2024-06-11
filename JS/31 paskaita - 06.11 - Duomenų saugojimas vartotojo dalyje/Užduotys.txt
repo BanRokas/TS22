@@ -1,0 +1,6 @@
+Praleisti CAO 20, 21, 22
+
+More or less jau mokame 23, 24, 25. Prie jų sugrįšime praktikuotis.
+
+CAO darykite 26 pamoką
+  galima praleisti "IndexedDB" skiltį ir tuo pačiu "Informacijos saugojimas IndexedDB" užduotį
