@@ -1,3 +1,6 @@
+import TodoApp from "./modules/todoApp.js";
+
+console.groupCollapsed('Cookies');
 // Cookies
 // susikurti cookies
 document.cookie = `name='value'`;
@@ -8,13 +11,12 @@ document.cookie = `objektas={raktas:'reiksme', skaicius:5}`;
 // document.cookie = `pasens='po kazkiek laiko';expires=${new Date('Tue Jun 11 2024 09:35:05')}`;
 
 // pasiimti cookies
-console.group('Cookies');
 const sausainiai = document.cookie.split('; ');
 console.log(sausainiai);
 console.groupEnd();
 
+console.groupCollapsed('Local / Session Storage');
 // session/local Storage
-
 sessionStorage.setItem("vardas", "Rokas");
 sessionStorage.setItem("amzius", 27);
 
@@ -40,7 +42,7 @@ console.log('----------');
 console.log(localStorage);
 localStorage.removeItem('pavarde');
 console.log(localStorage);
-localStorage.clear();
+// localStorage.clear();
 console.log(localStorage);
 console.log('----------');
 const asmuo = {
@@ -89,3 +91,8 @@ const asmenys = [
 localStorage.setItem('asmenys', JSON.stringify(asmenys));
 const grazintiAsmenys = JSON.parse(localStorage.getItem('asmenys'));
 console.log(grazintiAsmenys);
+console.groupEnd();
+
+// to do
+const todo = new TodoApp(document.querySelector('#toDo'));
+console.log(todo);
