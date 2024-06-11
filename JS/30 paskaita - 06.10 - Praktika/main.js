@@ -12,3 +12,4 @@ console.log(calculator);
 
 calculator.calculator.children[1].querySelectorAll('[data-action]').forEach(el => el.addEventListener('click', () => calculator.addAction(el.dataset.action)));
 
+calculator.calculator.children[1].querySelector('[data-calculate]').addEventListener('click', () => calculator.calculate());

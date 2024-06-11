@@ -39,6 +39,6 @@ export default class Calculator{
 
     this.memory = this.visual;
     this.renderVisual();
-    this.visual = '0';
+    this.action = null;
   }
 }
