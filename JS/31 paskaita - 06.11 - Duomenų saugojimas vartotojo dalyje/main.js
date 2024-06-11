@@ -21,7 +21,7 @@ sessionStorage.setItem("amzius", 27);
 console.log(sessionStorage.getItem('vardas'));
 console.log(sessionStorage.getItem('amzius'));
 console.log(sessionStorage.getItem('amzius')*1);
-
+console.log('----------');
 localStorage.setItem("vardas", "Rokas");
 localStorage.setItem("pavarde", "Banaitis");
 localStorage.setItem("amzius", 27);
@@ -30,7 +30,19 @@ console.log(localStorage.getItem('vardas'));
 console.log(localStorage.getItem('pavarde'));
 console.log(localStorage.getItem('amzius'));
 console.log(localStorage.getItem('alkanas'));
-
+// console.log(localStorage.key(0));
+console.log('----------');
+for(let i = 0; i < localStorage.length; i++){
+  console.log(localStorage.key(i));
+  console.log(localStorage.getItem(localStorage.key(i)));
+}
+console.log('----------');
+console.log(localStorage);
+localStorage.removeItem('pavarde');
+console.log(localStorage);
+localStorage.clear();
+console.log(localStorage);
+console.log('----------');
 const asmuo = {
   vardas: "Rokas",
   pavarde: "Banaitis",
@@ -38,5 +50,42 @@ const asmuo = {
   alkanas: true
 };
 
-localStorage.setItem("asmuo", asmuo);
-console.log(localStorage.getItem('asmuo'));
+// localStorage.setItem("asmuo", `{
+//   vardas: "Rokas",
+//   pavarde: "Banaitis",
+//   amzius: 27,
+//   alkanas: true
+// }`);
+// const kasTai = localStorage.getItem('asmuo');
+// console.log(kasTai);
+// console.log(kasTai.vardas);
+
+localStorage.setItem('asmuo', JSON.stringify(asmuo));
+console.log(JSON.parse(localStorage.getItem('asmuo')).amzius);
+
+const asmenys = [
+  {
+    vardas: "Rokas",
+    pavarde: "Banaitis",
+    amzius: 27,
+    alkanas: true
+  },{
+    vardas: "Rokas0",
+    pavarde: "Banaitis0",
+    amzius: 270,
+    alkanas: false
+  },{
+    vardas: "Rokas1",
+    pavarde: "Banaitis1",
+    amzius: 21,
+    alkanas: false
+  },{
+    vardas: "Rokas2",
+    pavarde: "Banaitis2",
+    amzius: 220,
+    alkanas: true
+  }
+];
+localStorage.setItem('asmenys', JSON.stringify(asmenys));
+const grazintiAsmenys = JSON.parse(localStorage.getItem('asmenys'));
+console.log(grazintiAsmenys);
