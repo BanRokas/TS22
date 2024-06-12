@@ -32,13 +32,58 @@ export default class Calculator{
   }
   calculate(){
     if(this.action === 'sum'){
-      console.log(this.visual*1, this.memory*1);
-      this.visual = this.visual*1 + this.memory*1;
+      // console.log(this.visual*1, this.memory*1);
+      this.visual = this.memory*1 + this.visual*1;
+    } else if(this.action === 'subtract'){
+      this.visual = this.memory*1 - this.visual*1;
+    } else if(this.action === 'multiply'){
+      this.visual = this.memory*1 * this.visual*1;
+    } else if(this.action === 'division'){
+      this.visual = this.memory*1 / this.visual*1;
+    } else if(this.action === 'modulus'){
+      this.visual = this.memory*1 % this.visual*1;
+    } else if(this.action === 'root'){
+      this.visual = (this.memory*1) ** (1/(this.visual*1));
+    } else if(this.action === 'power'){
+      this.visual = (this.memory*1) ** this.visual*1;
     }
-    // like veiksmai
+    this.visual = this.visual.toFixed(3);
+    while(this.visual.at(-1) === '0'){
+      this.visual = this.visual.slice(0,-1);
+    }
+    if(this.visual.at(-1) === '.'){
+      this.visual = this.visual.slice(0,-1);
+    }
 
     this.memory = this.visual;
     this.renderVisual();
     this.action = null;
   }
+  delete(what){
+    if(what === 'visual'){
+      this.visual = '0';
+    } else if(what === 'all'){
+      this.visual = '0';
+      this.action = null;
+      this.memory = null;
+    } else if(what === 'last'){
+      this.visual = this.visual.slice(0,-1);
+    }
+    this.renderVisual();
+  }
+  toggleSign(){
+    if(this.visual.at(0) !== '-'){
+      this.visual = '-'+this.visual;
+    } else {
+      this.visual = this.visual.slice(1);
+    }
+    this.renderVisual();
+  }
 }
+/* yra dar bėda kai:
+    skaiciu suvedi
+    pasirenki veiksmą
+    kitą skaičių
+    naujas veiksmas arba calculate
+    ČIA rašant naują veiksmą vietoj skaičiau pasidaro nesamonė
+*/

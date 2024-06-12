@@ -13,3 +13,9 @@ console.log(calculator);
 calculator.calculator.children[1].querySelectorAll('[data-action]').forEach(el => el.addEventListener('click', () => calculator.addAction(el.dataset.action)));
 
 calculator.calculator.children[1].querySelector('[data-calculate]').addEventListener('click', () => calculator.calculate());
+
+calculator.calculator.children[1].querySelector('[data-delVisual]').addEventListener('click', () => calculator.delete('visual'));
+calculator.calculator.children[1].querySelector('[data-delAll]').addEventListener('click', () => calculator.delete('all'));
+calculator.calculator.children[1].querySelector('[data-delLast]').addEventListener('click', () => calculator.delete('last'));
+
+calculator.calculator.children[1].querySelector('[data-sign]').addEventListener('click', () => calculator.toggleSign());

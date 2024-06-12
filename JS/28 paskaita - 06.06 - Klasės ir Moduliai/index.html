@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>28 paskaita - Klasės ir Moduliai</title>
+  <link rel="stylesheet" href="./main.css">
   <script src="./data.js"></script>
   <script src="./main.js" defer></script>
 </head>
@@ -26,7 +27,33 @@
         <li>Polymorphism - Polimorfizmas</li>
       </ul>
     </section>
-    <section></section>
+    <section id="taskasTask">
+      <form id="kurtiTaska">
+        <div>
+          <label for="coordX">X coordinate:</label>
+          <input type="number" min="-999" max="999" required="" name="coordX" id="coordX">
+        </div>
+        <div>
+          <label for="coordY">Y coordinate:</label>
+          <input type="number" min="-999" max="999" required="" name="coordY" id="coordY">
+        </div>
+        <input type="submit" value="Create Point">
+      </form>
+      <div id="taskai"></div>
+
+      <form id="atstumuSkaiciavimas">
+        <div>
+          <label for="pointA">Point A:</label>
+          <select name="pointA" id="pointA"></select>
+        </div>
+        <div>
+          <label for="pointB">Point B:</label>
+          <select name="pointB" id="pointB"></select>
+        </div>
+        <input type="submit" value="Find Distance">
+      </form>
+      <div id="atstumai"></div>
+    </section>
     <section></section>
   </main>
   <footer></footer>
