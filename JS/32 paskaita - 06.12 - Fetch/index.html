@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>32 paskaita - Fetch</title>
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- API -->
+      <h2>API</h2>
+      <p>
+        Application Programming Interface - jūsų užklausa iš aplikacijos (front-end) išsiunčiama į serverį (back-end) ir jeigu viskas tvarkoje - grąžinami kažkokie duomenys pagal jūsų užklausą; jeigu kažkas negerai - grąžinama error žinutė.
+      </p>
+      <p>
+        Kas yra API - <a href="https://youtu.be/s7wmiS2mSXY" target="_blank">video</a>.
+      </p>
+    </section>
+    <section> <!-- JSON -->
+      <h2>JSON</h2>
+      <p>
+        JSON - Java Script Object Notation yra duomenų formatas, kuris naudojamas request'uose.<br>
+        JSON formatas nuo JS Object formato skiriasi tuo, kad: raktiniai žodžiai ir string reikšmės privalo būti dvigubose kabutėse IR po paskutinės reikšmės negali būti kablelio.
+      </p>
+      <p>
+        Tam, kad paversti JSON reikšmę į JS arba atvirkščiai, reikia naudoti JSON metodus:<br>
+        1) JSON.parse(JSON) - paverčia JSON sintaksę į JS sintaksę
+        2) JSON.stringify(JS) - paverčia JS sintaksę į JSON sintaksę
+      </p>
+    </section>
+    <section> <!-- Fetch -->
+      <h2>Fetch</h2>
+      <p>
+        Funkcija/metodas, kurios pagalba mes galime siūsti užklausas į serverį ir gauti kažkokius atsakymus.
+      </p>
+      <h3>Fetch vykdomo eiga:</h3>
+      <ol>
+        <li>
+          Fetch'inant (siūnčiant užklausą) nurodomas URL, galima nurodyti papildomas opcija. Tarp tų opcijų yra metodai:
+          <ul>
+            <li>GET - gauti info (default)</li>
+            <li>POST - pateikti info (sukurti naują duomenį)</li>
+            <li>DELETE - trinti info (pagal ID)</li>
+            <li>PUT - redaguoti info (pagal ID ir info) (perrašo viską apart ID)</li>
+            <li>PATCH - redaguoti info (pagal ID ir info) (pakoreguoja/prideda)</li>
+          </ul>
+        </li>
+        <li>Apdoroti gautą info/atsakymą</li>
+        <li>Naudoti gautą apdorotą data</li>
+        <li>Pagauti (catch) error ir kažką su juo padaryti</li>
+        <li>Galiausiai (finally) dar kažką atlikti (nesvarbu buvo ar nebuvo error)</li>
+      </ol>
+    </section>
+    <section> <!-- randomUserAPI -->
+
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
