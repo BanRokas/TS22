@@ -1,4 +1,4 @@
-import TodoApp from "./modules/todoApp.js";
+import TodoApp from "./modules/TodoApp.js";
 
 console.groupCollapsed('Cookies');
 // Cookies

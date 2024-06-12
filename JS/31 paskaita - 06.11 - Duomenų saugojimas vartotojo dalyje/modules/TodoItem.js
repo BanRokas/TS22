@@ -1,9 +1,11 @@
 export default class ToDoItem{
-  constructor({id, name, completed}, allTasks){
+  constructor({id, name, completed}, del, update, toggleCompletion){
     this.id = id;
     this.name = name;
     this.completed = completed;
-    this.allTasks = allTasks;
+    this.deleteFunc = del;
+    this.updateFunc = update;
+    this.toggleFunc = toggleCompletion;
     return this.render();
   }
   render(){
@@ -14,23 +16,21 @@ export default class ToDoItem{
 
     /*
       button change status
-      button delete
+      // redaguoti ekrane
       button edit
+      // redaguoti ekrane
     */
+    // button delete
+    const delButton = document.createElement('button');
+    delButton.textContent = 'delete';
+    // func del ir išimti iš ekrano
+    delButton.addEventListener('click', () => {
+      this.deleteFunc(this.id);
+      divEl.remove();
+    });
 
-    divEl.append(par);
+    divEl.append(par, delButton);
 
     return divEl;
-  }
-  delete(id){
-    // filtruoti allTasks be nurodyto id
-    // localStorage keisti
-    // išimti iš ekrano
-  }
-  update(){} // jei norit ir sugebat
-  toggleCompletion(id){
-    // map allTasks keičiant nurodyto id completed
-    // localStorage keisti
-    // redaguoti ekrane
   }
 }
