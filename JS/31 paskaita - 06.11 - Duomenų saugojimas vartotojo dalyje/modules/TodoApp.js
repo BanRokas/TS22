@@ -14,7 +14,7 @@ export default class TodoApp{
   }
 
   formSubmit(){
-    this.todoEl.firstElementChild.addEventListener('submit', e => {
+    this.todoEl.querySelector('form').addEventListener('submit', e => {
       e.preventDefault();
       if(
         e.target.elements.task.value.trim().length < 4 ||
@@ -38,12 +38,12 @@ export default class TodoApp{
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
 
     const newTaskNode = new ToDoItem(newTask, this.delete, this.update, this.toggleCompletion);
-    this.todoEl.children[2].appendChild(newTaskNode);
+    this.todoEl.querySelector('div#tasks > ul').appendChild(newTaskNode);
   }
   loadTasks(){
     this.tasks.forEach(el => {
       const newTaskNode = new ToDoItem(el, this.delete, this.update, this.toggleCompletion);
-      this.todoEl.children[2].appendChild(newTaskNode);
+      this.todoEl.querySelector('div#tasks > ul').appendChild(newTaskNode);
     });
   }
   delete(id){

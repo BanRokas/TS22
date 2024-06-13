@@ -9,28 +9,35 @@ export default class ToDoItem{
     return this.render();
   }
   render(){
-    const divEl = document.createElement('div');
+    const liEl = document.createElement('li');
+    if(this.completed){
+      liEl.classList.add('done');
+    }
+
+    liEl.addEventListener('click', () => {
+      liEl.classList.toggle('done');
+      this.toggleFunc(this.id);
+    });
     
-    const par = document.createElement('p');
-    par.textContent = this.name;
+    const head = document.createElement('h3');
+    head.textContent = this.name;
 
     /*
-      button change status
-      // redaguoti ekrane
       button edit
       // redaguoti ekrane
     */
-    // button delete
-    const delButton = document.createElement('button');
-    delButton.textContent = 'delete';
+
+    // button/icon delete
+    const delIcon = document.createElement('i');
+    delIcon.classList.add('bi', 'bi-trash-fill');
     // func del ir išimti iš ekrano
-    delButton.addEventListener('click', () => {
+    delIcon.addEventListener('click', () => {
       this.deleteFunc(this.id);
-      divEl.remove();
+      liEl.remove();
     });
 
-    divEl.append(par, delButton);
+    liEl.append(head, delIcon);
 
-    return divEl;
+    return liEl;
   }
 }
