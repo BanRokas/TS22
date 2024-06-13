@@ -1,0 +1,8 @@
+CAO 23, 24, 25 pasiskaityti / pasidartyti - šitai atlikinėsime per ateinančias kelias dienas
+
+Roko užduotis (nebūtina, pasimėginti savo jėgas):
+  sukurti interface krepšinio komandų:
+    atvaizduoti visų komandų korteles (galite papildyti duomenis img url)
+    sukurti formą (html), kurioje galima būtų suvesti naujos komandos info ir ją pateikus būtų sukuriama nauja komanda (ir ekrane ir json-server)
+    pridėti ekrane rodomų kortelių trinimą (ir iš ekrano ir iš json-server)
+    edit kažkokį jeigu labai jau nori (paprastą pažymėjimą arba full on edit)
