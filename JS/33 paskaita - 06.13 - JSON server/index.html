@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>33 paskaita - JSON server</title>
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section>
+      <h1>JSON server</h1>
+      <p>
+        JSON serveris yra NPM (Node Package Manager) paketas, kurio pagalba galime susikurti lokalų API serverį. Šiame serveryje turėti savo susikurtus duomenis, kurie privalo būti JSON faile, JSON formatu. Pasileidus JSON serverį naudojant tą JSON failą su duomenimis, galėsime į jį (serverį) kreiptis su Fetch užklausomis ir siūsti/gauti/redaguoti/trinti jame esančius duomenis.
+      </p>
+      <h4>Tam, kad galėtume naudotis JSON serveriu reikia:</h4>
+      <ol>
+        <li>npm (įsirašo kartu su Node'u)</li>
+        <li>įsirašyti json-server globaliai</li>
+        <li>susikurti JSON failą su tinkama duomenų struktūra</li>
+        <li>pasileisti JSON failą su json-server komanda (json-server data.json)</li>
+      </ol>
+      <h3>JSON server Routes</h3>
+      <p>*kiekvienas duomenų laukas (dlName) gauna savo route'us</p>
+      <ul>
+        <li>GET dlName - gauna visus dlName esančius duomenis</li>
+        <li>GET dlName/id - gauna dlName esantį specifinį duomenį pagal ID</li>
+        <li>POST dlName - papildo dlName esančius duomenis nauju duomenimi</li>
+        <li>PUT dlName/id - redaguoja dlName esantį duomenį pagal ID</li>
+        <li>PATCH dlName/id - redaguoja dlName esantį duomenį pagal ID</li>
+        <li>DELETE dlName/id  - trina iš dlName esantį duomenį pagal ID</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Terminal</h2>
+      <h3>Terminal commands</h3>
+      <ul>
+        <li>ls - list files - išvardina failus/aplankalus esančius dabartinėje direktorijoje (mac/linux)</li>
+        <li>dir - directories - išvardina failus/aplankalus esančius dabartinėje direktorijoje (windows)</li>
+        <li>cd - change directory - skirta naviguotis tarp aplankalų</li>
+        <li>clear - išvalo komandines eilutės vaizdą (ar kažkas tokios)</li>
+        <li>extra stuff
+          <ul>
+            <li>TAB - užbaigia komandinę eilutę arba pasiūlo galimus užbaigimus</li>
+            <li>CTRL C - atšaukia dabartinę komandą/veiksmą/eilutę...</li>
+            <li>ARROW UP/DOWN - vaikšto per komandinės eilutės istoriją</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Terminal Navigation</h3>
+      <ul>
+        <li>/ - projekto/sistemos pradžia</li>
+        <li>./ - niekur (lieki toje pačioje vietoje)</li>
+        <li>../ - žingsnis per aplankalus atgal</li>
+        <li>- - grįžti į buvusį aplankalą (iš kurio tiką išėjai (tarsi CTRL Z))</li>
+      </ul>
+    </section>
+    <section></section>
+  </main>
+  <footer></footer>
+</body>
+</html>

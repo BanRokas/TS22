@@ -1,0 +1,35 @@
+{
+  "krepsinioKomandos":[
+    {
+      "id": "1",
+      "pavadinimas": "Žalgiris",
+      "salis": "Lietuva",
+      "biudzetas": 11000000,
+      "cempionoTitulas": true
+    },{
+      "id": "2",
+      "pavadinimas": "Rytas",
+      "salis": "Lietuva",
+      "biudzetas": 3500000,
+      "cempionoTitulas": true
+    },{
+      "id": "3",
+      "pavadinimas": "Fenerbahçe",
+      "salis": "Turkija",
+      "biudzetas": 20000000,
+      "cempionoTitulas": true
+    },{
+      "id": "4",
+      "pavadinimas": "Real Madrid",
+      "salis": "Ispanija",
+      "biudzetas": 25000000,
+      "cempionoTitulas": true
+    }
+  ],
+  "zaidejai":[
+    {},{},{}
+  ],
+  "rungtynes":[
+    {},{},{},{},{}
+  ]
+}
