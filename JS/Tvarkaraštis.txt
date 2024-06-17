@@ -21,15 +21,15 @@
   32 paskaita - 06.12 - JSON ir Fetch
   33 paskaita - 06.13 - JSON server
   34 paskaita - 06.14 - Minkštieji įgūdžiai
-8 savaitė: Async, CRUD, Recursion, Praktika
-  35 paskaita - 06.17 - 
-  36 paskaita - 06.18 - 
-  37 paskaita - 06.19 - 
-  38 paskaita - 06.20 - 
+8 savaitė:
+  35 paskaita - 06.17 - Praktika
+  36 paskaita - 06.18 - CRUD
+  37 paskaita - 06.19 - Async, Recursion
+  38 paskaita - 06.20 - Praktika
   39 paskaita - 06.21 - Minkštieji įgūdžiai
-9 savaitė: 
-  40 paskaita - 06.25 - 
-  41 paskaita - 06.26 - 
-  42 paskaita - 06.27 - 
-  43 paskaita - 06.28 - Atsiskaitymas?
+9 savaitė:
+  40 paskaita - 06.25 - Praktika
+  41 paskaita - 06.26 - Praktika
+  42 paskaita - 06.27 - Ruošimasis atsiskaitymui
+  43 paskaita - 06.28 - JS Atsiskaitymas
 10 savaitė: 
