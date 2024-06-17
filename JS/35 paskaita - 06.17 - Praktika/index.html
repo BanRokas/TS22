@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>35 paskaita - Praktika</title>
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section id="games"> <!-- CRuD -->
+      <h2>Video žaidimai</h2>
+      <h3>Pridėti žaidimą</h3>
+      <form>
+        <div>
+          <label for="name">Pavadinimas</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="photo">Nuotrauka</label>
+          <input type="url" name="photo" id="photo">
+        </div>
+        <div>
+          <label for="description">Aprašymas</label>
+          <textarea name="description" id="description"></textarea>
+        </div>
+        <div>
+          <label for="releaseDate">Leidimo data</label>
+          <input type="date" name="releaseDate" id="releaseDate">
+        </div>
+        <div>
+          <label for="developer">Kūrėjas</label>
+          <input type="text" name="developer" id="developer">
+        </div>
+        <div>
+          <label for="platform">Platforma</label>
+          <select name="platform" id="platform">
+            <option value="pc">PC</option>
+            <option value="xbox">Xbox</option>
+            <option value="ps">PS</option>
+            <option value="switch">Switch</option>
+          </select>
+        </div>
+        <div>
+          <label for="genres">Žanrai</label>
+          <input type="text" name="genres" id="genres">
+        </div>
+        <input type="submit" value="Kurti žaidimą">
+      </form>
+      <h3>Visi žaidimai</h3>
+      <div>
+        <div class="gameCard">
+          <h3>Pavadinimas</h3>
+          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0a8e28653c86e9e66867379ccc350ee70284a7f5-1920x1080.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officiis eos, facilis deserunt nam ipsa quia culpa alias a voluptates modi, doloribus adipisci. Illo at dolorem sunt, voluptates ipsa sequi.</p>
+          <span>leidimo data</span><br>
+          <span>kurejas</span><br>
+          <span>platforma</span><br>
+          <span>zanrai</span>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+  </main>
+  <footer></footer>
+</body>
+</html>
