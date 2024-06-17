@@ -4,6 +4,7 @@ export default class Calculator{
     this.memory = null; // skaičius saugomas atmintyje
     this.visual = '0'; // skaičius rodomas ekrane
     this.action = null; // veiksmas, kurį norime atlikti su abiem
+    this.lastAction = null;
   }
 
   renderVisual(){
@@ -19,16 +20,18 @@ export default class Calculator{
     } else {
       this.visual = (this.visual + nr).toString();
     }
+    this.lastAction = 'addNumber';
     this.renderVisual();
   }
   addAction(symbol){
-    if(this.action){
+    if(this.action && this.lastAction !== 'addAction'){
       this.calculate();
     } else {
       this.memory = this.visual;
       this.visual = '0';
     }
     this.action = symbol;
+    this.lastAction = 'addAction';
   }
   calculate(){
     if(this.action === 'sum'){
@@ -58,6 +61,7 @@ export default class Calculator{
     this.memory = this.visual;
     this.renderVisual();
     this.action = null;
+    this.lastAction = 'calculate';
   }
   delete(what){
     if(what === 'visual'){
@@ -70,6 +74,7 @@ export default class Calculator{
       this.visual = this.visual.slice(0,-1);
     }
     this.renderVisual();
+    this.lastAction = 'delete';
   }
   toggleSign(){
     if(this.visual.at(0) !== '-'){
@@ -78,6 +83,7 @@ export default class Calculator{
       this.visual = this.visual.slice(1);
     }
     this.renderVisual();
+    this.lastAction = 'toggleSign';
   }
 }
 /* yra dar bėda kai:
