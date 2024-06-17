@@ -24,8 +24,8 @@
 8 savaitė:
   35 paskaita - 06.17 - Praktika
   36 paskaita - 06.18 - CRUD
-  37 paskaita - 06.19 - Async, Recursion
-  38 paskaita - 06.20 - Praktika
+  37 paskaita - 06.19 - Async, Recursion, RegExp
+  38 paskaita - 06.20 - AI panaudojimas programavime
   39 paskaita - 06.21 - Minkštieji įgūdžiai
 9 savaitė:
   40 paskaita - 06.25 - Praktika
