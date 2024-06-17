@@ -1,5 +1,5 @@
 export default class GameCard{
-  constructor({id, name, photo, description, releaseDate, developer, platform, genres}){
+  constructor({ id, name, photo, description, releaseDate, developer, platform, genres, checked }){
     this.id = id;
     this.name = name;
     this.photo = photo;
@@ -9,6 +9,7 @@ export default class GameCard{
     this.developer = developer;
     this.platform = platform;
     this.genres = genres;
+    this.checked = checked;
     return this.render();
   }
   render(){
@@ -49,7 +50,24 @@ export default class GameCard{
       // REIKIA confirmation
     });
 
-    cardDiv.append(heading, image, par, span1, br1, span2, br2, span3, br3, span4, br4, delButton);
+    // miniUpdate
+    const statusButton = document.createElement('button');
+    statusButton.textContent = this.checked ? 'keisti į ne' : 'keisti į taip';
+    statusButton.addEventListener('click', () => {
+      // ekrane
+      this.checked = !this.checked;
+      statusButton.textContent = this.checked ? 'keisti į ne' : 'keisti į taip';
+      // duomenyse
+      fetch(`http://localhost:3000/videoGames/${this.id}`,{
+        method: "PATCH",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body: JSON.stringify({ checked: this.checked })
+      });
+    });
+
+    cardDiv.append(heading, image, par, span1, br1, span2, br2, span3, br3, span4, br4, delButton, statusButton);
     return cardDiv;
   }
 }

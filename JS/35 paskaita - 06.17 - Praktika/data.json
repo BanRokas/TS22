@@ -11,7 +11,8 @@
       "genres": [
         "MOBA",
         "RPG"
-      ]
+      ],
+      "checked": false
     },
     {
       "id": "2",
@@ -25,7 +26,8 @@
         "MMORPG",
         "Action",
         "Fantasy"
-      ]
+      ],
+      "checked": true
     }
   ]
 }
