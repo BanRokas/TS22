@@ -36,8 +36,20 @@ export default class GameCard{
     const br1 = document.createElement('br');
     const br2 = document.createElement('br');
     const br3 = document.createElement('br');
+    const br4 = document.createElement('br');
 
-    cardDiv.append(heading, image, par, span1, br1, span2, br2, span3, br3, span4);
+    // Delete
+    const delButton = document.createElement('button');
+    delButton.textContent = 'Trinti';
+    delButton.addEventListener('click', () => {
+      cardDiv.remove();
+      fetch(`http://localhost:3000/videoGames/${this.id}`, {
+        method: "DELETE"
+      });
+      // REIKIA confirmation
+    });
+
+    cardDiv.append(heading, image, par, span1, br1, span2, br2, span3, br3, span4, br4, delButton);
     return cardDiv;
   }
 }
