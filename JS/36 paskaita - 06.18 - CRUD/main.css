@@ -1,3 +1,11 @@
+body{
+  height: 500vh;
+}
+/* neleidžia scroll'inti body viduje kol yra atidarytas dialog modalas */
+body:has(dialog[open]){
+  overflow: hidden;
+}
+
 #games{
   > h2{
     text-align: center;

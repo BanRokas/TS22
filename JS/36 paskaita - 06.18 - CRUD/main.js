@@ -44,3 +44,41 @@ document
 
     e.target.reset();
   });
+
+// mokinamės modalą su dialog
+
+// atidarome modalą
+document
+  .querySelector('#modalExampleButton')
+  .addEventListener('click', () => {
+    document
+      .querySelector('#modalExample')
+      .showModal();
+  });
+
+// uždarome modalą su mygtuku
+document
+  .querySelector('#modalExample > button')
+  .addEventListener('click', e => {
+    e.target.parentElement.close();
+  });
+
+// uždarome modalą spaudžiant už jo ribų
+document
+  .querySelector('#modalExample')
+  .addEventListener('click', e => {
+    const dialogDimensions = e.target.getBoundingClientRect();
+    // console.log(dialogDimensions);
+    // console.log(e);
+    if(e.target.attributes.open){
+      if(
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom 
+      ){
+        // console.log(e.target.attributes.open);
+        e.target.close();
+      }
+    }
+  });
