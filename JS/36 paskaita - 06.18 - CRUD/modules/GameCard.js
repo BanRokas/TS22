@@ -1,4 +1,5 @@
 import DeleteConfirmationModal from "./DeleteConfirmationModal.js";
+import EditGameCardModal from "./EditGameCardModal.js";
 
 export default class GameCard{
   constructor({ id, name, photo, description, releaseDate, developer, platform, genres, checked }){
@@ -12,6 +13,7 @@ export default class GameCard{
     this.platform = platform;
     this.genres = genres;
     this.checked = checked;
+
     return this.render();
   }
   render(){
@@ -93,9 +95,16 @@ export default class GameCard{
       });
     });
 
-    cardDiv.append(heading, image, par, span1, br1, span2, br2, span3, br3, span4, br4, delButton, statusButton);
+    // edit
+    const editButton = document.createElement('button');
+    editButton.textContent = 'Redaguoti';
+    editButton.addEventListener('click', () => {
+      const editFormModalEl = new EditGameCardModal(this.id, this.name, this.photo, this.description, this.releaseDate, this.developer, this.platform, this.genres, this.checked,);
+      cardDiv.appendChild(editFormModalEl);
+      editFormModalEl.showModal();
+    });
+
+    cardDiv.append(heading, image, par, span1, br1, span2, br2, span3, br3, span4, br4, delButton, statusButton, editButton);
     return cardDiv;
   }
 }
-
-

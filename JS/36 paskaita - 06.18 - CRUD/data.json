@@ -15,7 +15,6 @@
       "checked": false
     },
     {
-      "id": "2",
       "name": "World of Warcraft",
       "photo": "https://assets2.ignimgs.com/2014/02/14/wow-boss-compilation-wallpaperjpg-dc3b63.jpg",
       "description": "World of Warcraft is a massively multiplayer online role-playing game released in 2004 by Blizzard Entertainment.",
@@ -27,7 +26,35 @@
         "Action",
         "Fantasy"
       ],
-      "checked": true
+      "checked": false,
+      "id": "2"
+    },
+    {
+      "name": "Bandymas asd",
+      "photo": "https://as.com",
+      "description": "haa keiciasi kazkas asdasdasdasd",
+      "releaseDate": "2024-05-30",
+      "developer": "ha",
+      "platform": "PC",
+      "genres": [
+        "irl",
+        "notIrl"
+      ],
+      "checked": false,
+      "id": "1718695839563"
+    },
+    {
+      "id": "1718695945983",
+      "name": "aaa",
+      "photo": "",
+      "description": "",
+      "releaseDate": "",
+      "developer": "",
+      "platform": "PC",
+      "genres": [
+        ""
+      ],
+      "checked": false
     }
   ]
 }

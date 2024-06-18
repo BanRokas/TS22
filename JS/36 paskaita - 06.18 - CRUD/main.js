@@ -27,7 +27,8 @@ document
       releaseDate: ete.releaseDate.value,
       developer: ete.developer.value,
       platform: ete.platform.value,
-      genres: ete.genres.value.split(', ')
+      genres: ete.genres.value.split(', '),
+      checked: false
     };
     // console.log(gameData);
 
