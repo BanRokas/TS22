@@ -1,0 +1,34 @@
+#games{
+  > h2{
+    text-align: center;
+    font-size: 3rem;
+  }
+  > h3{
+    text-align: center;
+  }
+  > div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 50px;
+
+    > .gameCard{
+      width: 300px;
+      /* height: ; */
+      border: 1px solid black;
+      padding: 20px 10px;
+
+      > h3{
+        margin-top: 0;
+        text-align: center;
+      }
+      > p{
+        text-align: justify;
+      }
+      > img{
+        width: 100%;
+      }
+    }
+  }
+}

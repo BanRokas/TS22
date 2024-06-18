@@ -1,0 +1,33 @@
+{
+  "videoGames": [
+    {
+      "id": "1",
+      "name": "League of Legends",
+      "photo": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0a8e28653c86e9e66867379ccc350ee70284a7f5-1920x1080.jpg",
+      "description": "League of Legends, commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games. Inspired by Defense of the Ancients, a custom map for Warcraft III, Riot's founders sought to develop a stand-alone game in the same genre.",
+      "releaseDate": "2009-10-27",
+      "developer": "Riot Games",
+      "platform": "PC",
+      "genres": [
+        "MOBA",
+        "RPG"
+      ],
+      "checked": false
+    },
+    {
+      "id": "2",
+      "name": "World of Warcraft",
+      "photo": "https://assets2.ignimgs.com/2014/02/14/wow-boss-compilation-wallpaperjpg-dc3b63.jpg",
+      "description": "World of Warcraft is a massively multiplayer online role-playing game released in 2004 by Blizzard Entertainment.",
+      "releaseDate": "2004-11-23",
+      "developer": "Blizzard Entertainment",
+      "platform": "PC",
+      "genres": [
+        "MMORPG",
+        "Action",
+        "Fantasy"
+      ],
+      "checked": true
+    }
+  ]
+}
