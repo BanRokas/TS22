@@ -1,3 +1,5 @@
+import DeleteConfirmationModal from "./DeleteConfirmationModal.js";
+
 export default class GameCard{
   constructor({ id, name, photo, description, releaseDate, developer, platform, genres, checked }){
     this.id = id;
@@ -43,11 +45,35 @@ export default class GameCard{
     const delButton = document.createElement('button');
     delButton.textContent = 'Trinti';
     delButton.addEventListener('click', () => {
-      cardDiv.remove();
-      fetch(`http://localhost:3000/videoGames/${this.id}`, {
-        method: "DELETE"
-      });
+      console.log('bandome trinti');
+      
       // REIKIA confirmation
+      // kuriamas naujas modalas, kuris po to ištirnamas
+      const confirmModalEl = new DeleteConfirmationModal(cardDiv, this.id);
+      document.body.appendChild(confirmModalEl);
+      confirmModalEl.showModal();
+
+      // šitas būdas negerai, nes dedasi daugelis event'ų tiem patiem mygtukam
+      // reikėtų naikinti mygtukams uždėtas funkcijas su kiekvienu iškvietimu
+      // document
+      //   .querySelector('#deleteConfirmation')
+      //   .showModal();
+      // document
+      //   .querySelector('#deleteCancel')
+      //   .addEventListener('click', e => {
+      //     e.target.parentElement.close();
+      //   });
+      // document
+      //   .querySelector('#deleteConfirm')
+      //   .addEventListener('click', e => {
+      //     e.target.parentElement.close();
+      //     console.log(this.id);
+      //     console.log('hello? triname?');
+      //     cardDiv.remove();
+      //     fetch(`http://localhost:3000/videoGames/${this.id}`, {
+      //       method: "DELETE"
+      //     });
+      //   });
     });
 
     // miniUpdate
@@ -71,3 +97,5 @@ export default class GameCard{
     return cardDiv;
   }
 }
+
+
