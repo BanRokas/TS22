@@ -1,2 +1,10 @@
 Modalas:
   https://youtu.be/ywtkJkxJsdg - web dev simplified
+
+Daryti CAO 23 24 25
+Bandyti daryti buvusias užduotis ir atvaizduoti jų informaciją ekrane, talpinti duomenis JSON, juos redaguoti/trinti/pildyti su UI pagalba
+
+Galima pasiruošti rytojui pasiskaitinėjant kas yra:
+  Rekursija (funkcijos kviečia pačios save)
+  Regex (regular expression - aprašomoji sintaksė)
+  Async (Promise, async func, await, try catch block)
