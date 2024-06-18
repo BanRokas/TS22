@@ -99,10 +99,20 @@ export default class GameCard{
     const editButton = document.createElement('button');
     editButton.textContent = 'Redaguoti';
     editButton.addEventListener('click', () => {
-      const editFormModalEl = new EditGameCardModal(this.id, this.name, this.photo, this.description, this.releaseDate, this.developer, this.platform, this.genres, this.checked,);
+      const editFormModalEl = new EditGameCardModal(this.id, this.name, this.photo, this.description, this.releaseDate, this.developer, this.platform, this.genres, this.checked, stupidFunction);
       cardDiv.appendChild(editFormModalEl);
       editFormModalEl.showModal();
     });
+
+    const stupidFunction = (editedStuff) => {
+      heading.textContent = editedStuff.name;
+      image.src = editedStuff.photo;
+      par.textContent = editedStuff.description;
+      span1.textContent = `Leidimo data: ${editedStuff.releaseDate}`;
+      span2.textContent = `Kūrėjas: ${editedStuff.developer}`;
+      span3.textContent = `Platforma: ${editedStuff.platform}`;
+      span4.textContent = `Žanrai: ${editedStuff.genre ? editedStuff.genre.join(' | ') : ''}`;
+    }
 
     cardDiv.append(heading, image, par, span1, br1, span2, br2, span3, br3, span4, br4, delButton, statusButton, editButton);
     return cardDiv;

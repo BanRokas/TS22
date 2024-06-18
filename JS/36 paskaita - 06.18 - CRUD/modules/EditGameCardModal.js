@@ -113,7 +113,7 @@ export default class EditGameCardModal {
         releaseDate: ete.releaseDateModal.value,
         developer: ete.developerModal.value,
         platform: ete.platformModal.value,
-        genres: ete.genresModal.value.split(', '),
+        genres: ete.genresModal.value?.split(', '),
         checked: this.checked
       };
       console.log(editedCard);
@@ -125,7 +125,8 @@ export default class EditGameCardModal {
         body: JSON.stringify(editedCard)
       });
 
-      window.location.reload();
+      // window.location.reload();
+      this.editFunc(editedCard);
 
       dialogEl.remove();
     });
