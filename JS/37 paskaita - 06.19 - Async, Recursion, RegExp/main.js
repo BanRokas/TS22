@@ -50,3 +50,20 @@ const fancyPazadas = (time, data) => {
     console.log('finally vykdosi visais atvejais.');
   }
 })();
+
+
+// Recursion
+const grazinkSkaiciu = (sk, iteration) => {
+  const randomSkaicius = Math.ceil(Math.random()*sk)*2;
+  iteration++;
+  if(randomSkaicius > 1_000){
+    return { // 1
+      skaicius: randomSkaicius,
+      iteracija: iteration
+    }
+  } else {
+    return grazinkSkaiciu(randomSkaicius, iteration); // 2
+  }
+}
+
+console.log(grazinkSkaiciu(5, 1));
