@@ -67,3 +67,37 @@ const grazinkSkaiciu = (sk, iteration) => {
 }
 
 console.log(grazinkSkaiciu(5, 1));
+
+
+// Regex
+
+const string = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi, veritatis pariatur natus eos voluptates numquam aspernatur neque perspiciatis harum illo. Accusamus nostrum, possimus excePturi esse officiis ratione neque in blanditiis ex perferendis nemo nisi fugit tempore, laborum necessitatibus corrupti. Autem iusto tenetur suscipit dolore neque, ipsa quaerat animi provident.`;
+
+const reg = /[A-Z]\w*/g;
+const matched = string.match(reg);
+console.log(matched);
+
+const regPass = 
+new RegExp("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@$!%*?#&])[A-Za-z0-9@$!%*#?&]{8,}$");
+            // ^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$
+console.log(regPass);
+// console.log(regPass.test('TinkaMas123!'));
+// console.log('TinkaMas123!'.match(regPass));
+const checkPassword = (password) => {
+  // console.log(password);
+  // return password.match(regPass);
+  return regPass.test(password);
+}
+console.log(checkPassword('silpnas'));
+console.log(checkPassword('stiprus'));
+console.log(checkPassword('keletasSimboliu'));
+console.log(checkPassword('StrongPass1#'));
+
+const password = "StrongPass1!";
+const pattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+if (pattern.test(password)) {
+  console.log("Password is valid.");
+} else {
+  console.log("Password is invalid.");
+}

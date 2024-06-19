@@ -61,7 +61,27 @@
       </p>
     </section>
     <section> <!-- Regural Expression -->
-
+      <h2><a href="https://regexr.com/" target="_blank">Regural Expression (regex)</a></h2>
+      <p>
+        Regural Expression arba kitaip tariant regex yra paternas/šablonas/simbolių seka, skirta išreikšti tam tikrą tekstą.
+      </p>
+      <h3>Regex simboliai</h3>
+      <ul>
+        <li>[] - šitų skliaustelių viduje gali būti aprašyta simbolių klasės, tuos simbolius vardinant.</li>
+        <li>[a-e] - nurodo, kad galimi simboliai nuo a iki e (a b c d e)</li>
+        <li>{nuo, iki} - šitų skliaustelių viduje galima nurodyti nuo, iki skaičius, kurie nusakys minimalų ir maksimalų simbolių kiekį.</li>
+        <li>\ - escape simbolis nurodo, kad sekantis simbolis yra tiesiog tekstas ir neturi kažkokios specialios reikšmės</li>
+        <li>. - visi simboliai apart eilučių lūžio</li>
+        <li>() - šitų skliaustelių viduje gali būti aprašytos simbolių grupės.</li>
+        <li>| - veikia kaip OR sąlyga. Reikia, kad atitiktų simboliai prieš arba už |.</li>
+        <li>...</li>
+      </ul>
+      <h3>Regex aprašymas JS'e</h3>
+      <ul>
+        <li>const reg = /regularExpression/;</li>
+        <li>const reg = new RegExp('regularExpression');</li>
+      </ul>
+      
     </section>
   </main>
   <footer></footer>
