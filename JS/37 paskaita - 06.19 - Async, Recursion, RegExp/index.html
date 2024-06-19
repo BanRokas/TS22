@@ -26,7 +26,33 @@
           </ul>
         </li>
       </ul>
-      
+      <h3>setTimeout</h3>
+      <p>
+        Yra funkcija, kuri įvykdo jai pateiktą funkciją po jai nurodyto laiko.
+      </p>
+      <h3>Promise</h3>
+      <p>
+        Rašant asinchroninį kodą yra kuriami pažadai (Promise).<br>
+        Promise'ai pažada grąžinti kažkokį atsakymą arba error'ą po kažkiek laiko (neaišku po kiek).<br>
+        Kreipimosi į Promise'ą metu, mes atsakymo dar neturime, jo turime laukti.
+      </p>
+      <h3>then catch finally</h3>
+      <p>
+        Pažado atsakymo galime laukti su Pažadas<b>.then()</b>. To .then() viduje rašome kodą, kuris kažką darys su Pažado atsakymu.<br>
+        Jeigu pažadas grąžina klaidą (error'ą) jį reikia pagauti ir kažką su juo nuveikti Pažadas.then()<b>.catch()</b> dalyje.<br>
+        Galiausiai galime vykdyti Pažadas.then().catch()<b>.finally()</b>, kuris vyksta tiek gaunant duomenis tiek gaunant klaidą.
+      </p>
+      <h3>Async ir await</h3>
+      <p>
+        Kitas būdas laukti Pažado atsakymo yra asinchroninės funkcijos viduje pasirašant await žodelį prieš kreipimasi į Pažadą.
+      </p>
+      <p>
+        Extra info: Async funkcijos grąžina pažadus.
+      </p>
+      <h3>Try Catch Finally</h3>
+      <p>
+        Kadangi async ir await neturi galimybės gaudyti (catch'inti) klaidų (error'ų), galima visą kodą sudėlioti į try{}catch(err){}finally{} kodo blokus. Kurie veikia panašiu principu kaip ir .then().catch().finally().
+      </p>
     </section>
     <section> <!-- Recursion -->
 
