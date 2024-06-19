@@ -1,0 +1,8 @@
+Persižiūrėti video (nebūtina):
+  https://www.youtube.com/watch?v=Q0alTGQ-lXk - recursion
+  https://www.youtube.com/watch?v=eiC58R16hb8 - JS veiksmų seka
+  https://www.youtube.com/watch?v=HyK_Q5rrcr4 - recursion CodingTrain challenge
+
+CAO:
+  Pamoka 20 - Async
+  Pamoka 27 - Regex
