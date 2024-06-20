@@ -1,0 +1,3 @@
+Praktikuotis programuot su AI tools'ais (mėgintis žiūrėtis kaip jie veikia ir pns.)
+
+Pabandyti naudojantis AI tools'ais padaryti taip, kad galima būtų keisti duomenų inStock reikšmę iš true į false ir atvirkščiai. Atnaujinimas matytūsi ir ekrane (be puslapio perkrovimo) ir duomenyse (JSON-server).
