@@ -1,15 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Wireless Bluetooth Headphones",
-      "category": "Electronics",
-      "price": 99.99,
-      "inStock": true,
-      "imageUrl": "https://example.com/products/headphones.jpg"
-    },
-    {
-      "id": 2,
+      "id": "2",
       "name": "Organic Green Tea",
       "category": "Groceries",
       "price": 4.99,
@@ -17,7 +9,7 @@
       "imageUrl": "https://example.com/products/green-tea.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Running Shoes",
       "category": "Sportswear",
       "price": 59.99,
@@ -25,7 +17,7 @@
       "imageUrl": "https://example.com/products/running-shoes.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Ergonomic Wireless Mouse",
       "category": "Electronics",
       "price": 29.99,
@@ -33,7 +25,7 @@
       "imageUrl": "https://example.com/products/wireless-mouse.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Classic Leather Wallet",
       "category": "Accessories",
       "price": 19.99,
@@ -41,7 +33,7 @@
       "imageUrl": "https://example.com/products/leather-wallet.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Organic Honey",
       "category": "Groceries",
       "price": 7.99,
@@ -49,7 +41,7 @@
       "imageUrl": "https://example.com/products/organic-honey.jpg"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Cotton T-Shirt",
       "category": "Clothing",
       "price": 14.99,
@@ -57,7 +49,7 @@
       "imageUrl": "https://example.com/products/cotton-tshirt.jpg"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Stainless Steel Water Bottle",
       "category": "Accessories",
       "price": 24.99,
@@ -65,7 +57,7 @@
       "imageUrl": "https://example.com/products/water-bottle.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Wireless Bluetooth Speaker",
       "category": "Electronics",
       "price": 49.99,
@@ -73,7 +65,7 @@
       "imageUrl": "https://example.com/products/bluetooth-speaker.jpg"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Organic Coffee",
       "category": "Groceries",
       "price": 9.99,
@@ -81,7 +73,7 @@
       "imageUrl": "https://example.com/products/organic-coffee.jpg"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Running Shorts",
       "category": "Sportswear",
       "price": 24.99,
@@ -89,7 +81,7 @@
       "imageUrl": "https://example.com/products/running-shorts.jpg"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Stylish Sunglasses",
       "category": "Accessories",
       "price": 34.99,
@@ -97,7 +89,7 @@
       "imageUrl": "https://example.com/products/sunglasses.jpg"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Wireless Bluetooth Earbuds",
       "category": "Electronics",
       "price": 79.99,
@@ -105,7 +97,7 @@
       "imageUrl": "https://example.com/products/earbuds.jpg"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Organic Oatmeal",
       "category": "Groceries",
       "price": 3.99,
@@ -113,7 +105,7 @@
       "imageUrl": "https://example.com/products/oatmeal.jpg"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Running Jacket",
       "category": "Sportswear",
       "price": 39.99,
@@ -121,7 +113,7 @@
       "imageUrl": "https://example.com/products/running-jacket.jpg"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Leather Belt",
       "category": "Accessories",
       "price": 19.99,
@@ -129,7 +121,7 @@
       "imageUrl": "https://example.com/products/leather-belt.jpg"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Wireless Bluetooth Keyboard",
       "category": "Electronics",
       "price": 39.99,
@@ -137,7 +129,7 @@
       "imageUrl": "https://example.com/products/wireless-keyboard.jpg"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Organic Almonds",
       "category": "Groceries",
       "price": 6.99,
@@ -145,7 +137,7 @@
       "imageUrl": "https://example.com/products/organic-almonds.jpg"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Running Socks",
       "category": "Sportswear",
       "price": 9.99,
@@ -153,7 +145,7 @@
       "imageUrl": "https://example.com/products/running-socks.jpg"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Leather Wallet",
       "category": "Accessories",
       "price": 29.99,
@@ -161,7 +153,7 @@
       "imageUrl": "https://example.com/products/leather-wallet.jpg"
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Wireless Bluetooth Mouse",
       "category": "Electronics",
       "price": 19.99,
@@ -169,7 +161,7 @@
       "imageUrl": "https://example.com/products/wireless-mouse.jpg"
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Organic Tea",
       "category": "Groceries",
       "price": 5.99,
@@ -177,7 +169,7 @@
       "imageUrl": "https://example.com/products/organic-tea.jpg"
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Running Hat",
       "category": "Sportswear",
       "price": 14.99,
@@ -185,7 +177,7 @@
       "imageUrl": "https://example.com/products/running-hat.jpg"
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Leather Belt",
       "category": "Accessories",
       "price": 24.99,
@@ -193,7 +185,7 @@
       "imageUrl": "https://example.com/products/leather-belt.jpg"
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Wireless Bluetooth Speaker",
       "category": "Electronics",
       "price": 49.99,
@@ -201,7 +193,7 @@
       "imageUrl": "https://example.com/products/bluetooth-speaker.jpg"
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Organic Coffee",
       "category": "Groceries",
       "price": 9.99,
@@ -209,7 +201,7 @@
       "imageUrl": "https://example.com/products/organic-coffee.jpg"
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Running Shorts",
       "category": "Sportswear",
       "price": 24.99,
@@ -217,7 +209,7 @@
       "imageUrl": "https://example.com/products/running-shorts.jpg"
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Stylish Sunglasses",
       "category": "Accessories",
       "price": 34.99,
@@ -225,7 +217,7 @@
       "imageUrl": "https://example.com/products/sunglasses.jpg"
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Wireless Bluetooth Earbuds",
       "category": "Electronics",
       "price": 79.99,
@@ -233,7 +225,7 @@
       "imageUrl": "https://example.com/products/earbuds.jpg"
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Organic Oatmeal",
       "category": "Groceries",
       "price": 3.99,
@@ -241,7 +233,7 @@
       "imageUrl": "https://example.com/products/oatmeal.jpg"
     },
     {
-      "id": 31,
+      "id": "31",
       "name": "Running Jacket",
       "category": "Sportswear",
       "price": 39.99,
@@ -249,7 +241,7 @@
       "imageUrl": "https://example.com/products/running-jacket.jpg"
     },
     {
-      "id": 32,
+      "id": "32",
       "name": "Leather Belt",
       "category": "Accessories",
       "price": 19.99,
@@ -257,7 +249,7 @@
       "imageUrl": "https://example.com/products/leather-belt.jpg"
     },
     {
-      "id": 33,
+      "id": "33",
       "name": "Wireless Bluetooth Keyboard",
       "category": "Electronics",
       "price": 39.99,
@@ -265,7 +257,7 @@
       "imageUrl": "https://example.com/products/wireless-keyboard.jpg"
     },
     {
-      "id": 34,
+      "id": "34",
       "name": "Organic Almonds",
       "category": "Groceries",
       "price": 6.99,
@@ -273,7 +265,7 @@
       "imageUrl": "https://example.com/products/organic-almonds.jpg"
     },
     {
-      "id": 35,
+      "id": "35",
       "name": "Running Socks",
       "category": "Sportswear",
       "price": 9.99,
@@ -281,12 +273,44 @@
       "imageUrl": "https://example.com/products/running-socks.jpg"
     },
     {
-      "id": 36,
+      "id": "36",
       "name": "Leather Wallet",
       "category": "Accessories",
       "price": 29.99,
       "inStock": true,
       "imageUrl": "https://example.com/products/leather-wallet.jpg"
+    },
+    {
+      "id": "333a",
+      "name": "Lemon Gym",
+      "category": "Monkey",
+      "price": "0.03",
+      "imageUrl": "https://cdn.prod.website-files.com/6143afec68f555387049efb3/65e0c9b7b12eff1195312fd9_image8_476f9e62920ba4afffffebe6723cf265_800.png",
+      "inStock": false
+    },
+    {
+      "id": "7f28",
+      "name": "Lemon Gym",
+      "category": "Monkey",
+      "price": "0.02",
+      "inStock": true,
+      "imageUrl": "https://cdn.prod.website-files.com/6143afec68f555387049efb3/65e0c9b7b12eff1195312fd9_image8_476f9e62920ba4afffffebe6723cf265_800.png"
+    },
+    {
+      "id": "1ff3",
+      "name": "China",
+      "category": "Monkey",
+      "price": "-0.01",
+      "inStock": true,
+      "imageUrl": "https://cdn.prod.website-files.com/6143afec68f555387049efb3/65e0c9b7b12eff1195312fd9_image8_476f9e62920ba4afffffebe6723cf265_800.png"
+    },
+    {
+      "id": "2334",
+      "name": "Stars",
+      "category": "Monkeys",
+      "price": "0.02",
+      "inStock": true,
+      "imageUrl": "https://cdn.prod.website-files.com/6143afec68f555387049efb3/65e0c9b7b12eff1195312fd9_image8_476f9e62920ba4afffffebe6723cf265_800.png"
     }
   ]
 }
