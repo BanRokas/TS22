@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="./main.css">
   <script type="module" src="./main.js"></script>
 </head>
+
 <body>
   <header></header>
   <main>
@@ -28,16 +30,20 @@
       <h2><a href="https://chatgpt.com/" target="_blank">Chat GPT</a></h2>
       <p>
         Chat GTP 4.0 yra dalinai nemokamas įrankis suteikiantis limituotą atsakymų kiekį dienoje.<br>
-        Jis jau yra išbandytas daugelio programuotojų, gyvuojantis ilgą laiką, tai galimai niekur nepradings ir bus toliau tobulinamas/naujinamas ir naudojamas.
+        Jis jau yra išbandytas daugelio programuotojų, gyvuojantis ilgą laiką, tai galimai niekur nepradings ir bus
+        toliau tobulinamas/naujinamas ir naudojamas.
       </p>
       <p>
-        Tam, kad pasinaudoti šiuo įrankiu, reikia nueiti į https://chatgpt.com/auth/login puslapį, prisijungti (galima su google paskyra) ir kai būsite nukeltas į pokalbio puslapį/lauką ten galima užduoti klausimus ir sulaukti atsakymų.
+        Tam, kad pasinaudoti šiuo įrankiu, reikia nueiti į https://chatgpt.com/auth/login puslapį, prisijungti (galima
+        su google paskyra) ir kai būsite nukeltas į pokalbio puslapį/lauką ten galima užduoti klausimus ir sulaukti
+        atsakymų.
       </p>
     </section>
     <section> <!-- GitHub Copilot -->
       <h2><a href="https://code.visualstudio.com/docs/copilot/overview" target="_blank">GitHub Copilot</a></h2>
       <p>
-        GitHub Copilot gali būti naudojamas kaip papildinys (extension) kokiame nors kodo editoriuje arba kaip įrankis GitHub puslapyje.
+        GitHub Copilot gali būti naudojamas kaip papildinys (extension) kokiame nors kodo editoriuje arba kaip įrankis
+        GitHub puslapyje.
       </p>
       <p>
         Jeigu jis yra naudojamas kaip papildinys VisualStudioCode, jis atlieka įvairius dalykus:
@@ -51,14 +57,49 @@
       </ul>
       <p>Video for more info: <a href="https://www.youtube.com/watch?v=jXp5D5ZnxGM" target="_blank">Video</a></p>
       <p>
-        Norint naudotis GitHub Copilot reikia turėti VisualStudioCode ir GitHub paskyrą. Nuėjus į šitą nuorodą: https://education.github.com/discount_requests/application ir užpildžius formą galima gauti nemokamą GitHub Copilot licenciją. Formoje reikės pateikti: vardą, pavardę, el. paštą, mokymosi įstaigos pavadinimą, mokymosi įstaigos el. paštą, dokumentą nurodantį, kad esi studentas.<br>
-        Kol forma yra aplikuojama, galima gauti laikiną nemokamą GitHub Copilot licenziją užpildant formą, kurioje nurodai: gyvenamosios vietos informaciją, kortelės informaciją (mokėjimui, kurį galima bus atšaukti prieš pasibaigiant nemokamai licencijai) ir savo kontaktinę informaciją.
+        Norint naudotis GitHub Copilot reikia turėti VisualStudioCode ir GitHub paskyrą. Nuėjus į šitą nuorodą:
+        https://education.github.com/discount_requests/application ir užpildžius formą galima gauti nemokamą GitHub
+        Copilot licenciją. Formoje reikės pateikti: vardą, pavardę, el. paštą, mokymosi įstaigos pavadinimą, mokymosi
+        įstaigos el. paštą, dokumentą nurodantį, kad esi studentas.<br>
+        Kol forma yra aplikuojama, galima gauti laikiną nemokamą GitHub Copilot licenziją užpildant formą, kurioje
+        nurodai: gyvenamosios vietos informaciją, kortelės informaciją (mokėjimui, kurį galima bus atšaukti prieš
+        pasibaigiant nemokamai licencijai) ir savo kontaktinę informaciją.
       </p>
     </section>
-    <section>
-
+    <section id="crud">
+      <div>
+        <h3>Add a Product</h3>
+        <form id="productForm">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+          </div>
+          <div>
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+          </div>
+          <div>
+            <label for="inStock">In Stock:</label>
+            <input type="checkbox" id="inStock" name="inStock">
+          </div>
+          <div>
+            <label for="imageUrl">Image URL:</label>
+            <input type="url" id="imageUrl" name="imageUrl" required>
+          </div>
+          <input type="submit" value="Add Product">
+        </form>
+      </div>
+      <div>
+        <h3>Prekės</h3>
+        <div id="products"></div>
+      </div>
     </section>
   </main>
   <footer></footer>
 </body>
+
 </html>

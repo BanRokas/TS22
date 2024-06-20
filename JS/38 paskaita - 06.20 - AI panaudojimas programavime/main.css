@@ -1,0 +1,91 @@
+#crud {
+
+  >div {
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 20px auto;
+
+    >h3 {
+      color: #333;
+    }
+  }
+
+  >div:nth-child(1) {
+    >form#productForm {
+      div {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="url"] {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+    }
+
+  }
+  > div:nth-child(2){
+
+    > #products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      
+      > .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fff;
+    
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+    
+        h3 {
+          color: #333;
+          padding: 10px;
+        }
+    
+        p {
+          padding: 0 10px 10px;
+          margin: 0;
+          color: #666;
+        }
+      }
+    }
+  }
+}
