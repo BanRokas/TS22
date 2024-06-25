@@ -1,3 +1,5 @@
+import MovieInfoModal from "./MovieInfoModal.js";
+
 export default class MovieCard{
   constructor(props){
     this.props = props;
@@ -28,6 +30,8 @@ export default class MovieCard{
 
     const trailerInfoDiv = document.createElement('div');
     const youtubeLink = document.createElement('a');
+    youtubeLink.setAttribute('href', this.props.videos.trailers[0]);
+    youtubeLink.setAttribute('target', '_blank');
     const playIcon = document.createElement('i');
     playIcon.classList.add('bi', 'bi-play-fill');
     const youtubeLinkText = document.createElement('span');
@@ -36,6 +40,15 @@ export default class MovieCard{
     const infoBox = document.createElement('i');
     infoBox.classList.add('bi', 'bi-info-circle');
     trailerInfoDiv.append(youtubeLink, infoBox);
+
+    infoBox.addEventListener('click', () => {
+      // sukurti modala su naujos klases pagalba
+      const modal = new MovieInfoModal(this.props);
+      // ideti modala i ekrana (nesvarbu kur)
+      document.body.appendChild(modal);
+      // atvaizduoti modala
+      modal.showModal();
+    });
 
     cardDiv.append(thumbnail, imdbDiv, title, addToWatchlist, trailerInfoDiv);
     return cardDiv;
