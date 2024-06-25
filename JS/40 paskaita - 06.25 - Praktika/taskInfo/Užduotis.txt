@@ -1,0 +1,14 @@
+Pabandyti atkartoti IMDB puslapio dalis, kurios atvaizduotos mainPage.PNG ir modal_IMDB.PNG; moviePage.PNG nebūtina.
+
+// Read
+Pradiniame puslapyje turi būti header, body su filmų kortelėmis, kurios atvaizduotos kaip karuselė (sunkiau) arba paprastai su flex/grid konteineriu ir footer (footer_IMDB.PNG).
+Paspaudus ant kortelės infoBox būtų atidaromas modalas (modal_IMDB.PNG).
+
+// Create
+Pradiniame puslapyje būtų forma skirta pridėti naują filmą (gali būti kaip modalas) (duomenys neturi būti tokie patys kaip data.json, bet raktiniai žodžiai privalo būti identiški ir informacijos tik tiek, kiek reikia atvaizduoti kortelę ir modalą).
+
+// DELETE
+Patobulinti korteles, kad jų modale (infoBox'e) būtų trinimui skirtas mygtukas su trinimo patvirtinimu.
+
+// UPDATE
+Patobulinti korteles, kad jų modale (infoBox'e) būtų redagavimo mygtukas, kurį paspaudus būtų atidaromas modalas su redagavimo info.
