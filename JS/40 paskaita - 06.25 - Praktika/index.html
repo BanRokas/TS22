@@ -13,7 +13,6 @@
     <section>
       <button id="showNewMovieModal">Add new Movie to the list</button>
       <dialog id="newMovieModal">
-        <button class="upTopAbs">Close</button>
         <h3>Add new Movie</h3>
         <form id="newMovieForm">
           <div>
@@ -46,12 +45,12 @@
             </fieldset>
           </div>
           <div>
-            <label for="length">Length in minutes:</label>
-            <input type="number" name="length" id="length" min="0" max="999">
+            <label for="duration">Length in minutes:</label>
+            <input type="number" name="duration" id="duration" min="0" max="999">
           </div>
           <div>
             <label for="imdbScore">IMDB Score:</label>
-            <input type="range" name="imdbScore" id="imdbScore" min="1" max="10">
+            <input type="range" name="imdbScore" id="imdbScore" min="1" max="10" step="0.1">
           </div>
           <div>
             <label for="thumbnail">Thumbnail:</label>
@@ -85,6 +84,7 @@
           </div>
           <input type="submit" value="Add Movie">
         </form>
+        <button class="upTopAbs">Close</button>
       </dialog>
     </section>
     <section id="topPicks">
