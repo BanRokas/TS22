@@ -35,3 +35,9 @@
     height: 250px;
   }
 }
+
+.upTopAbs{
+  position: absolute;
+  top: 0;
+  right: 0;
+}

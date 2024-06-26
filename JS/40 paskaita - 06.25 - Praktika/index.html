@@ -10,6 +10,83 @@
 <body>
   <header></header>
   <main>
+    <section>
+      <button id="showNewMovieModal">Add new Movie to the list</button>
+      <dialog id="newMovieModal">
+        <button class="upTopAbs">Close</button>
+        <h3>Add new Movie</h3>
+        <form id="newMovieForm">
+          <div>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title">
+          </div>
+          <div>
+            <label for="releaseYear">Release Date:</label>
+            <input type="date" name="releaseYear" id="releaseYear">
+          </div>
+          <div>
+            <fieldset>
+              <legend>Eirin Category</legend>
+              <div>
+                <input type="radio" name="eirinCategory" id="G" value="G">
+                <label for="G">General Audiences</label>
+              </div>
+              <div>
+                <input type="radio" name="eirinCategory" id="PG-12" value="PG-12">
+                <label for="PG-12">PG-12</label>
+              </div>
+              <div>
+                <input type="radio" name="eirinCategory" id="R-15" value="R-15">
+                <label for="R-15">R-15</label>
+              </div>
+              <div>
+                <input type="radio" name="eirinCategory" id="R-18" value="R-18">
+                <label for="R-18">R-18</label>
+              </div>
+            </fieldset>
+          </div>
+          <div>
+            <label for="length">Length in minutes:</label>
+            <input type="number" name="length" id="length" min="0" max="999">
+          </div>
+          <div>
+            <label for="imdbScore">IMDB Score:</label>
+            <input type="range" name="imdbScore" id="imdbScore" min="1" max="10">
+          </div>
+          <div>
+            <label for="thumbnail">Thumbnail:</label>
+            <input type="url" name="thumbnail" id="thumbnail">
+          </div>
+          <div>
+            <label for="trailer">Trailer:</label>
+            <input type="url" name="trailer" id="trailer">
+          </div>
+          <div>
+            <label for="description">Description:</label>
+            <textarea name="description" id="description"></textarea>
+          </div>
+          <div>
+            <label for="genres">Genres:</label>
+            <select name="genres" id="genres" multiple>
+              <option value="Action">Action</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Anime">Anime</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Crime">Crime</option>
+              <option value="Dark_Comedy">Dark Comedy</option>
+              <option value="Drama">Drama</option>
+              <option value="Family">Family</option>
+              <option value="Fantasy">Fantasy</option>
+              <option value="Horror">Horror</option>
+              <option value="Romance">Romance</option>
+              <option value="Sci-Fi">Sci-Fi</option>
+              <option value="Thriller">Thriller</option>
+            </select>
+          </div>
+          <input type="submit" value="Add Movie">
+        </form>
+      </dialog>
+    </section>
     <section id="topPicks">
       <h2>Top Picks</h2>
       <div id="moviesTP"></div>

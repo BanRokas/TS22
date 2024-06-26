@@ -16,3 +16,11 @@ fetch(`http://localhost:3000/movies`)
     });
   })
   .catch(err => console.error(err));
+
+document
+  .querySelector('#showNewMovieModal')
+  .addEventListener('click', () => {
+    document
+      .querySelector('#newMovieModal')
+      .showModal();
+  });
