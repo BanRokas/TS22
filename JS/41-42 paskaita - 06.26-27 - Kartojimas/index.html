@@ -172,6 +172,49 @@
         Taip pat Klasė gali grąžinamam Objektui suteikti ir metodų, kurie yra aprašomi tos klasės viduje kaip funkcijos.
       </p>
     </section>
+    <section>
+      <h2>Moduliai</h2>
+      <h3>Import'ai ir Export'ai</h3>
+      <p>
+        Modulių idėją yra ta, kad nebūtina viso JS kodo turėti viename faile. Galima turėti daug failų, kuriuose yra aprašytos atskiros klasės ar funkcijos ar netgi kintamieji. Svarbu yra juos export'uoti ir reikiamose vietose import'uoti, kad galėtume jomis naudotis.
+      </p>
+      <p>
+        Import ir Export gali būti kaip default (pagrindinis) arba kaip paprastus.<br>
+        Import'avimas turi būti aprašytas failo pradžioje, o export'avimas gali būti aprašytas arba failo pabaigoje arba toje vietoje kur kuriama Klasę / funkciją / kintamasis.<br>
+        Import'uojant dalykus galima pakeisti jų originalius vardus (tame faile į kurį importuojiesi kažką, gali jį turėti kitokiu vardu negu jis aprašytas originaliame faile).
+      </p>
+    </section>
+    <section>
+      <h2>Duomenų saugojimas vartotojo dalyje</h2>
+      <h3>Cookies, Session Storage ir Local Storage</h3>
+      <p>
+        Šie duomenys yra saugojami naršyklių aplinkoje kaip tekstinė informacija. Reikiasi savo duomenis, kuriuos nori saugoti reikia pasiversti į tekstą, o kai pasiėmi duomenis, reikia juos pasiversti atgal į JS sintaksę. Tai padaroma so JSON.stringify() arba JSON.parse().
+      </p>
+      <p>
+        Cookies turi labai mažai vietos, bet jie yra siunčiami į back'ą su request'ais/užklausomis ir jiems galima nustatyti išsitrinimo datą.<br>
+        LocalStorage turi daugiausiai vietos ir yra saugojama iki tol kol rankiniu būdu ištrinama.<br>
+        SessionStorage turi perpus mažiau vietos negu localStorage, nes tenais saugojama informacija pradingta pasibaigus svetainės lankymosi sesijai. SessionStorage naudingas saugoti įvairią informaciją apie vartotojo prisijungimo laiką/naršymą/token ir pns.
+      </p>
+    </section>
+    <section>
+      <h2>Fetch</h2>
+      <p>
+        Užklausos siuntimas į kažkokį serverį (puslapį).<br>
+        Užklausos gali būti: Atsisiūsti / išsiūsti / ištrinti / redaguoti.<br>
+      </p>
+      <p>
+        Fetch funkcija yra Primose'as (pažadas), tai reiškiasi informacija nebus grąžinama akimirksniu, o tik po kažkiek laiko, dėl to dirbant su Fetch'u (arba apskritai su Promise'ais) yra naudojamas asinchroninis programavimas.
+      </p>
+    </section>
+    <section>
+      <h2>Asinchroninis programavimas</h2>
+      <p>
+        Async'roninio programavimo idėja yra ta, kad kol vyksta vieni veiksmai, galima vykdyti kitus veiksmus, jeigu šiems nėra reikalinga informacija iš buvusių.
+      </p>
+      <p>
+        Asinchroninis programavimas gali būti rašomas su .then()'ais arba su async await 'ais.
+      </p>
+    </section>
   </main>
   <footer></footer>
 </body>

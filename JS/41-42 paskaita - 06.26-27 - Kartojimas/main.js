@@ -127,3 +127,33 @@ const klasesTest0 = new KlasesVardas('As Kas');
 console.log(klasesTest, klasesTest0);
 console.log(klasesTest.sveikinasiSu('Rokas'));
 console.log(KlasesVardas.statinisMetodas(5));
+
+// imports exports
+
+// Cookies Seesion/Local storage
+document.cookie = `raktinisZodis=reiksme`;
+window.localStorage.setItem('raktas', 'reiksme');
+window.sessionStorage.setItem('raktas', 'reiksme');
+
+// fetch be async await
+// window.fetch(`https://someRandomUrl.com`)
+// fetch(`https://someRandomUrl.com`)
+//   .then(res => console.log(res))
+//   .catch(err => console.error(err))
+//   .finally()
+
+// kitasKodas();
+
+// const fetchinimoFunc = async () => {
+//   try{
+//     const fetchRes = await fetch(`https://someRandomUrl.com`);
+//     console.log(fetchRes)
+//   } catch(err){
+//     console.error(err)
+//   } finally {
+
+//   }
+// }
+// fetchinimoFunc();
+
+// kitasKodas();
