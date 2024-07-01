@@ -1,0 +1,6 @@
+10 savaitė:
+  44 paskaita - 07.01 - Git ir Github
+  45 paskaita - 07.02 - Grupiniai darbai
+  46 paskaita - 07.03 - Grupiniai darbai
+  47 paskaita - 07.04 - Grupiniai darbai ir jo pristatymai
+  48 paskaita - 07.05 - Git ir Github Atsiskaitymas
