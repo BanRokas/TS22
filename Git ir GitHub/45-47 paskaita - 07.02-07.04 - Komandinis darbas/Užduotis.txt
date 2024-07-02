@@ -1,0 +1,20 @@
+Sukurti svetainę laisva tema.
+
+Svetainės kūrimo proceso metu, turi būti kuriamos užduotys Projekto valdymo įrankyje (teams'ų Task Planner'yje). Jos pasirenkamos vieno arba kelių žmonių, perkeliamos į atitinkamus laukus (buckets).
+
+Projektas privalo būti talpinamas GitHub'e.
+Kuriant projektą, privalo būti naudojamos šakos (git branch'ai).
+Tam, kad į master/main šaką būtų galima įkelti naują informacija - reikia kurti pull requests, kuriuos turi patvirtinti bent 2 kiti projekto dalyviai. 
+(vienas asmuo sukuria git'o repozitoriją ir sujungia ją su GitHub ir prideda kitus komandos narius kaip "collaborators". Kiti žmonės nusiklonuoja tą repozitoriją ir kartu prie jos dirba) (git clone gitHubRepoLink)
+
+Darbas vykdomas komandoje, brainstorm'inama kartu, priimami svarbūs sprendimai kartu...
+
+Svetainės kriterijai:
+  Menu su nuorodomis į kitus svetainės puslapius. (svetainė multi-page (galima ir single page, bet nesiūlau, nes bus daug merge conflict'ų))
+  Footer'is su kontaktais, soc. tinklų nuorodomis, copyrights, terms and uses...
+  Hero puslapio dalis (įvadinė svetainės dalis, kurioje paaiškinama trumpai drūtai apie ką yra svetainė).
+  Informacinė puslapio dalis (plačiau apie tai ką daro jūsų įmonė/organizacija...).
+  Susisiekimo forma. (kažkur turi būti galimybė arba užsisakyti prenumeratą arba išsiusti atsiliepimą svetainei (jokio actual funkcionalumo neprivalo būti))
+  Kažkur (papildomame puslapyje arba jau esamame) kurti kažkokias korteles (su JS'u iš duomenų failo). Kortelėje turi būti "plačiau" mygtukas, ant kurio paspaudus būsite nukelti į puslapį / atidarytas modalas, kuriame užkraunama išplėsta informacija apie tą kortelę.
+
+  Galima papildyti dar ką sugalvojate.

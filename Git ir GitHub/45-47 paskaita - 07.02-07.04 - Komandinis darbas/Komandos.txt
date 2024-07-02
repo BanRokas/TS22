@@ -1,0 +1,4 @@
+Team1:  Matas, Laurynas, Indrė, Andrius T., Simonas, Vaidas
+Team2:  Deividas, Miglė, Justas, Andrius G., Dainius, Ignas
+
+Komandos gali susigalvoti pavadinimus ir paprašyti, kad pakeisčiau.
