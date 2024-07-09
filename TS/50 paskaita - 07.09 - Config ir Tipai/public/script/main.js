@@ -17,3 +17,23 @@ let matrica = [
     [4, 5, 6],
     [7, 8, 9]
 ];
+let vartotojas = {
+    email: '',
+    username: '',
+    isAdmin: false,
+    creditCard: 64516159191
+};
+let vartotojas0 = {
+    email: 'a@a',
+    username: 'kebab',
+    creditCard: "651165"
+};
+vartotojas0.isAdmin = false;
+;
+let automobilis = {
+    marke: "Audi",
+    modelis: "TT",
+    metai: 2015,
+    arNauja: false,
+    kuras: "hibridas"
+};

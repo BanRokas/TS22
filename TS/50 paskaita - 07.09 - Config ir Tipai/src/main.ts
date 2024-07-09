@@ -4,6 +4,7 @@ let vardas:string = 'Rokas';
 // good assignment
 let vardas0 = 'Rokas';
 
+// Arrays
 // not Tuple, but string array
 let asmuo = ['vardas', 'pavarde'];
 // Tuples
@@ -29,3 +30,44 @@ let matrica: number[][] = [
   [4,5,6],
   [7,8,9]
 ];
+
+// Objects
+  // simple but not used
+  let vartotojas = {
+    email: '',
+    username: '',
+    isAdmin: false,
+    creditCard: 64516159191
+  }
+// type
+  // sukurimas
+  type vartotojoTipas = {
+    email: string,
+    username: string,
+    isAdmin?: boolean,
+    creditCard: number | string
+  };
+  // panaudojimas
+  let vartotojas0: vartotojoTipas = {
+    email: 'a@a',
+    username: 'kebab',
+    creditCard: "651165"
+  }
+  vartotojas0.isAdmin = false;
+// interface
+  // sukurimas
+  interface Auto{
+    marke: string,
+    modelis: string,
+    metai: number,
+    arNauja: boolean,
+    kuras: "benzinas" | "dyzelis" | "elektra" | "hibridas"
+  };
+  // panaudojimas
+  let automobilis: Auto = {
+    marke: "Audi",
+    modelis: "TT",
+    metai: 2015,
+    arNauja: false,
+    kuras: "hibridas"
+  };
