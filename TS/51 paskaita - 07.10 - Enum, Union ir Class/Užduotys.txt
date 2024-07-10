@@ -1,0 +1,4 @@
+CAO 4 paskaitos peržiūrėti video
+  Padaryti https://github.com/CodeAcademy-Online/TypeScript/tree/lesson-4/u%C5%BEduotys/src esančias užduotis apart "assertation"
+CAO 5 paskaitos perskaityti (optional) ir peržiūrėti video (optional)
+  Užduočių nedaryti
