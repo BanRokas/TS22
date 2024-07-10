@@ -37,3 +37,16 @@ let automobilis = {
     arNauja: false,
     kuras: "hibridas"
 };
+const alausGamykla = (a, b, c) => {
+    return {
+        skonis: a,
+        gamintojas: b,
+        metai: c
+    };
+};
+const alus0 = alausGamykla('kazkas', 'Petras', 1999);
+const alus1 = {
+    skonis: 'geras',
+    gamintojas: "Jonas",
+    metai: 2005
+};

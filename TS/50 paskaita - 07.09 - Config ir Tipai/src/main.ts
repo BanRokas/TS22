@@ -71,3 +71,24 @@ let matrica: number[][] = [
     arNauja: false,
     kuras: "hibridas"
   };
+
+type Alus = {
+  skonis: string,
+  gamintojas: string,
+  metai: number
+}
+type AlausGamykla = (par1:string, par2: string, par3:number) => Alus;
+
+const alausGamykla = (a:string, b:string, c:number): Alus => {
+  return {
+    skonis: a,
+    gamintojas: b,
+    metai: c
+  }
+}
+const alus0 = alausGamykla('kazkas', 'Petras', 1999);
+const alus1:Alus = {
+  skonis: 'geras',
+  gamintojas: "Jonas",
+  metai: 2005
+}
