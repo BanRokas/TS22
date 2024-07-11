@@ -97,3 +97,40 @@
   const kazkas1: Stringas | Numberis = {
     skaicius: 654
   };
+
+//    Generics
+let arg = true;
+function identity(par: any): any {
+  return par+'hihi';
+}
+console.log(typeof identity(arg));
+
+function identity0<Type>(par: Type):Type{
+  return par;
+}
+console.log(typeof identity0(arg));
+
+
+interface TuriIlgi{
+  length: number
+  vardas: string
+}
+function genericMagic<T extends TuriIlgi>(par:T):T[]{
+  console.log(par.length); // length reiksme
+  console.log(par.vardas.length); // vardo ilgi
+  return [par];
+}
+genericMagic({
+  vardas: 'Rokas',
+  length: 49411
+});
+
+function nonGeneric(par: number | string ): string | number{
+  console.log(typeof par);
+  if(typeof par === 'string'){
+    return 'par';
+  } else {
+    return 654;
+  }
+}
+nonGeneric('labas rytas');
