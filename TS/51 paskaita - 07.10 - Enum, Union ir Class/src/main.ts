@@ -16,12 +16,16 @@ console.log(manoMasinosKuras);
   // ARBA
 let kintamasis: number | string = 654;
 kintamasis = 'stringui';
+console.log(kintamasis);
 // ARBA number ARBA string masyvas, ne kažkoks mix'as
 let masyvas: number[] | string[] = ['a','b','c']; 
+console.log(masyvas);
 // norint mixed masyvo
 let mixMas: (number | string)[] = ['a',2,'c'];
-  // IR
+console.log(mixMas);
+// IR
 let objektas: { vardas:string } & { amzius:number } = {
   vardas: 'Petras',
   amzius: 54
 };
+console.log(objektas);

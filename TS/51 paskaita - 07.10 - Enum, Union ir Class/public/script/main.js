@@ -13,9 +13,13 @@ const manoMasinosKuras = 'dyzelinas';
 console.log(manoMasinosKuras);
 let kintamasis = 654;
 kintamasis = 'stringui';
+console.log(kintamasis);
 let masyvas = ['a', 'b', 'c'];
+console.log(masyvas);
 let mixMas = ['a', 2, 'c'];
+console.log(mixMas);
 let objektas = {
     vardas: 'Petras',
     amzius: 54
 };
+console.log(objektas);
