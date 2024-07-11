@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>52 paskaita - Interface vs Type ir Generics</title>
+  <script src="./script/main.js" defer></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Interface vs Type -->
+      <h2>Interface vs Type</h2>
+      <a href="https://www.youtube.com/watch?v=zM9UPcIyyhQ">Matt Pocock: TypeScript: Should you use Types or Interfaces?</a><br>
+      <a href="https://www.youtube.com/watch?v=oiFo2z8ILNo">Web Dev Simplified: I Cannot Believe TypeScript Recommends You Do This!</a>
+      <p> <!-- 1 -->
+        Interface gali būti naudojamas kuriant klasių arba objektų aprašymą.<br>
+        Type gali būti naudojamas kuriant betkokį aprašymą.
+      </p>
+      <p> <!-- 2 -->
+        Vienas Interface gali būti pratęstas kitu Interface naudojant 'extends' prierašą.<br>
+        Vienas Type gali būti pratęstas kitu Type naudojant '&' (intersection) ženkliuką.
+      </p>
+      <p> <!-- 3 -->
+        Interface gali būti papildytas naujomis savybėmis/metodais, negrįžtant prie to Interface aprašymo vietos, o per naują jį aprašant.<br>
+        Type gali būti papildytas naujomis savybėmis/metodais/reikšmėmis..., bet norint tai atlikti būtina sugrįžti prie tos vietos, kur jis originaliai sukurtas.
+      </p>
+      <p> <!-- 4 -->
+        Kuriant Interface negali nurodyti vieno arba kito varianto. Reikia susikurti du Interface, su vienu ir kitu variantu ir kuriant duomenį naudoti vieną arba kitą Interface.<br>
+        Kuriant Type galima nurodyti vieną arba kitą variantą.
+      </p>
+      <h4>Išvada (mano asmeninė (Rokas Banaitis)): Siūlyčiau naudoti Type vietoj Interface. Nes Type gali atlikti beveik viską ką atlieką Interface, o taip pat daug dalykų, kurių Interface negali atlikti.</h4>
+    </section>
+    <section></section>
+    <section></section>
+  </main>
+  <footer></footer>
+</body>
+</html>
