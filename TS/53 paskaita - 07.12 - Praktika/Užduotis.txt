@@ -1,0 +1,9 @@
+CAO pasiskaityti / peržiūrėti video (nebūtinai): 8, 9, 10.
+CAO pasidarykite: 4 (pasibaigti), 5 (pasibaigti), 3 (nebuvo dar darytas).
+
+Roko Pasibandyti:
+  1) Pasikurti data.json (su duomenis apie šiandienos temą), jį fetch'inti ir per visus duomenis sukant ciklą atvaizduoti juos ekrane.
+  2) Paisleisti data.json kaip json-server ir į jį nusiūsti naujus duomenis.
+  3) Pabandyti įgalinti delete metodą.
+
+extra: (apie maistą) galima naudoti food api: https://www.themealdb.com/api.php
