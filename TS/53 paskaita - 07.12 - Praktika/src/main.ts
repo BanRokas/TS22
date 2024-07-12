@@ -1,6 +1,8 @@
+import FoodCard from "./FoodCard.js";
+
 // basics
 const sec1: HTMLElement | null = document.querySelector('#basicDom');
-!sec1 && console.warn('sec1 kintamasis yra null/undefine or w/e');
+!sec1 && console.warn('sec1 kintamasis yra null/undefined or w/e');
 // console.log(sec1);
 
 const par1: HTMLParagraphElement = document.createElement('p');
@@ -42,4 +44,7 @@ form1?.addEventListener('submit', ( e: SubmitEvent ) => {
     nuotrauka: nuotraukosInput.value
   }
   console.log(formosDuomenys);
+  const foodCardDiv = new FoodCard(formosDuomenys).render();
+
+  document.querySelector('#output')?.appendChild(foodCardDiv);
 });

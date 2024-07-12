@@ -1,6 +1,6 @@
-"use strict";
+import FoodCard from "./FoodCard.js";
 const sec1 = document.querySelector('#basicDom');
-!sec1 && console.warn('sec1 kintamasis yra null/undefine or w/e');
+!sec1 && console.warn('sec1 kintamasis yra null/undefined or w/e');
 const par1 = document.createElement('p');
 par1.textContent = 'Hello World!';
 sec1 === null || sec1 === void 0 ? void 0 : sec1.appendChild(par1);
@@ -18,6 +18,7 @@ button1.addEventListener('click', ((e) => {
 sec1 === null || sec1 === void 0 ? void 0 : sec1.appendChild(button1);
 const form1 = document.querySelector('#foodForm');
 form1 === null || form1 === void 0 ? void 0 : form1.addEventListener('submit', (e) => {
+    var _a;
     e.preventDefault();
     const pavadinimoInput = document.querySelector('#foodForm #name');
     const reitingoInput = document.querySelector('#foodForm #rating');
@@ -28,4 +29,6 @@ form1 === null || form1 === void 0 ? void 0 : form1.addEventListener('submit', (
         nuotrauka: nuotraukosInput.value
     };
     console.log(formosDuomenys);
+    const foodCardDiv = new FoodCard(formosDuomenys).render();
+    (_a = document.querySelector('#output')) === null || _a === void 0 ? void 0 : _a.appendChild(foodCardDiv);
 });
