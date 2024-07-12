@@ -13,7 +13,25 @@
     <section id="basicDom">
       <h2>Simple stuff</h2>
     </section>
-    <section></section>
+    <section>
+      <h2>Add New Food Form</h2>
+      <form id="foodForm">
+        <div>
+          <label for="name">Pavadinimas</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="rating">Skonio reitingas</label>
+          <input type="range" name="rating" id="rating" min="1" max="10">
+        </div>
+        <div>
+          <label for="photo">Nuotrauka</label>
+          <input type="url" name="photo" id="photo">
+        </div>
+        <input type="submit" value="Add New">
+      </form>
+      <div id="output"></div>
+    </section>
     <section></section>
   </main>
   <footer></footer>

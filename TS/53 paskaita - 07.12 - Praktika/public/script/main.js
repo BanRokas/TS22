@@ -1,7 +1,6 @@
 "use strict";
 const sec1 = document.querySelector('#basicDom');
 !sec1 && console.warn('sec1 kintamasis yra null/undefine or w/e');
-console.log(sec1);
 const par1 = document.createElement('p');
 par1.textContent = 'Hello World!';
 sec1 === null || sec1 === void 0 ? void 0 : sec1.appendChild(par1);
@@ -17,3 +16,16 @@ button1.addEventListener('click', ((e) => {
     console.log(e);
 }));
 sec1 === null || sec1 === void 0 ? void 0 : sec1.appendChild(button1);
+const form1 = document.querySelector('#foodForm');
+form1 === null || form1 === void 0 ? void 0 : form1.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const pavadinimoInput = document.querySelector('#foodForm #name');
+    const reitingoInput = document.querySelector('#foodForm #rating');
+    const nuotraukosInput = document.querySelector('#foodForm #photo');
+    const formosDuomenys = {
+        pavadinimas: pavadinimoInput.value,
+        reitingas: reitingoInput.valueAsNumber,
+        nuotrauka: nuotraukosInput.value
+    };
+    console.log(formosDuomenys);
+});

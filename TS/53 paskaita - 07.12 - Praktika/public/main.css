@@ -1,3 +1,7 @@
+body{
+  height: 500vh;
+}
+
 .mediumImage{
   width: 300px;
   height: auto;
