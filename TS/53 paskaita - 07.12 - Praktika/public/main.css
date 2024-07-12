@@ -1,0 +1,16 @@
+.mediumImage{
+  width: 300px;
+  height: auto;
+}
+.eventButton{
+  padding: 10px 20px;
+  border: 5px outset black;
+  border-radius: 20px;
+  background-color: aquamarine;
+
+  &:hover{
+    cursor: pointer;
+    border-style: inset;
+    background-color: rgb(103, 189, 159);
+  }
+}
