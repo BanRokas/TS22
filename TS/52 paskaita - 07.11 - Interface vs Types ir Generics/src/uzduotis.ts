@@ -165,12 +165,12 @@ console.groupCollapsed('2. Sukurkite funkciją, kuri paverčia žmogaus objektą
   // });
   // const result: TaskProps[] = people.map(selectTaskProps);
 
-  const result: TaskProps[] = people.map((person: Person): TaskProps => {
-    return {
-      married: Boolean(person.married),
-      hasCar: Boolean(person.hasCar),
-    }
-  });
+  // const result: TaskProps[] = people.map((person: Person): TaskProps => {
+  //   return {
+  //     married: Boolean(person.married),
+  //     hasCar: Boolean(person.hasCar),
+  //   }
+  // });
 
   // const result: TaskProps[] = people.map((person: Person): TaskProps => {
   //   console.log(person.hasCar, person.married);
@@ -192,8 +192,18 @@ console.groupCollapsed('2. Sukurkite funkciją, kuri paverčia žmogaus objektą
   //   }
   // });
 
-  console.table(people);
-  console.table(result);
+  const result: TaskProps[] = people.map(({ hasCar, married }: Person): TaskProps => {
+    const returnResult:TaskProps = {};
+    if(typeof hasCar === 'boolean'){
+      returnResult.hasCar = hasCar;
+    }
+    if(typeof married === 'boolean'){
+      returnResult.married = married;
+    }
+    return returnResult;
+  }).filter((person: TaskProps) => Object.keys(person).length);
+
+  console.log(result);
 }
 console.groupEnd();
 
@@ -254,7 +264,40 @@ console.groupEnd();
 
 console.groupCollapsed('9. Performuokite žmonių masyvą, jog kiekvieno žmogaus savybė "income", taptų "salary"');
 {
+  type Person9 = {
+    readonly name: string,
+    readonly surname: string,
+    readonly sex: 'male' | 'female',
+    age: number,
+    salary?: number,
+    married?: boolean,
+    hasCar?: boolean,
+  };
+  // type PersonBritish = Omit<Person, 'income'> & {
+  //   salary?: Person['income']
+  // }
 
+  const ats9: Person9[] = people.map((/*person*/{ income, ...rest }:Person):Person9 => {
+    const result:Person9 = rest;
+    if (typeof income === 'number') {
+      result.salary = income;
+    }
+    return result;
+    // return {
+    //   ...rest,
+    //   salary: income
+    // }
+    // return {
+    //   name: person.name,
+    //   surname: person.surname,
+    //   sex: person.sex,
+    //   age: person.age,
+    //   salary: person.income || 0,
+    //   married: person.married || false,
+    //   hasCar: person.hasCar || false
+    // }
+  });
+  console.table(ats9);
 }
 console.groupEnd();
 

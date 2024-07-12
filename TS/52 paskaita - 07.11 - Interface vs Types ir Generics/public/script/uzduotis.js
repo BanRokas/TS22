@@ -1,4 +1,15 @@
 "use strict";
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
 const people = [
     {
         name: 'Jonas',
@@ -59,14 +70,17 @@ console.groupCollapsed('1. Sukurkite funkciją, kuri paverčia žmogaus objektą
 console.groupEnd();
 console.groupCollapsed('2. Sukurkite funkciją, kuri paverčia žmogaus objektą -> {married: boolean, hasCar: boolean} objektu. Naudojant šią funkciją performuokite visą žmonių masyvą.');
 {
-    const result = people.map((person) => {
-        return {
-            married: Boolean(person.married),
-            hasCar: Boolean(person.hasCar),
-        };
-    });
-    console.table(people);
-    console.table(result);
+    const result = people.map(({ hasCar, married }) => {
+        const returnResult = {};
+        if (typeof hasCar === 'boolean') {
+            returnResult.hasCar = hasCar;
+        }
+        if (typeof married === 'boolean') {
+            returnResult.married = married;
+        }
+        return returnResult;
+    }).filter((person) => Object.keys(person).length);
+    console.log(result);
 }
 console.groupEnd();
 console.groupCollapsed('3. Sukurtite masyvą su vardais, pavardėmis ir lytimi, pagal pradinį žmonių masyvą');
@@ -103,6 +117,15 @@ console.groupCollapsed('8. Sukurkite objektą, kuriame būtų apskaičiuotas vai
 console.groupEnd();
 console.groupCollapsed('9. Performuokite žmonių masyvą, jog kiekvieno žmogaus savybė "income", taptų "salary"');
 {
+    const ats9 = people.map((_a) => {
+        var { income } = _a, rest = __rest(_a, ["income"]);
+        const result = rest;
+        if (typeof income === 'number') {
+            result.salary = income;
+        }
+        return result;
+    });
+    console.table(ats9);
 }
 console.groupEnd();
 console.groupCollapsed('10. Suformuokite žmonių masyvą, kuriame nebūtų lyties, vardo ir pavardės');
