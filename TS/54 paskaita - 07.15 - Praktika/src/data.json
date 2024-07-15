@@ -1,27 +1,30 @@
 {
-  "europosFutboloČempionatoRungtynės":[
+  "europosFutboloČempionatoRungtynės": [
     {
       "id": "0",
-      "team1": "Germany",
-      "team2": "Scotland",
-      "dateOfMatch": "2024-06-14",
+      "team1": "Germanija",
+      "team2": "Scotlandija",
+      "dateOfMatch": "2024-06-16",
       "team1goals": 5,
-      "team2goals": 1
-    },{
+      "team2goals": 3
+    },
+    {
       "id": "1",
       "team1": "Hungary",
       "team2": "Switzerland",
       "dateOfMatch": "2024-06-15",
       "team1goals": 1,
       "team2goals": 3
-    },{
+    },
+    {
       "id": "2",
       "team1": "Spain",
       "team2": "Croatia",
       "dateOfMatch": "2024-06-15",
       "team1goals": 3,
       "team2goals": 0
-    },{
+    },
+    {
       "id": "3",
       "team1": "Italy",
       "team2": "Albania",
