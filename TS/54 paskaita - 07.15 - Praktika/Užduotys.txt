@@ -1,0 +1,9 @@
+CAO 12 pasižiūrėti ir panagrinėti github'o lesson12 šaką.
+
+Pasibaigti darytą darbą:
+  Sustilizuoti.
+  Pateikus formą fetch'inti naujus duomenis ir atvaizduoti ekrane naują koretlę (id problema).
+  Pridėti trinimo mygtuką.
+  Išspręsti "yet to play" redagavimą.
+
+  extra: padaryti, kad neduotų įvedinėti "goals" jeigu data tolimesnė nei šiandienos.
