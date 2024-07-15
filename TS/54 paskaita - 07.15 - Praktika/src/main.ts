@@ -1,4 +1,7 @@
+import FootballMatches from "./FootballMatches.js";
+
 type FormDataObject = {
+  id?: string,
   team1: string,
   team2: string,
   dateOfMatch: string,
@@ -33,6 +36,8 @@ newFootballMatchForm.addEventListener('submit', (e: SubmitEvent) => {
 fetch(`http://localhost:3000/europosFutbolo%C4%8CempionatoRungtyn%C4%97s`)
   .then(res => res.json())
   .then((data: FormDataObject[]) => {
-    console.log(data);
-    
+    data.forEach(match => {
+      const matchCard: HTMLDivElement = new FootballMatches(match).render();
+      document.querySelector(`#matchesCards`)?.appendChild(matchCard);
+    });
   });

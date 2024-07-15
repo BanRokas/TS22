@@ -1,4 +1,4 @@
-"use strict";
+import FootballMatches from "./FootballMatches.js";
 const newFootballMatchForm = document.querySelector('#newFootballMatch');
 newFootballMatchForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -18,6 +18,10 @@ newFootballMatchForm.addEventListener('submit', (e) => {
 });
 fetch(`http://localhost:3000/europosFutbolo%C4%8CempionatoRungtyn%C4%97s`)
     .then(res => res.json())
-    .then(data => {
-    console.log(data);
+    .then((data) => {
+    data.forEach(match => {
+        var _a;
+        const matchCard = new FootballMatches(match).render();
+        (_a = document.querySelector(`#matchesCards`)) === null || _a === void 0 ? void 0 : _a.appendChild(matchCard);
+    });
 });
