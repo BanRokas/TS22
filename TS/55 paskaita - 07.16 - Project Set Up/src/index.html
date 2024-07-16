@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>54 paskaita - Praktika</title>
+  <link rel="stylesheet" href="/main.css">
+  <script src="./script/main.js" type="module"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section>
+      <h2>Add Football Match</h2>
+      <form id="newFootballMatch">
+        <div>
+          <label for="team1">Name of team1:</label>
+          <input type="text" name="team1" id="team1" placeholder="Team1 name..." required>
+        </div>
+        <div>
+          <label for="team2">Name of team2:</label>
+          <input type="text" name="team2" id="team2" placeholder="Team2 name..." required>
+        </div>
+        <div>
+          <label for="dateOfMatch">Select the date of match:</label>
+          <input type="date" name="dateOfMatch" id="dateOfMatch" required>
+        </div>
+        <div>
+          <label for="team1goals">Number of goals by team1:</label>
+          <input type="number" name="team1goals" id="team1goals" min="0">
+        </div>
+        <div>
+          <label for="team2goals">Number of goals by team2:</label>
+          <input type="number" name="team2goals" id="team2goals" min="0">
+        </div>
+        <input type="submit" value="Add a new Match">
+      </form>
+    </section>
+    <section>
+      <h2>UEFA Euro 2024 matches</h2>
+      <div id="matchesCards"></div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
