@@ -27,17 +27,17 @@
     {
       "id": "3",
       "team1": "Italy",
-      "team2": "Albaniaaaa",
+      "team2": "Albania",
       "dateOfMatch": "2024-06-15",
       "team1goals": 2,
       "team2goals": 2
     },
     {
-      "id": "4",
-      "team1": "Lietuva",
-      "team2": "Lenkija yay",
-      "dateOfMatch": "2024-07-10",
-      "team1goals": 5,
+      "id": "6df3",
+      "team1": "pirma",
+      "team2": "antra",
+      "dateOfMatch": "2024-07-04",
+      "team1goals": 0,
       "team2goals": 1
     }
   ]

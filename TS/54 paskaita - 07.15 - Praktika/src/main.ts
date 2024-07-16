@@ -28,8 +28,22 @@ newFootballMatchForm.addEventListener('submit', (e: SubmitEvent) => {
     }
   });
 
-  console.log(formDataObject);
-
+  // console.log(formDataObject);
+  fetch(`http://localhost:3000/europosFutboloČempionatoRungtynės`, {
+    method: "POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body: JSON.stringify(formDataObject)
+  })
+  .then(res => res.json())
+  .then(data => {
+    // console.log(data);
+    const matchCard: HTMLDivElement = new FootballMatches(data).render();
+    document.querySelector(`#matchesCards`)?.appendChild(matchCard);
+  })
+  
+  newFootballMatchForm.reset();
 });
 
 // fetch and display

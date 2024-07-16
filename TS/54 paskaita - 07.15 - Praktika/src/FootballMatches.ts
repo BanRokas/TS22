@@ -62,7 +62,16 @@ export default class FootballMatches{
       // console.log('ar galiu redaguot:', this.isBeingEdited);
     });
 
-    cardDiv.append(team1Name, team1Score, matchDate, team2Name, team2Score, editButton);
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'delete this card';
+    deleteButton.addEventListener('click', () => {
+      fetch(`http://localhost:3000/europosFutboloČempionatoRungtynės/${this.id}`, {
+        method: "DELETE"
+      });
+      cardDiv.remove();
+    });
+
+    cardDiv.append(team1Name, team1Score, matchDate, team2Name, team2Score, editButton, deleteButton);
     return cardDiv;
   }
   changeStuff(element:Element, type: 'number' | 'text' | 'date', keyName: string){
