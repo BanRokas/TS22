@@ -1,3 +1,5 @@
+import "./main.css";
+
 import FootballMatches from "./FootballMatches";
 
 type FormDataObject = { 
