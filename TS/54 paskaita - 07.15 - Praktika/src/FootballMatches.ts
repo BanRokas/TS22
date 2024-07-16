@@ -67,25 +67,30 @@ export default class FootballMatches{
   }
   changeStuff(element:Element, type: 'number' | 'text' | 'date', keyName: string){
     if(this.isBeingEdited){
-      const elementAsInput = document.createElement('input');
-      elementAsInput.type = type;
-      elementAsInput.value = element.textContent || '';
-      element.parentElement?.replaceChild(elementAsInput, element);
-      elementAsInput.focus();
+      if(type !== 'number' || (type === 'number' && new Date(this.dateOfMatch) < new Date())){
+        const elementAsInput = document.createElement('input');
+        elementAsInput.type = type;
+        elementAsInput.value = element.textContent || '';
+        element.parentElement?.replaceChild(elementAsInput, element);
+        elementAsInput.focus();
 
-      elementAsInput.addEventListener('blur', () => {
-        element.textContent = elementAsInput.value;
-        elementAsInput.parentElement?.replaceChild(element, elementAsInput);
-        fetch(`http://localhost:3000/europosFutbolo%C4%8CempionatoRungtyn%C4%97s/${this.id}`, {
-          method: "PATCH",
-          headers: {
-            "Content-Type":"application/json"
-          },
-          body: JSON.stringify({
-            [keyName]: type === 'number' ? elementAsInput.valueAsNumber : elementAsInput.value
+        elementAsInput.addEventListener('blur', () => {
+          if(type === 'date'){
+            this.dateOfMatch = elementAsInput.value;
+          }
+          element.textContent = elementAsInput.value;
+          elementAsInput.parentElement?.replaceChild(element, elementAsInput);
+          fetch(`http://localhost:3000/europosFutbolo%C4%8CempionatoRungtyn%C4%97s/${this.id}`, {
+            method: "PATCH",
+            headers: {
+              "Content-Type":"application/json"
+            },
+            body: JSON.stringify({
+              [keyName]: type === 'number' ? elementAsInput.valueAsNumber : elementAsInput.value
+            })
           })
-        })
-      });
+        });
+      }
     }
   }
 }

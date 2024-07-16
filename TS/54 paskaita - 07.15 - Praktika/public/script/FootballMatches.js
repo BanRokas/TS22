@@ -45,25 +45,30 @@ export default class FootballMatches {
     changeStuff(element, type, keyName) {
         var _a;
         if (this.isBeingEdited) {
-            const elementAsInput = document.createElement('input');
-            elementAsInput.type = type;
-            elementAsInput.value = element.textContent || '';
-            (_a = element.parentElement) === null || _a === void 0 ? void 0 : _a.replaceChild(elementAsInput, element);
-            elementAsInput.focus();
-            elementAsInput.addEventListener('blur', () => {
-                var _a;
-                element.textContent = elementAsInput.value;
-                (_a = elementAsInput.parentElement) === null || _a === void 0 ? void 0 : _a.replaceChild(element, elementAsInput);
-                fetch(`http://localhost:3000/europosFutbolo%C4%8CempionatoRungtyn%C4%97s/${this.id}`, {
-                    method: "PATCH",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        [keyName]: type === 'number' ? elementAsInput.valueAsNumber : elementAsInput.value
-                    })
+            if (type !== 'number' || (type === 'number' && new Date(this.dateOfMatch) < new Date())) {
+                const elementAsInput = document.createElement('input');
+                elementAsInput.type = type;
+                elementAsInput.value = element.textContent || '';
+                (_a = element.parentElement) === null || _a === void 0 ? void 0 : _a.replaceChild(elementAsInput, element);
+                elementAsInput.focus();
+                elementAsInput.addEventListener('blur', () => {
+                    var _a;
+                    if (type === 'date') {
+                        this.dateOfMatch = elementAsInput.value;
+                    }
+                    element.textContent = elementAsInput.value;
+                    (_a = elementAsInput.parentElement) === null || _a === void 0 ? void 0 : _a.replaceChild(element, elementAsInput);
+                    fetch(`http://localhost:3000/europosFutbolo%C4%8CempionatoRungtyn%C4%97s/${this.id}`, {
+                        method: "PATCH",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            [keyName]: type === 'number' ? elementAsInput.valueAsNumber : elementAsInput.value
+                        })
+                    });
                 });
-            });
+            }
         }
     }
 }
