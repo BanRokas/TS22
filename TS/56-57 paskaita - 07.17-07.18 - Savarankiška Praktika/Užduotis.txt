@@ -1,0 +1,22 @@
+Sukurti CRud svetainę laisva tema.
+
+Projektas gali būti talpinamas GitHub'e.
+Kuriant projektą, gali būti naudojamos šakos (git branch'ai).
+Tam, kad į master/main šaką būtų galima įkelti naują informacija - reikia kurti pull requests.
+
+Svetainės kriterijai:
+  Menu su:
+    Logotipu (nuoroda į pradinį puslapį)
+    Nuorodomis į kitus svetainės puslapius. (single page arba multi page - laisvas pasirinkimas)
+    Prisijungimo/Prisiregistravimo mygtukais ant kurių paspaudus bus:
+	    Atidaromas naujas puslapis arba modalas su atitinkama forma.
+      Neprisijungęs vartotojas mato Login/Register, prisijungęs mato savo vardą (gal ir avatar image) ir Logout mygtuką.
+  Footer'is su kontaktais, soc. tinklų nuorodomis, copyrights, terms and uses... (užtenka minimalistinio)
+  Hero puslapio dalis (įvadinė svetainės dalis, kurioje paaiškinama trumpai drūtai apie ką yra svetainė).
+  Susisiekimo forma. (kažkur turi būti galimybė arba užsisakyti prenumeratą arba išsiusti atsiliepimą svetainei - gali daryti ir prisijungęs ir neprisijungęs vartotojas)
+  Kažkur (papildomame puslapyje arba jau esamame) kurti CRud (su TS'u iš duomenų failo (JSON-server)).
+    Forma, kuri pridėtų naują kortelę - gali atlikti TIK prisijungęs vartotojas.
+    NEBŪTINA - Kortelėje gali būti "plačiau" mygtukas, ant kurio paspaudus būsite nukelti į puslapį / atidarytas modalas, kuriame užkraunama išplėsta informacija apie tą kortelę.
+
+  Galima set-up'inti webpack ir/ar eslint.
+  Galima papildyti dar ką sugalvojate.
