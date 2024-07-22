@@ -1,0 +1,9 @@
+Persiskaityti ir pasidaryti CAO React 1 pamoką.
+
+Persiskaityti:
+  (arba nauja)
+    https://react.dev/learn/describing-the-ui
+    https://react.dev/learn/your-first-component
+    https://react.dev/learn/importing-and-exporting-components
+    https://react.dev/learn/writing-markup-with-jsx
+    https://react.dev/learn/javascript-in-jsx-with-curly-braces
