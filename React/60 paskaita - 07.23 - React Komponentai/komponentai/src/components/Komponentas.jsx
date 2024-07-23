@@ -33,6 +33,15 @@ const Komponentas = () => {
         Norint stilizuoti inline būdu reikia tag'ui suteikti style atributą ir &#123;&#125; skliausteliuose rašyti objektą, kuriame yra išvardinti stiliai camelCase'intais pavadinimais ir už dvitaškių nurodytais stiliais. pvz.: &#123; &#123; backgroundColor: red, marginRight: 100px &#125; &#125;.<br />
         Suteikti klasę tag'ui jsx faile, galima lygiai taip pat kaip ir paprastame HTML'e, tik rašyti nebe class="kazkokiaKlase", bet className="kazkokiaKlase".
       </p>
+
+      <Heading
+        text="Iteracinis Komponentų užkrovimas"
+        size={3}
+      />
+      <p>
+        Iteruojant per masyvą, reikia naudoti tokį metodą, kuris kažką grąžina (nenaudoti forEach). <br />
+        Komponentui/tag'ui, kuris kuriamas itercijos būdu, reikia priskirti raktą "key" su unikalia reikšme (dėl React'o dalykų, nesukit galvos ką su ją daryti).
+      </p>
     </section>
   );
 }

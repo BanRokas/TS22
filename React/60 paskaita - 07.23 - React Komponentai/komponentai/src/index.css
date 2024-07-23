@@ -10,3 +10,26 @@ body {
 #random{
   border: 5px dashed black;
 }
+
+.foodContainer{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.maistoKortele{
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  overflow: hidden;
+
+  > h3{
+    text-align: center;
+  }
+  > img{
+    width: 100%;
+    max-height: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
