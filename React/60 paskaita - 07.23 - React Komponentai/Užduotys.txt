@@ -1,0 +1,22 @@
+CAO:
+  2 pamoka Komponentai
+    Perskaityti: 
+      Kas yra komponentas?
+      Darome komponentus išmanesniais: Props
+      Atomic Design Pattern (nebūtina kolkas)
+    Pasidaryti:
+      Pratimas su React Komponentais (galima naudoti iteracijas)
+  3 pamoka Kintami elementai su ReactJS
+    Perskaityti: 
+      Kintami elementai
+      Elementų loopinimas (nereikia)
+    Pasidaryti:
+      Kintami elementai - pratimas
+      Elementų loopinimas - pratimas (nereikia)
+
+Dokumentacijos:
+  https://react.dev/learn/passing-props-to-a-component
+  https://react.dev/learn/conditional-rendering
+  https://react.dev/learn/rendering-lists
+  https://react.dev/learn/keeping-components-pure (nebūtina)
+  https://react.dev/learn/understanding-your-ui-as-a-tree (nebūtina)
