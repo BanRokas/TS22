@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.staciakampiuKonteineris{
+  display: flex;
+  gap: 10px;
+}
+
+#random{
+  border: 5px dashed black;
+}
