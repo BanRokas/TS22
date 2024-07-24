@@ -1,3 +1,42 @@
 body {
   margin: 0;
 }
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  padding: 10px;
+  border-bottom: 3px dashed red;
+}
+
+.skaiciavimas{
+  padding: 10px;
+  border-bottom: 3px dashed red;
+
+  > button{
+    margin-right: 10px;
+  }
+}
+
+.vandenys{
+  padding: 10px;
+
+  > h2{
+    text-align: center;
+  }
+  > div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+.vandensKortele{
+  border: 1px solid black;
+  padding: 5px;
+  > h3{
+    text-align: center;
+  }
+}

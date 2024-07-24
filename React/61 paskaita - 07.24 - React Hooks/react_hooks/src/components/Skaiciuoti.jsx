@@ -21,18 +21,18 @@ const Skaiciuoti = ({ data, dataChange, arPrisijunges }) => {
   // }
 
   return (
-    <>
+    <section className="skaiciavimas">
       {/* <button onClick={() => setSkaicius(skaicius+1)}>Didinti</button><br /> */}
       {
         arPrisijunges ? 
         <>
-          <button onClick={() => dataChange(1)}>Didinti</button><br />
+          <button onClick={() => dataChange(1)}>Didinti</button>
           <button onClick={() => dataChange(-1)}>Mažinti</button>
         </> :
         <p>Reikia prisijungti norint keisti skaičių.</p>
       }
-      <div>Skaičius yra: {data}</div>
-    </>
+      <p>Skaičius yra: {data}</p>
+    </section>
   );
 }
  

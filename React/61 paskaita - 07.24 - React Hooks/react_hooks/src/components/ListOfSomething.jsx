@@ -2,7 +2,7 @@ import VandensKortele from "./VandensKortele";
 
 const ListOfSomething = ({ data }) => {
   return (
-    <section>
+    <section className="vandenys">
       <h2>Vandenys</h2>
       <div>
         {
