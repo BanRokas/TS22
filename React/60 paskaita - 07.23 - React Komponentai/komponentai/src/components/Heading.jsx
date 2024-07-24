@@ -1,4 +1,8 @@
 const Heading = ({ text, size }) => {
+  const Hea = `h${size}`;
+  return (
+    <Hea>{text}</Hea>
+  )
   // if(size === 3){
   //   return(
   //     <h3>{text}</h3>
@@ -8,13 +12,13 @@ const Heading = ({ text, size }) => {
   //     <h2>{text}</h2>
   //   )
   // }
-  return(
-    size === 3 ?
-    <h3>{text}</h3>
-    : size === 2 ?
-    <h2>{text}</h2>
-    : <></>
-  )
+  // return(
+  //   size === 3 ?
+  //   <h3>{text}</h3>
+  //   : size === 2 ?
+  //   <h2>{text}</h2>
+  //   : <></>
+  // )
 }
  
 export default Heading;
