@@ -1,0 +1,32 @@
+Perskaityti:
+  Legacy: (nebūtina)
+    https://reactjs.org/docs/hello-world.html
+      6 - Handling Events
+      7 - Condition rendering
+      9 - Forms
+    https://reactjs.org/docs/hooks-intro.html
+      1 - Introducing Hooks
+      2 - Hooks at Glance
+      3 - Using the State Hook
+  Naujas:
+    State:
+      https://react.dev/reference/react/useState
+      https://react.dev/learn/adding-interactivity
+      https://react.dev/learn/state-a-components-memory
+      https://react.dev/learn/updating-objects-in-state
+      https://react.dev/learn/updating-arrays-in-state
+      https://react.dev/learn/reacting-to-input-with-state
+      https://react.dev/learn/choosing-the-state-structure
+      https://react.dev/learn/sharing-state-between-components
+      https://react.dev/learn/preserving-and-resetting-state
+    Conditional rendering:
+      https://react.dev/learn/conditional-rendering
+    Events:
+      https://react.dev/learn/responding-to-events
+
+Peržiūrėti video apie State ir Effect hook'us: https://www.youtube.com/watch?v=P5p3vMeJ6LQ
+
+CAO:
+  Pamoka 4 - Praktika: Fetch ir state management - PRALEISTI
+  Pamoka 5 - Event handling - pasiskaityti ir pabandyti padaryti ToDo aplikaciją.
+    Nereikia jokio JSON-server arba localStorage (jei jau bandysi - reikia useEffect (very basic))
