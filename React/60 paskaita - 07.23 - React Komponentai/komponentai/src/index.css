@@ -33,3 +33,10 @@ body {
     object-position: center;
   }
 }
+
+.redBg{
+  background-color: red;
+}
+.blueBg{
+  background-color: blue;
+}
