@@ -12,6 +12,21 @@ const App = () => {
   const prisijungti = () => setArPrisijunges(true);
   const atsijungti = () => setArPrisijunges(false);
 
+  const [formInputPavadinimas, setFormInputPavadinimas] = useState('');
+  const [formInputReitingas, setFormInputReitingas] = useState('');
+  const formosSubmit = (e) => {
+    e.preventDefault();
+    const formValues = {
+      id: Date.now().toString(),
+      pavadinimas: formInputPavadinimas,
+      reitingas: formInputReitingas
+    };
+    console.log(formValues);
+    pridetiVandeny(formValues);
+    setFormInputPavadinimas('');
+    setFormInputReitingas('');
+  }
+
   const [vandenys, setVandenys] = useState([
     {
       id: "6ads4f9",
@@ -31,6 +46,12 @@ const App = () => {
       reitingas: 4
     }
   ]);
+  const pridetiVandeny = (naujasVanduo) => {
+    setVandenys([...vandenys, naujasVanduo]);
+  }
+  const isimtiVandeny = (id) => {
+    setVandenys(vandenys.filter(el => el.id !== id));
+  }
 
   return (
     <>
@@ -45,7 +66,13 @@ const App = () => {
         dataChange={keistiSkaiciu}
       />
       <ListOfSomething
+        formInputPavadinimas={formInputPavadinimas}
+        formInputReitingas={formInputReitingas}
+        setFormInputPavadinimas={setFormInputPavadinimas}
+        setFormInputReitingas={setFormInputReitingas}
         data={vandenys}
+        formosSubmit={formosSubmit}
+        isimtiVandeny={isimtiVandeny}
       />
     </>
   );
