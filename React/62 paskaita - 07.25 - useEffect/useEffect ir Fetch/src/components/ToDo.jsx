@@ -1,8 +1,11 @@
 import { useState } from "react";
 
 import ToDoList from "./ToDoList";
+import ToDoForm from "./ToDoForm";
 
 const ToDo = () => {
+
+  const [formInput, setFormInput] = useState('');
 
   const [toDos, setToDos] = useState([
     {
@@ -23,11 +26,26 @@ const ToDo = () => {
       completed: false
     }
   ]);
+  const addNewToDo = (newTask) => {
+    // setToDos([...toDos, 'labas']);
+    // setToDos([...toDos, false]);
+    setToDos([...toDos, newTask]);
+    // console.log(toDos);
+  }
+  const removeToDo = (id) => {
+    setToDos(toDos.filter(el => el.id !== id));
+  }
 
   return (
     <section>
+      <ToDoForm 
+        formInput={formInput}
+        setFormInput={setFormInput}
+        addNewToDo={addNewToDo}
+      />
       <ToDoList
         data={toDos}
+        removeToDo={removeToDo}
       />
     </section>
   );

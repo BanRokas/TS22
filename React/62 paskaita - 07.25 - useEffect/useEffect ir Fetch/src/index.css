@@ -1,3 +1,38 @@
 body {
   margin: 0;
 }
+
+.toDoList{
+  margin: 0 auto;
+  width: 80%;
+
+  > h2{
+    text-align: center;
+  }
+  > div{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+
+.toDoForm{
+  margin: 0 auto;
+  width: 80%;
+
+  > h2{
+    text-align: center;
+  }
+}
+
+.toDoItem{
+  padding: 10px;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: space-around;
+
+  > *{
+    margin: 0;
+  }
+}
