@@ -1,0 +1,12 @@
+CAO:
+  Atlikti Pamoka 4 Praktika: Fetch ir state management
+
+Dokumentacija:
+  Legacy:
+      https://reactjs.org/docs/hello-world.html
+        5 - State and Lifecycle
+      https://reactjs.org/docs/hooks-intro.html
+        4 - Using the Effect Hook
+  New:
+    Effect:
+      https://react.dev/reference/react/useEffect
