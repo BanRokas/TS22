@@ -35,6 +35,19 @@ const ToDo = () => {
   const removeToDo = (id) => {
     setToDos(toDos.filter(el => el.id !== id));
   }
+  const changeStatus = (id) => {
+    setToDos(toDos.map(el => {
+      if( id === el.id ){
+        return {
+          id: el.id,
+          name: el.name,
+          completed: !el.completed
+        }
+      } else {
+        return el;
+      }
+    }));
+  }
 
   return (
     <section>
@@ -46,6 +59,7 @@ const ToDo = () => {
       <ToDoList
         data={toDos}
         removeToDo={removeToDo}
+        changeStatus={changeStatus}
       />
     </section>
   );

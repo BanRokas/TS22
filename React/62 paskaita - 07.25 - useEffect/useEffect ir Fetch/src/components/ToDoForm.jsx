@@ -1,9 +1,11 @@
+import { v4 as generateID } from 'uuid';
+
 const ToDoForm = ({ formInput, setFormInput, addNewToDo }) => {
 
   const formSubmit = (e) => {
     e.preventDefault();
     addNewToDo({
-      id: Date.now().toString(),
+      id: generateID(),
       name: formInput,
       completed: false
     });

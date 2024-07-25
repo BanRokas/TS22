@@ -1,6 +1,6 @@
 import ToDoItem from "./ToDoItem";
 
-const ToDoList = ({ data, removeToDo }) => {
+const ToDoList = ({ data, removeToDo, changeStatus }) => {
   return (
     <div className="toDoList">
       <h2>My ToDos</h2>
@@ -11,6 +11,7 @@ const ToDoList = ({ data, removeToDo }) => {
               key={todo.id}
               task={todo}
               removeToDo={removeToDo}
+              changeStatus={changeStatus}
             />
           )
         }

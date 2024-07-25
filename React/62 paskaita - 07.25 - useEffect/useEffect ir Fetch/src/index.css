@@ -35,4 +35,11 @@ body {
   > *{
     margin: 0;
   }
+  > p{
+    cursor: pointer;
+  }
+}
+
+.line_through{
+  text-decoration: line-through;
 }
