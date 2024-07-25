@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": "4a6sd156as1",
+      "name": "Pavalgyti",
+      "completed": false
+    },
+    {
+      "id": "4a6sd156as2",
+      "name": "Atsiprausti",
+      "completed": true
+    },
+    {
+      "id": "4a6sd156as4",
+      "name": "Pasportuoti",
+      "completed": false
+    },
+    {
+      "id": "2ecd5d20-c550-437f-a1b2-9ee5aa8b1fdd",
+      "name": "random",
+      "completed": true
+    }
+  ]
+}
