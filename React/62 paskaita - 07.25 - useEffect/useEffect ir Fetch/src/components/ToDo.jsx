@@ -19,7 +19,10 @@ const ToDo = () => {
         "Content-Type":"application/json"
       },
       body: JSON.stringify(newTask)
-    });
+    })
+      .then(res => res.json())
+      .then(normalRes => console.log(normalRes))
+      .catch(err => console.log(err))
   }
   // ekvivalentus - componentDidUpdate jeigu keitėsi toDos state'as
   // useEffect(()=>{
