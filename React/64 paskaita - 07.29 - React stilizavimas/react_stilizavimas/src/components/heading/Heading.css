@@ -1,0 +1,10 @@
+.antrasteWoW {
+  color: red;
+  transition: 5s;
+  transform-origin: left;
+}
+
+.antrasteWoW:hover {
+  color: orange;
+  transform: scale(2);
+}/*# sourceMappingURL=Heading.css.map */
