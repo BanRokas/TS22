@@ -1,6 +1,7 @@
 import Par from "../par/Par";
 import Heading from "../heading/Heading";
 import Image from "../image/Image";
+import List from "../list/List";
 
 const CssTryout = () => {
   return (
@@ -15,7 +16,14 @@ const CssTryout = () => {
         url="https://hobbyshop.lt/wp-content/uploads/2023/08/26821.jpg"
         name="Exploding Kittens card game"
       />
-
+      <List 
+        type="ul"
+        items={['malta mėsa', 'kepsnys', 'bulvės', 'morkos', 'svogūnas']}
+      />
+      <List 
+        type="ol"
+        items={['Išsiurbti kambarius', 'Nusivalyti dulkes', 'Išplauti kambarius']}
+      />
     </section>
   );
 }
