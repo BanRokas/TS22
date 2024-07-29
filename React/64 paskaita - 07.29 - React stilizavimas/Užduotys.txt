@@ -1,0 +1,14 @@
+CAO:
+  Praleisti 6
+  Perskaityti ir daryti 7 (penktadienio savarankišką)
+
+Skaityti:
+  https://css-tricks.com/different-ways-to-write-css-in-react/
+
+  https://styled-components.com/docs:
+  Basic:
+    Getting Started
+    Adapting based on props
+    Extending styles
+    Styling any component
+    Passed props
