@@ -6,6 +6,11 @@ const StyledButton = styled.button`
   cursor: pointer;
   background-color: ${props => props.$fonoSpalva || 'maroon'};
   color: ${props => props.$tekstoSpalva || 'aqua'};
+
+  &:hover{
+    color: yellow;
+    transform: scale(1.5);
+  }
 `;
 
 const Button = ({ text, bgColor, textColor }) => {
