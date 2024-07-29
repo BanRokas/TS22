@@ -1,0 +1,12 @@
+.paveiksliukas{
+  width: 200px;
+  height: auto;
+}
+
+/*  module klasės vardas susideda iš 3 dalių:
+  1) CSS failo vardas
+  2) CSS klasės vardas
+  3) random hash (koduotė)
+
+  Pliusas tas, kad garantuotas CSS klasių vardų unikalumas
+*/
