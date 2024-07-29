@@ -2,6 +2,7 @@ import Par from "../par/Par";
 import Heading from "../heading/Heading";
 import Image from "../image/Image";
 import List from "../list/List";
+import Button from "../button/Button";
 
 const CssTryout = () => {
   return (
@@ -23,6 +24,14 @@ const CssTryout = () => {
       <List 
         type="ol"
         items={['Išsiurbti kambarius', 'Nusivalyti dulkes', 'Išplauti kambarius']}
+      />
+      <Button 
+        text="Click ME!"
+      />
+      <Button 
+        text="Click ME 2!"
+        bgColor="red"
+        textColor="blue"
       />
     </section>
   );
