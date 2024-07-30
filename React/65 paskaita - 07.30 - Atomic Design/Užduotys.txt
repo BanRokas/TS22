@@ -1,0 +1,18 @@
+Persiskaityti CAO -> Pamoka 2 Komponentai -> Atomic Design Pattern: kaip struktūrizuoti React programą
+
+Pasiskaityti: 
+  https://www.andela.com/blog-posts/structuring-your-react-application-atomic-design-principles
+  https://medium.com/@janelle.wg/atomic-design-pattern-how-to-structure-your-react-application-2bb4d9ca5f97
+  https://bootcamp.uxdesign.cc/from-atoms-to-pages-implementing-atomic-design-in-react-2c91d1031e7c
+
+Extra Images/Gifs:
+  https://bradfrost.com/wp-content/uploads/2015/12/atomic-gif-3.gif
+  https://atomicdesign.bradfrost.com/images/content/instagram-atomic.png
+  https://blog.logicwind.com/content/images/2020/06/atomic-design-2-1-1024x359.png
+
+Roko Užduotis:
+  Sustilizuoti.
+  Pabandyti pakeisti radio div'ą į fieldset kaip __atskirą komponentą__.
+  Pasibaigti registraciją (padaryti, kad nusiūsti į JSON serverį). Galima papildyti įvesties laukų.
+  Pabandyti hash'inti password'ą prieš siunčiant (https://www.npmjs.com/package/bcryptjs) 
+  Pasidaryti Login puslapį.
