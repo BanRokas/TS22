@@ -1,0 +1,18 @@
+12? savaitė:
+  59 paskaita - 07.22 - React Įvadas
+  60 paskaita - 07.23 - React Komponentai ir props
+  61 paskaita - 07.24 - useState
+  62 paskaita - 07.25 - useEffect ir Fetch JSON-server
+  63 paskaita - 07.26 - Praktika
+13? savaitė: 
+  64 paskaita - 07.29 - React Stilizavimas
+  65 paskaita - 07.30 - Atomic Design
+  66 paskaita - 08.31 - Context ir Reducer
+  67 paskaita - 08.01 - Context ir Reducer
+  68 paskaita - 08.02 - Praktika
+14? savaitė: React Router; Formik, Validation (yup)
+  69 paskaita - 08.05 - 
+  70 paskaita - 08.06 - 
+  71 paskaita - 08.07 - 
+  72 paskaita - 08.08 - 
+  73 paskaita - 08.09 - 
