@@ -5,7 +5,7 @@ const RegisterPage = () => {
   return (
     <section>
       <Heading 
-        size={2}
+        size={6}
         text="Register Form"
       />
       <RegisterForm />
