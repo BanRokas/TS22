@@ -1,0 +1,19 @@
+CAO:
+  Praleisti Pamoka 8 Dizaino karpymas + React (2 paskaitos)
+  Pamoka 9 React useContext ir useReducer hook funkcijos:
+    Persiskaityti "React Context ir useContext() Hook (3 žingsniai)"
+    Kitų nereikia
+
+Perskaityti ir pasidaryti "challenges":
+  https://react.dev/reference/react/useContext
+  https://react.dev/learn/passing-data-deeply-with-context
+Peržiūrėti:
+  https://youtu.be/t9WmZFnE6Hg
+
+Roko:
+  Papildyti aplikaciją naujo augalo pridėjimo forma (form inputs saugoti naujame kontekste).
+  Galima: 
+    Stilizuoti
+    Pridėti Footer
+    Padaryti grąžesnę navigaciją (turėti actual puslapių komponentus)
+    Perkelti duomenis į JSON-server'į.
