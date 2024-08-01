@@ -1,5 +1,7 @@
 import { useContext, useState } from "react";
 import { v4 as generateID } from 'uuid';
+import bcrypt from 'bcryptjs';
+
 import UsersContext from "../../../../contexts/UsersContext";
 import PageLoaderContext from "../../../../contexts/PageLoader";
 
@@ -30,7 +32,8 @@ const RegisterForm = () => {
       const newUser = {
         id: generateID(),
         name: formInputs.name,
-        password: formInputs.password
+        passwordVisual: formInputs.password, // nepalikti realioje versijoje
+        password: bcrypt.hashSync(formInputs.password, 10)
       };
       setUsers({
         type: 'prideti',

@@ -21,11 +21,13 @@ const UsersProvider = ({ children }) => {
     {
       id: "654dfs651",
       name: "Petras",
-      password: "labas"
-    },{
+      passwordVisual: "labas",
+      password: "$2a$10$ZKV0iv4PmNKClrIzM7Qvp.cq6nj2wtNU9KIrMlSxXdt6C7cJpcioy"
+    }, {
       id: "654dfs652",
       name: "Jonas",
-      password: "ate"
+      passwordVisual: "ate",
+      password: "$2a$10$QGW5awYZ5O.u0B75TwbDgunOOHasVOJhIxQ5SSaNdTp5d/6A1HEpm"
     }
   ]);
   /* const [users, setUsers] = useState([

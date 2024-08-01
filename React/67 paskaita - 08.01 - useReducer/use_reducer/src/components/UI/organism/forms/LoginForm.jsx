@@ -1,4 +1,6 @@
 import { useContext, useState } from "react";
+import bcrypt from 'bcryptjs';
+
 import UsersContext from "../../../../contexts/UsersContext";
 import PageLoaderContext from "../../../../contexts/PageLoader";
 
@@ -23,17 +25,17 @@ const LoginForm = () => {
   };
   const formSubmit = (e) => {
     e.preventDefault();
-    console.log(formInputs);
+    // console.log(formInputs);
     const loggedIn = users.find(user => 
       user.name === formInputs.name &&
-      user.password === formInputs.password
+      bcrypt.compareSync(formInputs.password, user.password)
     );
     if(loggedIn){
-      console.log('prisijungė');
+      // console.log('prisijungė');
       setLoggedInUser(loggedIn);
       setPageLoader('home');
     } else {
-      console.log('neprisijungė');
+      // console.log('neprisijungė');
       setLoginError(true);
     }
   }
