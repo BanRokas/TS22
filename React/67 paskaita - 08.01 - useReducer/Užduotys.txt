@@ -1,0 +1,14 @@
+CAO:
+  perskaityt 9 paskaita - React useReducer() hook
+
+Peržiūrėti:
+  https://youtu.be/RZPAQV7JvNU arba/ir https://youtu.be/kK_Wqx3RnHk
+
+Perskaityti ir pasidaryti "challenges":
+  https://react.dev/learn/extracting-state-logic-into-a-reducer
+  https://react.dev/learn/scaling-up-with-reducer-and-context
+  https://react.dev/reference/react/useReducer
+
+Roko:
+  Susitvarkyti kodą (stilizuoti, puslapių komponentus padaryti, footer...)
+  Pakeisti HousePlantsContext esantį state'ą į reducer'į (ir visur kur jis naudojamas pakeisti, kad veiktų)
