@@ -1,13 +1,17 @@
 import { useContext, useState } from "react";
+import { v4 as generateID } from 'uuid';
 import UsersContext from "../../../../contexts/UsersContext";
+import PageLoaderContext from "../../../../contexts/PageLoader";
 
 import InputField from "../../molecules/InputField/InputField";
 import Input from "../../atoms/Input/Input";
 
 const RegisterForm = () => {
 
-  const { setUsers } = useContext(UsersContext);
+  const { setUsers, setLoggedInUser } = useContext(UsersContext);
+  const { setPageLoader } = useContext(PageLoaderContext);
 
+  const [registerError, setRegisterError] = useState(false);
   const [formInputs, setFormInputs] = useState({
     name: '',
     password: '',
@@ -23,54 +27,60 @@ const RegisterForm = () => {
     e.preventDefault();
     console.log(formInputs);
     if(formInputs.password === formInputs.passwordRepeat){
+      const newUser = {
+        id: generateID(),
+        name: formInputs.name,
+        password: formInputs.password
+      };
       setUsers({
         type: 'prideti',
-        newUser:{
-          id: Date.now().toString(),
-          name: formInputs.name,
-          password: formInputs.password
-        }
+        newUser: newUser
       });
       console.log('sėkmingai registravosi');
-      // prijungti vartotoja
-      // nunaviguoti
+      setLoggedInUser(newUser);
+      setPageLoader('home');
     } else {
       console.log('failed to enter same password twice');
-      // atvaizduoti error
+      setRegisterError(true);
     }
   }
 
   return (
-    <form onSubmit={formSubmit}>
-      <InputField
-        text="Name:"
-        type="text"
-        name="name" id="name"
-        placeholderText="Enter your user name..."
-        value={formInputs.name}
-        onChangeF={onFormInputChange}
-      />
-      <InputField
-        text="Password:"
-        type="password"
-        name="password" id="password"
-        placeholderText="Enter your password..."
-        value={formInputs.password}
-        onChangeF={onFormInputChange}
-      />
-      <InputField
-        text="Repeat password:"
-        type="password"
-        name="passwordRepeat" id="passwordRepeat"
-        placeholderText="Repeat password..."
-        value={formInputs.passwordRepeat}
-        onChangeF={onFormInputChange}
-      />
-      <Input
-        type="submit"
-        value="Register"
-      />
-    </form>
+    <>
+      <form onSubmit={formSubmit}>
+        <InputField
+          text="Name:"
+          type="text"
+          name="name" id="name"
+          placeholderText="Enter your user name..."
+          value={formInputs.name}
+          onChangeF={onFormInputChange}
+        />
+        <InputField
+          text="Password:"
+          type="password"
+          name="password" id="password"
+          placeholderText="Enter your password..."
+          value={formInputs.password}
+          onChangeF={onFormInputChange}
+        />
+        <InputField
+          text="Repeat password:"
+          type="password"
+          name="passwordRepeat" id="passwordRepeat"
+          placeholderText="Repeat password..."
+          value={formInputs.passwordRepeat}
+          onChangeF={onFormInputChange}
+        />
+        <Input
+          type="submit"
+          value="Register"
+        />
+      </form>
+      {
+        registerError && <p>Failed to enter same password twice.</p>
+      }
+    </>
   );
 }
  

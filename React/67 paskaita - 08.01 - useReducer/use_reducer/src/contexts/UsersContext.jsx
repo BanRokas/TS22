@@ -6,6 +6,8 @@ const reducerFunction = (state, action) => {
   switch(action.type){
     case 'prideti':
       return [...state, action.newUser];
+    case 'ištrinti':
+      return state.filter(el => el.id !== action.id);
     default:
       console.log('nera tokio veiksmo');
       return state;
@@ -14,6 +16,7 @@ const reducerFunction = (state, action) => {
 
 const UsersProvider = ({ children }) => {
 
+  const [loggedInUser, setLoggedInUser] = useState('');
   const [users, setUsers] = useReducer(reducerFunction, [
     {
       id: "654dfs651",
@@ -50,7 +53,9 @@ const UsersProvider = ({ children }) => {
         users,
         // addNewUser,
         // removeUser
-        setUsers
+        setUsers,
+        loggedInUser,
+        setLoggedInUser
       }}
     >
       {children}
