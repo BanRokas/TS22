@@ -19,6 +19,14 @@ const Header = () => {
         >Plants</button>
       </nav>
       <p>Mūsų svetainėje yra: {housePlants.length} augalų.</p>
+      <nav>
+        <button
+          onClick={() => setPageLoader('login')}
+        >Login</button>
+        <button
+          onClick={() => setPageLoader('register')}
+        >Register</button>
+      </nav>
     </header>
   );
 }
