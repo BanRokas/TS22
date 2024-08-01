@@ -10,9 +10,9 @@
   66 paskaita - 07.31 - Context ir Reducer
   67 paskaita - 08.01 - Context ir Reducer
   68 paskaita - 08.02 - Praktika
-14? savaitė: React Router; Formik, Validation (yup)
-  69 paskaita - 08.05 - 
-  70 paskaita - 08.06 - 
-  71 paskaita - 08.07 - 
-  72 paskaita - 08.08 - 
-  73 paskaita - 08.09 - 
+14? savaitė:
+  69 paskaita - 08.05 - React Router basic
+  70 paskaita - 08.06 - React Router
+  71 paskaita - 08.07 - Formik
+  72 paskaita - 08.08 - Formik + validation (yup)
+  73 paskaita - 08.09 - Praktika
