@@ -1,16 +1,20 @@
 import { useContext } from "react";
 import HousePlantsContext from "../../../../contexts/HousePlantsContext";
+import { HousePlantsActionTypes } from "../../../../contexts/HousePlantsContext";
 
 const PlantCard = ({ data }) => {
 
-  const { removePlant } = useContext(HousePlantsContext);
+  const { setHousePlants } = useContext(HousePlantsContext);
 
   return (
     <div>
       <h3>{data.pavadinimas}</h3>
       <p>{data.aprasymas}</p>
       <button
-        onClick={() => removePlant(data.id)}
+        onClick={() => setHousePlants({
+          type: HousePlantsActionTypes.Remove,
+          id: data.id
+        })}
       >Delete</button>
     </div>
   );
