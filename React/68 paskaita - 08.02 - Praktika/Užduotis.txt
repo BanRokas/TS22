@@ -1,0 +1,35 @@
+Padaryti puslapį:
+  Header dalyje:
+    Logotipas
+    NavBar
+      Vaikščioti tarp skirtingų "puslapių" (neaktyvus, nebent užsiimsi PageLoader'iu)
+
+  Main dalyje:
+    Kortelės (id, title, description, photo, timeStamp(nebūtina), ...):
+        Atvaizduoti visas korteles paimamas iš JSON serverio ir talpinamas Context'e.
+      Funkcionalumai (aprašyti Context'e su reducer'iu (pradžioje galima be jo)):
+        Naujų kortelių pridėjimas
+        Esamų kortelių trinimas
+        Esamų kortelių redagavimas (minimalus statuso ar ko keitimas ARBA pilnas kortelės redagavimas (extra), kuriam jau reikės formos)
+
+  Footer dalyje:
+    Ikonos su nuorodomis
+    Copyrights
+
+  Viską stilizuoti pasirinktu būdu/būdais.
+  Galima pridėti paprastą navigavimą (kaip darėm su PageLoader konstekstu).
+  
+  Extra:
+    1) Ekrane atvaizduoti loading gif'ą arba skeletoną (elementų šablonai be realių duomenų) kol duomenys nėra užkrauti į ekraną (kol dar vyksta jų siuntimas iš duomenų serverio).
+    DevTools -> Network -> No throttling pakeisti į 3G, kad neužkrautų duomenų taip greitai ir būtų galimybė pamatyti loading gif'ą. (nepamiršti sugrąžinti nustatymo į no throttling kai baigi tikrintis)
+
+    2) Papildyti Header
+      User info dalimi:
+        LogIn ir Register (jei neprisijungęs)
+        UserAvatar ir UserName ir LogOut (jei prisijungęs)
+      Sukurti userContext, kuriame būtų saugojami visi vartotojų duomenys su funkcionalumais aprašytais Reducer'yje (galima pradžioje su State) (JSON serveryje, pradžioje galima be).
+        LogIn - prijungia vartotoją, jeigu teisingos įvestys.
+        Register - priregistruoja ir prijungia vartotoją, jeigu teisingos įvestys (userName, password, passwordRepeat, email, userAvatar). (EXTRA password hash)
+        LogOut - atjungia vartotoją.
+      Vartotojo duomenys: id, username, email, avatarImage, password.
+      Vartotojų duomenų funkcionalumai: kurtiNaujaVartotoja, prijungti ir atjungiVartotoja.
