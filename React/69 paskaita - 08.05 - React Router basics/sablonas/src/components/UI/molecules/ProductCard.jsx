@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const CardDiv = styled.div`
@@ -23,6 +24,7 @@ const ProductCard = ({ data }) => {
       />
       <h3>{data.name}</h3>
       <p>Price: {data.price}&euro;</p>
+      <Link to={data.id}>More info</Link>
     </CardDiv>
   );
 }
