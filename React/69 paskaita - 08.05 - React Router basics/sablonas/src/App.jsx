@@ -1,21 +1,21 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/UI/organism/Header";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Shop from "./components/pages/Shop";
+import Error from "./components/pages/Error";
 
 const App = () => {
   return (
     <>
-      <header>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/shop">Shop</Link>
-        </nav>
-      </header>
+      <Header />
       <main>
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
-          <Route path="/about" element={<h1>About</h1>} />
-          <Route path="/shop" element={<h1>Our Products</h1>} />
-          <Route path="*" element={<h1>Error 404</h1>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </main>
       <footer></footer>
