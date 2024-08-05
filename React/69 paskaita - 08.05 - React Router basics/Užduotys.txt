@@ -1,0 +1,27 @@
+Perskaityti:
+  https://reactrouter.com/en/main/start/concepts
+  https://reactrouter.com/en/main/router-components/browser-router
+  https://reactrouter.com/en/main/route/route
+  CAO: Pamoka 6 - React Router
+
+Peržiūrėti:
+  Net Ninja: (tik pirmus du video)
+    1) https://youtu.be/OMQ2QARHPo0?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf
+    2) https://youtu.be/XN7E5tKM-no?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf
+
+  WebDev:
+    https://youtu.be/Ul3y1LXxzdU (tik pirmas ~10 minučių (galima ir viską, bet kitkas ryt bus))
+
+
+Galima pabandyt daryt tutorial iš reactrouter.com: https://reactrouter.com/en/main/start/tutorial (nesiūlau)
+
+
+Kartu darytą projektą pastilizuoti. Rytoj tęsime darbą ties tuo pačiu projektu.
+
+
+Pabandyti padaryti CAO Pamoka 6 uždavinį.
+  URL neveikiantys, tai duomenis (id, number of people, price) pasikurti patiems kaip JSON serverį.
+
+  Idėja tokia:
+    Home page'e yra Lentelės pavidalu atvaizduoti visus užsakymus. Ir paspaudus ant eilutės užsakymas ištrinamas (vėliau padaryti confirmation/patvirtinimą). (delete)
+    Add page'e yra forma pridėti naują užsakymą. (add)
