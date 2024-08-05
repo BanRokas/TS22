@@ -1,0 +1,29 @@
+{
+  "products":[
+    {
+      "id": "56ads41g",
+      "name": "cup",
+      "image": "https://m.media-amazon.com/images/I/51k5yyN+KVL.jpg",
+      "price": 5,
+      "description": "To put tea in"
+    },{
+      "id": "695asd41g",
+      "name": "plate",
+      "image": "https://m.media-amazon.com/images/I/51RhEPbfvHL.jpg",
+      "price": 3.5,
+      "description": "To eat from"
+    },{
+      "id": "as54df1",
+      "name": "fork",
+      "image": "https://m.media-amazon.com/images/I/61U4tatR8HL.jpg",
+      "price": 1.2,
+      "description": "To stab food"
+    },{
+      "id": "as6d5f1",
+      "name": "spoon",
+      "image": "https://m.media-amazon.com/images/I/618F1Xwm49L.jpg",
+      "price": 0.8,
+      "description": "Made in China"
+    }
+  ]
+}
