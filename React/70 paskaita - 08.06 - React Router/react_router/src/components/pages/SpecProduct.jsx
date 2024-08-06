@@ -6,7 +6,7 @@ const SpecProduct = () => {
   const [cardInfo, setCardInfo] = useState('');
 
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
   useEffect(()=>{
     fetch(`http://localhost:8080/products/${id}`)

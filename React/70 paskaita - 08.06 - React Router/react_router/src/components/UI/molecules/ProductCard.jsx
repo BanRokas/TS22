@@ -24,7 +24,7 @@ const ProductCard = ({ data }) => {
       />
       <h3>{data.name}</h3>
       <p>Price: {data.price}&euro;</p>
-      <Link to={data.id}>More info</Link>
+      <Link to={`item/${data.id}`}>More info</Link>
     </CardDiv>
   );
 }
