@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const CardDiv = styled.div`
-  width: 300px;
+  width: 200px;
   padding: 10px 5px;
   border: 1px solid black;
 

@@ -7,6 +7,7 @@ import Shop from "./components/pages/Shop";
 import Error from "./components/pages/Error";
 import SpecProduct from "./components/pages/SpecProduct";
 import AddProduct from "./components/pages/AddProduct";
+import ShopOutlet from "./components/pages/ShopOutlet";
 
 const App = () => {
   return (
@@ -16,9 +17,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/shop">
-            <Route path='addItem' element={<AddProduct />}/>
+          <Route path="/shop" element={<ShopOutlet />} >
             <Route index element={<Shop />}/>
+            <Route path='addItem' element={<AddProduct />}/>
             <Route path="item/:id" element={<SpecProduct />} />
             {/* <Route path="elektronines" element={<h1>Shop Ele</h1>}/>
             <Route path="lauko" element={<h1>Shop Lauko</h1>}/> */}
