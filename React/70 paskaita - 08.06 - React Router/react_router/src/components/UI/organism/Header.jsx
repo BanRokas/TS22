@@ -46,6 +46,7 @@ const Header = () => {
       </nav>
       <div>
         <h3>Login/Register</h3>
+        <h3>User profilePick ir name IR logout</h3>
       </div>
     </StyledHeader>
   );

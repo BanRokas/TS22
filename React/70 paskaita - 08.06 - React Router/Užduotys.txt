@@ -1,0 +1,24 @@
+Peržiūrėti:
+  Net Ninja: (visus video galima)
+    https://youtu.be/OMQ2QARHPo0?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf
+  WebDev: (galima peržiūrėti visą)
+    https://youtu.be/Ul3y1LXxzdU
+
+Tęsti vakar dienos užduotis.
+
+1) Patobulinti Error puslapį, kad po sekundės ar kelių būtų nunaviguojama į buvusį/home page'ą.
+2) Papildyti korteles didesniu kiekiu informacijos, kad mažesnis kiekis būtų rodomas bendrame puslapyje, bet visa informacija tos kortelės specifiniame puslapyje.
+3) Padaryti vartotojų prisijungimą/registravimąsį/atsijungimą ir saugoti duomenis JSON serveryje ir Kontekste (pasikurti vartotojų kontekstą). Login ir Register būtų kaip atskiri puslapiai.
+  Nebūtina:
+    Galima hash'inti passwords.
+    Galima daryti validaciją (kokią nors)
+
+Extra:
+  Sukurti vartotojo puslapį:
+    UserProfile - vartotojo informacija atvaizduojama atskirame puslapyje. Čia patenkama kai prisijungęs vartotojas paspaudžia ant savo userName esančio Header'yje.
+      EXTRA: Galimybė redaguotis vartotojo profilį.
+Extra:
+  Pridėti vartotojų roles:
+    Neprisijungęs gali TIK peržiūrėti.
+    Prisijungęs regular user gali kurti naujus produktus.
+    Prisijungęs moderator gali kurti naujas ir trinti/redaguoti esamas korteles.
