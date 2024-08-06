@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { v4 as uuid } from 'uuid';
+import { useNavigate } from 'react-router-dom';
 
+import ProductsContext from "../../contexts/Products";
 import InputField from "../UI/molecules/InputField";
 import Input from "../UI/atoms/Input";
 
 const AddProduct = () => {
+
+  const { setProducts } = useContext(ProductsContext);
+  const navigate = useNavigate();
 
   const [formInputs, setFormInputs] = useState({
     name: '',
@@ -18,10 +24,24 @@ const AddProduct = () => {
     });
   }
 
+  const formSubmit = (e) => {
+    e.preventDefault();
+    const newProduct = {
+      ...formInputs,
+      price: Number(formInputs.price),
+      id: uuid()
+    };
+    setProducts({
+      type: 'add',
+      newProduct: newProduct
+    });
+    navigate("/shop");
+  }
+
   return (
     <section>
       <h2>Add New Product</h2>
-      <form>
+      <form onSubmit={formSubmit}>
         <InputField
           labelText="Product name:"
           type="text"

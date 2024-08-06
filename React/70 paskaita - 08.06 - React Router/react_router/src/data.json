@@ -1,29 +1,116 @@
 {
-  "products":[
+  "products": [
     {
       "id": "56ads41g",
       "name": "cup",
       "image": "https://m.media-amazon.com/images/I/51k5yyN+KVL.jpg",
       "price": 5,
       "description": "To put tea in"
-    },{
+    },
+    {
       "id": "695asd41g",
       "name": "plate",
       "image": "https://m.media-amazon.com/images/I/51RhEPbfvHL.jpg",
       "price": 3.5,
       "description": "To eat from"
-    },{
+    },
+    {
       "id": "as54df1",
       "name": "fork",
       "image": "https://m.media-amazon.com/images/I/61U4tatR8HL.jpg",
       "price": 1.2,
       "description": "To stab food"
-    },{
+    },
+    {
       "id": "as6d5f1",
       "name": "spoon",
       "image": "https://m.media-amazon.com/images/I/618F1Xwm49L.jpg",
       "price": 0.8,
       "description": "Made in China"
+    },
+    {
+      "id": "93b2ff88-770d-4e21-b381-1c4f5827812e",
+      "name": "Agurkai",
+      "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
+      "price": 4,
+      "description": "Pickles in a jar"
+    },
+    {
+      "id": "7f326f87-cd96-48ce-9beb-f2dfdf882d00",
+      "name": "Agurkai",
+      "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
+      "price": 4,
+      "description": "Pickles in a jar"
+    },
+    {
+      "id": "f2baf1e1-20db-43a8-9134-fa7ce3811b1d",
+      "name": "Agurkai",
+      "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
+      "price": 4,
+      "description": "Pickles in a jar"
+    },
+    {
+      "id": "eb13821c-c235-43a3-9898-e13d0777bd05",
+      "name": "Agurkai",
+      "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
+      "price": 4,
+      "description": "Pickles in a jar"
+    },
+    {
+      "id": "9e53af0a-cbd4-4f25-8e87-746c6d06894b",
+      "name": "Agurkai",
+      "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
+      "price": 4,
+      "description": "Pickles in a jar"
+    },
+    {
+      "id": "bdd18c39-635e-4cdf-a02b-a271714854c2",
+      "name": "Agurkai",
+      "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
+      "price": 4,
+      "description": "Pickles in a jar"
+    },
+    {
+      "id": "32370b1f-a3f9-4a3e-ba39-a76b91eb849d",
+      "name": "Agurkai",
+      "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
+      "price": 4,
+      "description": "Pickles in a jar"
+    },
+    {
+      "id": "3ae98275-921d-4774-9795-ad07bd5d002a",
+      "name": "Agurkai",
+      "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
+      "price": 4,
+      "description": "Pickles in a jar"
+    },
+    {
+      "id": "448843de-864c-4a6e-9fbe-1e59f138273f",
+      "name": "Agurkai",
+      "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
+      "price": 4,
+      "description": "Pickles in a jar"
+    },
+    {
+      "id": "19cb68b3-c5ac-4ca5-ad08-843fb57b483d",
+      "name": "",
+      "image": "",
+      "price": 0,
+      "description": ""
+    },
+    {
+      "id": "32d113cc-9431-43fd-a5af-592365bd9fab",
+      "name": "",
+      "image": "",
+      "price": 0,
+      "description": ""
+    },
+    {
+      "id": "1c75020d-15b9-4650-af10-0aed3aa96b96",
+      "name": "",
+      "image": "",
+      "price": 0,
+      "description": ""
     }
   ]
 }

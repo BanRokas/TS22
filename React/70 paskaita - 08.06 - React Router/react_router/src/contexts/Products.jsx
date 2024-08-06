@@ -7,6 +7,13 @@ const reducer = (state, action) => {
     case 'setData':
       return action.allData;
     case 'add':
+      fetch(`http://localhost:8080/products`,{
+        method: "POST",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body: JSON.stringify(action.newProduct)
+      });
       return [...state, action.newProduct];
     case 'remove':
       return state.filter(el => el.id !== action.id);
