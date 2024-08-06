@@ -21,6 +21,7 @@ const App = () => {
             <Route index element={<Shop />}/>
             <Route path='addItem' element={<AddProduct />}/>
             <Route path="item/:id" element={<SpecProduct />} />
+            {/* <Route path="item/edit/:id" element={<EditProd />} /> */}
             {/* <Route path="elektronines" element={<h1>Shop Ele</h1>}/>
             <Route path="lauko" element={<h1>Shop Lauko</h1>}/> */}
           </Route>
