@@ -16,6 +16,9 @@ const reducer = (state, action) => {
       });
       return [...state, action.newProduct];
     case 'remove':
+      fetch(`http://localhost:8080/products/${action.id}`,{
+        method: "DELETE"
+      });
       return state.filter(el => el.id !== action.id);
     default:
       return state;

@@ -90,27 +90,6 @@
       "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
       "price": 4,
       "description": "Pickles in a jar"
-    },
-    {
-      "id": "19cb68b3-c5ac-4ca5-ad08-843fb57b483d",
-      "name": "",
-      "image": "",
-      "price": 0,
-      "description": ""
-    },
-    {
-      "id": "32d113cc-9431-43fd-a5af-592365bd9fab",
-      "name": "",
-      "image": "",
-      "price": 0,
-      "description": ""
-    },
-    {
-      "id": "1c75020d-15b9-4650-af10-0aed3aa96b96",
-      "name": "",
-      "image": "",
-      "price": 0,
-      "description": ""
     }
   ]
 }
