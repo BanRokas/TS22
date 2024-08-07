@@ -1,0 +1,15 @@
+Pasiskaitinėti internete apie:
+  React hook form vs formik ir pasirinkite kurį norite naudoti (kursų metų toliau naudosime formik).
+
+Norint more info kaip veikia paveiksiukai programavime:
+  https://www.youtube.com/watch?v=uQZLzhrzEs4
+  https://www.youtube.com/watch?v=55iwMYv8tGI
+
+Pasidaryti vartotojų kontekstą ir jame saugoti registruojamus vartotojus.
+Pasidaryti JSON-serverį (su vartootjų info).
+Pasidaryti Login formą (su formik arba react-hook-form). Padaryti login'ą veikiantį.
+
+
+Rytojui pasiruošti:
+  Pasiskaityti/pasiieškoti info apie validaciją (naudosime yup'ą).
+  Prisiminti regex
