@@ -7,9 +7,9 @@ import { ProductsProvider } from './contexts/Products';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ProductsProvider>
-    <BrowserRouter>
+  <BrowserRouter>
+    <ProductsProvider>
       <App />
-    </BrowserRouter>
-  </ProductsProvider>
+    </ProductsProvider>
+  </BrowserRouter>
 );

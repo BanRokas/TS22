@@ -21,18 +21,14 @@ const reducer = (state, action) => {
       });
       return state.filter(el => el.id !== action.id);
     case 'edit':
-      fetch(`http://localhost:8080/products/${action.id}`,{
-        method: "PUT",
-        headers:{
-          "Content-Type":"application/json"
-        },
-        body: JSON.stringify(action.editedProduct)
-      });
       return state.map(el => {
         if(el.id !== action.id){
           return el;
         } else {
-          return action.editedProduct;
+          return {
+            ...action.editedProduct,
+            id: action.id
+          }
         }
       });
     default:
@@ -41,7 +37,6 @@ const reducer = (state, action) => {
 };
 
 const ProductsProvider = ({ children }) => {
-
   const [products, setProducts] = useReducer(reducer, []);
 
   useEffect(() => {
@@ -53,11 +48,16 @@ const ProductsProvider = ({ children }) => {
       }))
   }, []);
 
+  const returnSpec = (id) => {
+    return products.find(el => el.id === id);
+  }
+
   return (
     <ProductsContext.Provider
       value={{
         products,
-        setProducts
+        setProducts,
+        returnSpec
       }}
     >
       {children}

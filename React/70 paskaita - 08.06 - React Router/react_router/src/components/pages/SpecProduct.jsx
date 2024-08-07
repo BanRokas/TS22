@@ -6,7 +6,7 @@ import ProductsContext from "../../contexts/Products";
 const SpecProduct = () => {
 
   const [cardInfo, setCardInfo] = useState('');
-  const { setProducts } = useContext(ProductsContext);
+  const { setProducts, returnSpec } = useContext(ProductsContext);
   const { id } = useParams();
   const navigate = useNavigate();
   // console.log(id);
@@ -15,6 +15,7 @@ const SpecProduct = () => {
     fetch(`http://localhost:8080/products/${id}`)
       .then(res => res.json())
       .then(data => setCardInfo(data))
+    // setCardInfo(returnSpec(id));
   }, []);
 
   return (
@@ -39,6 +40,9 @@ const SpecProduct = () => {
               navigate("/shop");
             }}
           >Delete</button>
+          <button
+            onClick={()=>navigate("edit")}
+          >Edit</button>
         </> :
         <p>loading</p>
       }

@@ -8,6 +8,7 @@ import Error from "./components/pages/Error";
 import SpecProduct from "./components/pages/SpecProduct";
 import AddProduct from "./components/pages/AddProduct";
 import ShopOutlet from "./components/pages/ShopOutlet";
+import EditProduct from "./components/pages/EditProduct";
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
             <Route index element={<Shop />}/>
             <Route path='addItem' element={<AddProduct />}/>
             <Route path="item/:id" element={<SpecProduct />} />
-            {/* <Route path="item/edit/:id" element={<EditProd />} /> */}
+            <Route path="item/:id/edit" element={<EditProduct />} />
             {/* <Route path="elektronines" element={<h1>Shop Ele</h1>}/>
             <Route path="lauko" element={<h1>Shop Lauko</h1>}/> */}
           </Route>

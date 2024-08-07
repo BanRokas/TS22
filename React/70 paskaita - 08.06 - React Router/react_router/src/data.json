@@ -8,11 +8,11 @@
       "description": "To put tea in"
     },
     {
-      "id": "695asd41g",
-      "name": "plate",
+      "name": "Plate",
       "image": "https://m.media-amazon.com/images/I/51RhEPbfvHL.jpg",
-      "price": 3.5,
-      "description": "To eat from"
+      "price": 4,
+      "description": "To eat from",
+      "id": "695asd41g"
     },
     {
       "id": "as54df1",
@@ -29,18 +29,18 @@
       "description": "Made in China"
     },
     {
-      "id": "93b2ff88-770d-4e21-b381-1c4f5827812e",
-      "name": "Agurkai",
+      "name": "Fancy Agurkai",
       "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
-      "price": 4,
-      "description": "Pickles in a jar"
+      "price": 66,
+      "description": "Pickles in a jar",
+      "id": "93b2ff88-770d-4e21-b381-1c4f5827812e"
     },
     {
-      "id": "7f326f87-cd96-48ce-9beb-f2dfdf882d00",
-      "name": "Agurkai",
+      "name": "Agurkėliai",
       "image": "https://www.karakara.lt/app/uploads/2021/06/04sr3172_4779039681523.jpg",
       "price": 4,
-      "description": "Pickles in a jar"
+      "description": "Pickles in a jar",
+      "id": "7f326f87-cd96-48ce-9beb-f2dfdf882d00"
     },
     {
       "id": "f2baf1e1-20db-43a8-9134-fa7ce3811b1d",
