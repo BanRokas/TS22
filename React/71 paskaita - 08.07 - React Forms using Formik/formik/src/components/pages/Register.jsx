@@ -1,12 +1,23 @@
 import { useFormik } from 'formik';
+import bcrypt from 'bcryptjs';
+import { v4 as generateID } from 'uuid';
+import { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import UsersContext from '../../contexts/Users';
 
 const Register = () => {
+
+  const { users, setUsers, setLoggedInUser } = useContext(UsersContext);
+  const [registerError, setRegisterError] = useState(null);
+  const navigate = useNavigate();
 
   const formik = useFormik({
     initialValues:{
       username: '',
       password: '',
       passwordRepeat: '',
+      email: '',
       drivingLicenseCategories: [], // checkbox
       phone: '', // tel
       profilePicture: '', // url
@@ -16,7 +27,22 @@ const Register = () => {
       dob: '' // date of birth
     },
     onSubmit: (values) => {
-      console.log(values);
+      // console.log(values);
+
+      if(users.find(user => user.username === values.username)){
+        setRegisterError('User with such name already exists');
+      } else if(users.find(user => user.email === values.email)){
+        setRegisterError('User with such email already exists');
+      } else {
+        const { passwordRepeat, ...newUser } = values;
+        newUser.passwordVisible = newUser.password; // realiame kode neturi būti. daromės kad turėtume galimybę pasižiūrėti password'ą kokį įvedinėti
+        newUser.password = bcrypt.hashSync(newUser.password, 10);
+        newUser.id = generateID();
+        // console.log(newUser);
+        setUsers({ type: 'addNew', newUser: newUser });
+        setLoggedInUser(newUser);
+        navigate('/');
+      }
     }
   });
 
@@ -48,6 +74,15 @@ const Register = () => {
             type="password"
             name="passwordRepeat" id="passwordRepeat"
             value={formik.values.passwordRepeat}
+            onChange={formik.handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            name="email" id="email"
+            value={formik.values.email}
             onChange={formik.handleChange}
           />
         </div>
@@ -160,6 +195,9 @@ const Register = () => {
         </div>
         <input type="submit" value="Register" />
       </form>
+      {
+        registerError && <p>Error: {registerError}</p>
+      }
     </section>
   );
 }

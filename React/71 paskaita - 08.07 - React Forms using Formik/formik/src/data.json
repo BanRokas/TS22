@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "6516198",
+      "username": "rokas",
+      "password": "$2a$10$sm5LRKttyrz3FVFMKNWJkeE.maRuWym.ZWAntBMG4vF0HC6DXCR3e",
+      "passwordVisible": "haha",
+      "email": "rok@gmail.com",
+      "drivingLicenseCategories": [
+        "b"
+      ],
+      "phone": "954+619",
+      "profilePicture": "https://static.wikia.nocookie.net/cartoons/images/e/ed/Profile_-_SpongeBob_SquarePants.png",
+      "gender": "male",
+      "age": 1,
+      "nationality": "lithuanian",
+      "dob": "2003-06-20T12:58"
+    },
+    {
+      "id": "f6594e0a-19da-4f67-b037-76ff85618575",
+      "username": "Piotr",
+      "password": "$2a$10$ba6Y8bW2Ff/16Qx.L7BsTe5cu9ujI7Y1CFS6QY8Qeaqgse3PJSV.m",
+      "email": "piotr@gmail.com",
+      "drivingLicenseCategories": [
+        "b"
+      ],
+      "phone": "123123",
+      "profilePicture": "https://static.wikia.nocookie.net/pure-evil-wiki/images/e/e4/BillCipherCropped.png",
+      "gender": "secret",
+      "age": -2,
+      "nationality": "lithuanian",
+      "dob": "2024-08-23T09:58",
+      "passwordVisible": "321a"
+    }
+  ],
+  "cards": []
+}
