@@ -3,6 +3,7 @@ import bcrypt from 'bcryptjs';
 import { v4 as generateID } from 'uuid';
 import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import * as Yup from 'yup';
 
 import UsersContext from '../../contexts/Users';
 
@@ -26,6 +27,46 @@ const Register = () => {
       nationality: '', // select
       dob: '' // date of birth
     },
+    validationSchema: Yup.object({
+      username: Yup.string()
+        .min(5, 'Username must be at least 5 symbols length')
+        .max(20, 'Username can be up to 20 symbols length')
+        .required('Field must be filled')
+        .trim(),
+      password: Yup.string()
+        .matches(
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,25}$/,
+          'Password must be at least: one lower case, one upper case, one number, one special symbol and length to be between 8 and 25'
+        )
+        .required('Field must be filled')
+        .trim(),
+      passwordRepeat: Yup.string()
+        .oneOf([Yup.ref('password')], 'Passwords must match')
+        .required('Field must be filled'),
+      email: Yup.string()
+        .email('Field must be a valid email')
+        .required('Field must be filled'),
+      drivingLicenseCategories: Yup.array()
+        .min(1, 'At least one category must be chosen'), // nelogiška turėti tokią validaciją mūsų atveju
+      phone: Yup.string()
+        .matches(/^\+370 6\d{2} \d{5}$/, 'Phone number must match this pattern: +370 6xx xxxxx'),
+      profilePicture: Yup.string()
+        .url('Must be a valid url'),
+      gender: Yup.string()
+        .required('Field must be filled'),
+      age: Yup.number()
+        .moreThan(10, 'must be over age of 10')
+        .lessThan(500, 'must still be alive')
+        .required('Field must be filled'),
+      nationality: Yup.string()
+        .required('Field must be filled'),
+      // dob: Yup.string()
+      //   .datetime()
+      // dob: Yup.date()
+      //   .min()
+      //   .max(new Date(), 'cannot later than now')
+
+    }),
     onSubmit: (values) => {
       // console.log(values);
 
@@ -94,6 +135,7 @@ const Register = () => {
               type="checkbox"
               name="drivingLicenseCategories" id="a"
               value='a'
+              onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
           </div>
@@ -103,6 +145,7 @@ const Register = () => {
               type="checkbox"
               name="drivingLicenseCategories" id="b"
               value='b'
+              onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
           </div>
@@ -112,9 +155,14 @@ const Register = () => {
               type="checkbox"
               name="drivingLicenseCategories" id="c"
               value='c'
+              onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
           </div>
+          {
+            formik.touched.drivingLicenseCategories && formik.errors.drivingLicenseCategories &&
+            <p>{formik.errors.drivingLicenseCategories}</p>
+          }
         </fieldset>
         <div>
           <label htmlFor="phone">Telephone:</label>
@@ -122,8 +170,13 @@ const Register = () => {
             type="tel"
             name="phone" id="phone"
             value={formik.values.phone}
+            onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           />
+          {
+            formik.touched.phone && formik.errors.phone &&
+            <p>{formik.errors.phone}</p>
+          }
         </div>
         <div>
           <label htmlFor="profilePicture">Profile Picture:</label>
