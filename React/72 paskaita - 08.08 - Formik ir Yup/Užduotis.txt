@@ -1,0 +1,11 @@
+Pasibaigti registracijos validaciją: Su data pasibandyti ir atvaizduoti error'us.
+  Galima pamėginti padaryti taip, kad jeigu atvaizduojamas error'as, jis po kelių sekundžių išnyktų (net jeigu dar neištaisytas).
+
+Puslapį patobulinti pridedant korteles (apie betką):
+  Pridėti addNewCard puslapį, kuriame būtų forma sukurta su formik arba react-hook-form ir validuota su Yup'u.
+    Pildant formos input'us po jais būtų išvedama error žinutė, kurioje aprašyta kas negerai su įvestimi (jei įvestis tvarkinga, neturi būti rodomos error žinutės)
+    Submit'inus formą atvaizduoti jos įvestis konsolėje.
+  Patobulinti:
+    Saugoti duomenis Context'e su Reducer'iu (arba su State'u).
+    Naudoti JSON serverį duomenims saugoti.
+    Atvaizduoti korteles atskirame puslapyje, kurio nuoroda yra header'yje, o puslapio krovimas/rodymas vykdomas naudojant ReactRouter.
