@@ -1,0 +1,51 @@
+Užduotis - sukurti puslapį su Header'iu, Footer'iu ir Content dalimi.
+  Header'yje:
+    Logo, Menu, (extra: Login ir Register)
+  Footer'yje:
+    Nuorodos, terms and uses, copyrights...
+  Content dalyje:
+    Home page:
+      Įvadinis puslapis pristatantis apie ką yra svetainė. (Hero dalis)
+    Card page:
+      Kortelių puslapis pasirinkta tema:
+        Nuoroda į naujos kortelės pridėjimo puslapį.
+        Atvaizduojams visos kortelės.
+        Paspaudus ant vienos iš kortelių - nukeliamas į puslapį, kur yra:
+          Platesnė informacija apie kortelę.
+          Galimybė ištrinti kortelę.
+          Galimybė redaguoti kortelę (paspaudus ant edit mygtuko - atidaromas naujas puslapis su redagavimo forma, kurioje yra tos kortelės duomenys)
+
+  Kortelių informacija saugoma Context'e, kuriame duomenys saugomi ir jų funkcionalumai yra aprašyti naudojant useReducer'į/useState'ą.
+  Duomenys saugojami ir keičiami JSON serveryje.
+  Puslapiai kuriami naudojant react-router-dom.
+  Papildyti kiekvieną formą validavimu ir netinkamų laukų error'us atvaizduoti šalimais(iškart po) tų laukų, kuriems tie error'ai priklauso. Error'ų atsiradimas interaktyvus (atsiranda ne bandant pateikti formą, bet baigus pildyti įvesties lauką).
+
+EXTRA:
+  Papildyti puslapį vartotojais:
+    Menu pridėti UserInfo dalį:
+      LogIn ir Register (jei neprisijungęs)
+      UserAvatar ir UserName ir LogOut (jei prisijungęs)
+        LogIn - prijungia vartotoją, jeigu teisingos įvestys.
+        Register - priregistruoja ir prijungia vartotoją, jeigu teisingos įvestys (userName, password, passwordRepeat, email, userAvatar).
+        LogOut - atjungia vartotoją.
+      Vartotojo duomenys: id, username, email, avatarImage, password.
+      Vartotojų duomenų funkcionalumai: kurtiNaujaVartotoja, trintiVartotoja, redaguotiVartotojoDuomenis, prijungti/atjungiVartotoja.
+    Sukurti userContext, kuriame būtų saugojami visi vartotojų duomenys su funkcionalumais aprašytais Reducer'yje/useState'e. (ar vartotojas prisijungęs ar ne ir to keitimo funkcionalumą galima daryti su atskiru paprastu useState'u, nebūtina kimšti į tą patį useReducer'į).
+  Papildyti kortelių puslapį filtravimo galimybe:
+    Filtruoti korteles, kurios atitinka tam tikrus kriterijus (kriterijai formoje virš/šalimais visų kortelių).
+  Papildyti vartotojus rolėmis:
+    Paprastas vartotojas:
+      Gali kurti ir trinti bei redaguoti TIK savo korteles.
+      Gali keisti savo vartotojo informaciją apart rolės.
+    Admin vartotojas:
+      Gali kurti ir redaguoti savo korteles, o trinti betkieno korteles.
+      Gali keisti savo informaciją.
+      Gali blokuoti vartotojus. Blokuoto vartotojo kortelės ir komentarai nebeatvaizduojami niekam. Blokuotas vartotojas negali prisijungti.
+  Papildyti korteles komentarais:
+    Komentarus gali palikti tik prisijungę vartotojai.
+    Komentarą gali redaguoti tik tas vartotojas, kuris jį sukūrė.
+    Komentarą gali trinti tik tas vartotojas, kuris jį sukūrė arba admin'as.
+  Papildyti korteles ir/arba kortelių komentarus balų sistema:
+    Kiekvienas prisijungęs vartotojas gali upVote'inti arba downVote'inti kiekvieną kortelę/komentarą po vieną kartą. (panaši sistema į stackoverflow).
+  Pridėti galimybę vartotojui keisti puslapio spalvų temą (2 variantai - šviesi ir tamsi)
+  Papildyti puslapio spalvų temas daugiau negu dvejomis spalvomis ir pridėti galimybę keisti puslapio šriftų dydžius.
