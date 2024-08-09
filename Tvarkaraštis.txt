@@ -1,0 +1,99 @@
+HTML:
+  1 savaitė:
+    1 paskaita - 04.29 - HTML Įvadas
+    2 paskaita - 04.30 - CSS Įvadas
+    3 paskaita - 05.02 - CSS prioritetai
+    4 paskaita - 05.03 - Box Model ir Positions
+  2 savaitė:
+    5 paskaita - 05.06 - Lentelės ir pseudo klasės
+    6 paskaita - 05.07 - Formos ir pseudo elementai
+    7 paskaita - 05.08 - Flex
+    8 paskaita - 05.09 - Grid
+    9 paskaita - 05.10 - Flex ir Grid praktika
+  3 savaitė:
+    10 paskaita - 05.13 - Responsive Design
+    11 paskaita - 05.14 - Animation ir Transition
+    12 paskaita - 05.15 - Git ir Github IR Framework ir Preprocessors
+    13 paskaita - 05.16 - Accessability ir Praktika
+    14 paskaita - 05.17 - Praktika
+  4 savaitė:
+    15 paskaita - 05.20 - HTML atsiskaitymas (testas ir praktika)
+JS:
+  4 savaitė:
+    16 paskaita - 05.21 - JS intro kintamieji
+    17 paskaita - 05.22 - Sąlygos
+    18 paskaita - 05.23 - Ciklai
+    19 paskaita - 05.24 - Funkcijos
+  5 savaitė:
+    20 paskaita - 05.27 - Kartojimas/Praktika/Gilinimasis
+    21 paskaita - 05.28 - Primityvių kintamųjų tipų Metodai 
+    22 paskaita - 05.29 - Masyvų metodai (neiteraciniai)
+    23 paskaita - 05.30 - Advanced sąlygos ir Destruktūrizavimas ir Iteraciniai masyvų metodai
+    24 paskaita - 05.31 - Praktika su metodai
+  6 savaitė: 
+    25 paskaita - 06.03 - Formos JS intro
+    26 paskaita - 06.04 - DOM
+    27 paskaita - 06.05 - Formos ir DOM
+    28 paskaita - 06.06 - Klasės + Moduliai
+    29 paskaita - 06.07 - Komponentai (ne React) ir Moduliai
+  7 savaitė:
+    30 paskaita - 06.10 - Praktika
+    31 paskaita - 06.11 - Local/Session/Cookie TodoApp
+    32 paskaita - 06.12 - JSON ir Fetch
+    33 paskaita - 06.13 - JSON server
+    34 paskaita - 06.14 - Minkštieji įgūdžiai
+  8 savaitė:
+    35 paskaita - 06.17 - Praktika
+    36 paskaita - 06.18 - CRUD
+    37 paskaita - 06.19 - Async, Recursion, RegExp
+    38 paskaita - 06.20 - AI panaudojimas programavime
+    39 paskaita - 06.21 - Minkštieji įgūdžiai
+  9 savaitė:
+    40 paskaita - 06.25 - Praktika
+    41 paskaita - 06.26 - Praktika
+    42 paskaita - 06.27 - Ruošimasis atsiskaitymui
+    43 paskaita - 06.28 - JS Atsiskaitymas
+Git ir GitHub:
+  10 savaitė:
+    44 paskaita - 07.01 - Git ir Github
+    45 paskaita - 07.02 - Grupiniai darbai
+    46 paskaita - 07.03 - Grupiniai darbai
+    47 paskaita - 07.04 - Grupiniai darbai ir jo pristatymai
+    48 paskaita - 07.05 - Git ir Github Atsiskaitymas
+TS:
+  11 savaitė:
+    49 paskaita - 07.08 - TS Įvadas
+    50 paskaita - 07.09 - Config ir Tipai
+    51 paskaita - 07.10 - Enum, Union ir Class
+    52 paskaita - 07.11 - Interface vs Types ir Generics
+    53 paskaita - 07.12 - Praktika
+  12 savaitė:
+    54 paskaita - 07.15 - Praktika
+    55 paskaita - 07.16 - Project Set Up
+    56 paskaita - 07.17 - Savarankiška praktika
+    57 paskaita - 07.18 - Savarankiška praktika
+    58 paskaita - 07.19 - Atsiskaitymas
+React:
+  13 savaitė:
+    59 paskaita - 07.22 - React Įvadas
+    60 paskaita - 07.23 - React Komponentai ir props
+    61 paskaita - 07.24 - useState
+    62 paskaita - 07.25 - useEffect ir Fetch JSON-server
+    63 paskaita - 07.26 - Praktika
+  14 savaitė: 
+    64 paskaita - 07.29 - React Stilizavimas
+    65 paskaita - 07.30 - Atomic Design
+    66 paskaita - 07.31 - Context ir Reducer
+    67 paskaita - 08.01 - Context ir Reducer
+    68 paskaita - 08.02 - Praktika
+  15 savaitė:
+    69 paskaita - 08.05 - React Router basic
+    70 paskaita - 08.06 - React Router
+    71 paskaita - 08.07 - Formik
+    72 paskaita - 08.08 - Formik + validation (yup)
+    73 paskaita - 08.09 - Praktika
+  16 savaitė:
+    74 paskaita - 08.12 - Praktika Kartu
+    75 paskaita - 08.13 - Praktika Kartu
+    76 paskaita - 08.14 - Praktika Kartu
+    77 paskaita - 08.16 - Praktika
